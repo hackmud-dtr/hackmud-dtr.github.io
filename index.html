@@ -16,7 +16,7 @@
 </style>
 <script>
 function link(x) {
-	alert(document.location.href.split('#')[0]+'#'+x.name)
+	alert(document.location.href.split('?')[0]+'?'+x.name)
 }
 function ends() {
 	var tds=document.getElementsByTagName('td');
@@ -40,14 +40,14 @@ function ends() {
 		
 	
 	
-	if(document.location.hash) {
+	if(document.location.search) {
 		for(var i=0;i<tds.length;++i) {
 			if(!tds[i].className.includes('command'))continue;
 			var x=tds[i].innerHTML.split('\n')[0].match(/<span style="color:#FF00EC">(.*?)<\/span>/g).map(o=>o.replace(/<span style="color:#FF00EC">(.*)<\/span>/,'$1')).join('-').replace(/"/g,'')//")//syntax
-			x='#'+x.replace(/^message_archive-THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE-/g,'')
-			if(x==document.location.hash){
+			x='?'+x.replace(/^message_archive-THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE-/g,'')
+			if(x==document.location.search){
 				tds[i].className+=' selected'
-				tds[i].scrollIntoView()
+				tds[i].scrollIntoView({behavior: "instant", block: "center", inline: "center"})
 				return;
 			}
 		}
