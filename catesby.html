@@ -26,8 +26,40 @@
 		border-color:yellow;
 	}
 </style>
+<script>
+function grabColors() {
+	var skip=['archive_id','derelict_1duij1','jn49tw','option']
+	var colors={
+	
+	}
+	var z=document.getElementsByClassName('command');
+	for(var i=0;i<z.length;++i) {
+		var x=z[i].innerHTML.split('\n').splice(1,100).join('\n');
+		var r=/<span.*?color:.*?(#.*?).>(.*?)<\/span>/g;
+		var w;
+		while(w=r.exec(x)) {
+			var c=w[1];
+			var w=w[2].replace(/[()]/g,'');
+			if(skip.includes(w))continue;
+			if(!colors[c])colors[c]=[]
+			colors[c].push(w)
+		}
+	}
+	var d=document.getElementById('colors')
+	var list=['#9B9B9BFF','#00FFFFFF','#FF8000FF','#0070DDFF','#FFF404FF','#B3FF9BFF','#B035EEFF','#1EFF00FF','#FF0000FF','#FFFFFFFF']
+	var names=['(gray)','cyan','orange','blue','yellow','lime','purple','green','red','white']
+	for(var c=0;c<list.length;++c) {
+		var i=list[c]
+		var p=document.createElement('p')
+		p.style='padding:0;margin:0'
+		p.innerHTML='<span style="color:'+i+';display:inline-block;min-width:6em;text-align:right">'+names[c]+'</span>: <span style="color:'+i+'">'+[...new Set(colors[i])].sort().join('</span>, <span style="color:'+i+'">')+'</span>'
+		d.appendChild(p)
+	}
+}
+</script>
 </head>
-<body>
+<body onload='grabColors()'>
+<div id='colors'><p style='margin:0;padding:0'><b>Colored Words</b></p></div>
 <table>
 <tr>
 <td class='command'><span style="color:#FFFFFFFF">&gt;&gt;<span style="color:#9B9B9BFF">robovac_catesby</span>.<span style="color:#1EFF00FF">potter</span></span>
