@@ -28,7 +28,7 @@
 </style>
 <script>
 function grabColors() {
-	var skip=['archive_id','derelict_1duij1','jn49tw','option']
+	var skip=['archive_id','derelict_1duij1','jn49tw','option','lack','nts','erva']
 	var colors={
 	
 	}
@@ -46,8 +46,9 @@ function grabColors() {
 		}
 	}
 	var d=document.getElementById('colors')
-	var list=['#9B9B9BFF','#00FFFFFF','#FF8000FF','#0070DDFF','#FFF404FF','#B3FF9BFF','#B035EEFF','#1EFF00FF','#FF0000FF','#FFFFFFFF']
-	var names=['(gray)','cyan','orange','blue','yellow','lime','purple','green','red','white']
+	var list=['#9B9B9BFF','#00FFFFFF','#FF8000FF','#0070DDFF','#FFF404FF','#B3FF9BFF','#B035EEFF','#1EFF00FF','#FF0000FF','#FFFFFFFF','']
+	var names=['(gray)','cyan','orange','blue','yellow','lime','purple','green','red','white','(six)']
+	colors['']=['<span style="color:#385A6CFF">six </span><span style="color:#00FFFFFF">lack</span><span style="color:#299400FF">lust</span><span style="color:#FFD863FF">er s</span><span style="color:#FF0000FF">erva</span><span style="color:#FF8000FF">nts</span>']
 	for(var c=0;c<list.length;++c) {
 		var i=list[c]
 		var p=document.createElement('p')
@@ -109,9 +110,11 @@ you find yourself out upon the lawn. it is noon and the sun is <span style="colo
 
 <td class='command'><span style="color:#FFFFFFFF">&gt;&gt;<span style="color:#9B9B9BFF">robovac_catesby</span>.<span style="color:#1EFF00FF">potter</span>{<span style="color:#00FFFFFF">option</span>:<span style="color:#FF00ECFF">"message_archive"</span>,<span style="color:#00FFFFFF">archive_id</span>:<span style="color:#FF00ECFF">"tearoom_understaffed_today"</span>,<span style="color:#00FFFFFF">well_kept_lawn</span>:<span style="color:#FF00ECFF">true</span>,<span style="color:#00FFFFFF">sinking</span>:<span style="color:#FF00ECFF">"hot"</span>}</span>
 you find yourself out upon the lawn. it is dusk and the sun is <span style="color:#FF8000FF">hot</span> and casts no <span style="color:#0070DDFF">shadow</span> of its own. you are well pleased with this observation. you would take <span style="color:#0070DDFF">tea</span>, were it offered</td>
-<td class="noborder"></td><td class="noborder"></td>
+<td class="noborder"></td>
 <td class='command'><span style="color:#FFFFFFFF">&gt;&gt;<span style="color:#9B9B9BFF">robovac_catesby</span>.<span style="color:#1EFF00FF">potter</span>{<span style="color:#00FFFFFF">option</span>:<span style="color:#FF00ECFF">"message_archive"</span>,<span style="color:#00FFFFFF">archive_id</span>:<span style="color:#FF00ECFF">"tearoom_understaffed_today"</span>,<span style="color:#00FFFFFF">kitchen_in_disarray</span>:<span style="color:#FF00ECFF">true</span>,<span style="color:#00FFFFFF">wrong</span>:<span style="color:#FF00ECFF">"opaque"</span>}</span>
 you find yourself in the kitchen and everything is <span style="color:#B035EEFF">opaque</span>! thick smoke rises from batch upon batch of burning biscuits, obscuring the true geometries of the grand old manor's most vital internal function. these are no conditions for making <span style="color:#0070DDFF">tea</span></td>
+<td class='command'><span style="color:#FFFFFFFF">&gt;&gt;><span style="color:#9B9B9BFF">robovac_catesby</span>.<span style="color:#1EFF00FF">potter</span>{<span style="color:#00FFFFFF">"option"</span>:<span style="color:#FF00ECFF">"message_archive"</span>,<span style="color:#00FFFFFF">"archive_id"</span>:<span style="color:#FF00ECFF">"tearoom_understaffed_today"</span>,<span style="color:#00FFFFFF">"kitchen_in_disarray"</span>:<span style="color:#FF00ECFF">true</span>,<span style="color:#00FFFFFF">"wrong"</span>:<span style="color:#FF00ECFF">"dumb"</span>}</span>
+you find yourself in the kitchen and everything is <span style="color:#FFFFFFFF">dumb</span>! the teapots are rolling about laughing. a vacuum cleaner develops a sense of self-importance on the counter-top. biscuits whizz to and fro, emitting bursts of colored smoke that communicate insults in a language you do not speak. this is all your doing, of course. you are <span style="color:#385A6CFF">six </span><span style="color:#00FFFFFF">lack</span><span style="color:#299400FF">lust</span><span style="color:#FFD863FF">er s</span><span style="color:#FF0000FF">erva</span><span style="color:#FF8000FF">nts</span>, after all. and the tearoom can be ever so demanding. enjoy this diversion: it may not last!</td>
 
 <td class='command'><span style="color:#FFFFFFFF">&gt;&gt;<span style="color:#9B9B9BFF">robovac_catesby</span>.<span style="color:#1EFF00FF">potter</span>{<span style="color:#00FFFFFF">option</span>:<span style="color:#FF00ECFF">"message_archive"</span>,<span style="color:#00FFFFFF">archive_id</span>:<span style="color:#FF00ECFF">"tearoom_understaffed_today"</span>,<span style="color:#00FFFFFF">kitchen_in_disarray</span>:<span style="color:#FF00ECFF">true</span>,<span style="color:#00FFFFFF">wrong</span>:<span style="color:#FF00ECFF">"united"</span>}</span>
 you find yourself in the kitchen and everyone is <span style="color:#FFFFFFFF">united</span>! there is an accord: a resolution that, under-staffed or no, the tearoom must be supplied. the counter-top vacuum cleaner awaits instructions. unbaked biscuits anticipate oven activation. and the teapots are upright, full of <span style="color:#1EFF00FF">(purified)</span> water, eager for the leaf. too eager, perhaps. the anticipated guests may not have such rareified tastes</td>
