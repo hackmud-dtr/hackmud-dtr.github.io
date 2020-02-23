@@ -181,7 +181,7 @@ you become aware that the surface of the monument is not quite featureless. with
 d29e9be052c55711 02c1293801abdc0b ???????????????? ???????????????? 6861a3661fff4586 ???????????????? ????????????????
 824f3151871f12a7 ???????????????? ???????????????? ???????????????? 334c5c9bffd5886d ???????????????? 506c409e34ebcbd3
 0286eda277110a0f ???????????????? ???????????????? 2e33e9876932b628 c84ebcf63df0fbe4 d7e35a4d9181635e 5cdcf1e26d5290ee
-???????????????? ???????????????? ???????????????? ???????????????? b7a8d3dbcc26d6e9 d4603da01cae7b13
+6283343570d3e42e ???????????????? ???????????????? ???????????????? b7a8d3dbcc26d6e9 d4603da01cae7b13
 ???????????????? ???????????????? ???????????????? ???????????????? 1ad76a75301c3fcb ????????????????
 ???????????????? 1831b619ee8708b2 5864ca32f16f9bc8 afc45e128e0dc9e4 ???????????????? e3e559061e4ec5a6
 03d2c78a565cd8ab ???????????????? 3467b0f462b72fb3 ???????????????? 2ec4a326cfeb6beb e1c22e6031df5f9b
@@ -191,13 +191,14 @@ d29e9be052c55711 02c1293801abdc0b ???????????????? ???????????????? 6861a3661fff
 sub_hyperion_1   excavation_9     ???????????????? ???????????????? excavation_1     ???????????????? ????????????????
 sub_hyperion_3   ???????????????? ???????????????? ???????????????? excavation_4     ???????????????? entrance_4
 crc64(pvs**)     ???????????????? ???????????????? sub_hyperion_2   excavation_5     excavation_10    entrance_3_bg
-???????????????? ???????????????? ???????????????? ???????????????? excavation_7     excavation_11
+crc64(myn**)     ???????????????? ???????????????? ???????????????? excavation_7     excavation_11
 ???????????????? ???????????????? ???????????????? ???????????????? excavation_2     ????????????????
 ???????????????? crc64(login)     sub_hyperion_4   excavation_6     ???????????????? entrance_1
 crc64(expert**)  ???????????????? excavation_8     ???????????????? excavation_3     entrance_2
 
 ** pvs: post_validation_service
 expert: approved_expert_claims_that_death_9lQF1P
+   myn: approved_the_mysterious_destruction_of_Myncuk
 </span>
 <span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">look</span>:<span style="color:#FF00EC">"subset_hyperion"</span>}</span>
 you head towards the light of the <span style="color:#00FFFF">beacon</span>. as you do, you become aware that this desert possesses an interior boundary, if not an exterior one.
@@ -499,6 +500,10 @@ ADDR post_validation_service HEAD Post Validation Service BODY You've reached th
 <span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"03d2c78a565cd8ab"</span>}</span>
 ADDR approved_expert_claims_that_death_9lQF1P HEAD AI expert claims that 'death' of Che "undeniably linked" to attack on Bo Yi BODY Among rife speculation over the fate of the operator 'Che', the University of Oxford's foremost expert on intelligent digital services has lent her voice to those claiming a connection to the destruction of China's 'Bo' system in 2055. "They are undeniably linked," claims Dr. Erin Rajbhandari. "These systems do not simply break, and they lack single points of failure or other exploitable vulnerabilities. We now have only two instances of total operator failure in the history of this technology, and in each case death has occurred in an identical fashion - sudden, without any preceding disruption, and with the same calling-card. This does not necessarily prove that the same hostile actor is responsible, but certainly suggests that the same vulnerability has been exploited and that whoever did this wishes us to perceive a connection between the two."
 </div>
+<div id="inspect-6283343570d3e42e">
+<span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"6283343570d3e42e"</span>}</span>
+ADDR approved_the_mysterious_destruction_of_Myncuk HEAD The Mysterious Destruction of China's Pioneering AI BODY Bo Yi - more commonly simply 'Bo' - was one of the world's first 'true' artificial intelligences. Now, AI experts across the world are reeling from the discovery that the service appears to have been deliberately and maliciously destroyed by a hostile force. Bo was integrated into governance, finance and community support systems throughout mainland China, all of which are seeing major outages today as alternative solutions are sought. The question on everybody's lips, meanwhile, is "how did this happen?" Operators like Bo are protected politically and digitally. They lack centralized hardware, spanning many thousands of individual systems each with top-tier security measures and deep redundancies - none of which appear to have registered any kind of intrusion or error in the moments before Bo 'died'. Indeed, we would likely be looking to 'acts of God' to explain Bo's destruction - an undetected solar flare, for example - were it not for the now-infamous signature appended to the service's shutdown: the singular red 'smiley face' that was witnessed on displays across China in the moments before the system went dark.
+</div>
 </div>
 <hr>
 <span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"1831b619ee8708b2"</span>,<span style="color:#00FFFF">def_packet</span>:<span style="color:#FF00EC">"username"</span>,<span style="color:#00FFFF">set_packet</span>:<span style="color:#FF00EC">"foo"</span>}</span>
@@ -507,12 +512,16 @@ ADDR ERROR HEAD Employee ID Not Recognized BODY Employee ID not recognized. Logi
 <span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"0286eda277110a0f"</span>,<span style="color:#00FFFF">def_packet</span>:<span style="color:#FF00EC">"searchbox"</span>,<span style="color:#00FFFF">set_packet</span>:<span style="color:#FF00EC">"foo"</span>}</span>
 ADDR ERROR HEAD No Results Found In System BODY No results found in post validation service.
 
->>risk.trace{go:"5,45,CHAOS",access:"subset_hyperion",inspect:"0286eda277110a0f",def_packet:"searchbox",set_packet:"che"}
-approved_expert_claims_that_death_9lQF1P
-approved_partial_restoration_of_che_59Qmnc
+<span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"0286eda277110a0f"</span>,<span style="color:#00FFFF">def_packet</span>:<span style="color:#FF00EC">"searchbox"</span>,<span style="color:#00FFFF">set_packet</span>:<span style="color:#FF00EC">"che"</span>}</span>
+approved_expert_claims_that_death_9lQF1P <span style="color:#FF0000">ED NOTE: this CRC works</span>
+approved_partial_restoration_of_che_59Qmnc <span style="color:#FF0000">ED NOTE: this CRC fails</span>
 §¤¢¤©¨Áª¨¤¤©Á©¨§¨¦¦ª¤ª¨¤¦¢_cpp1qm
 
+<span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"0286eda277110a0f"</span>,<span style="color:#00FFFF">def_packet</span>:<span style="color:#FF00EC">"searchbox"</span>,<span style="color:#00FFFF">set_packet</span>:<span style="color:#FF00EC">"bo"</span>}</span> <span style="color:#FF0000">ED NOTE: or bo yi</span>
+approved_the_mysterious_destruction_of_Myncuk  <span style="color:#FF0000">ED NOTE: this CRC works</span>
 
+<span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span>{<span style="color:#00FFFF">go</span>:<span style="color:#FF00EC">"5,45,CHAOS"</span>,<span style="color:#00FFFF">access</span>:<span style="color:#FF00EC">"subset_hyperion"</span>,<span style="color:#00FFFF">inspect</span>:<span style="color:#FF00EC">"0286eda277110a0f"</span>,<span style="color:#00FFFF">def_packet</span>:<span style="color:#FF00EC">"searchbox"</span>,<span style="color:#00FFFF">set_packet</span>:<span style="color:#FF00EC">"mallory"</span>}</span> <span style="color:#FF0000">ED NOTE: or petra, faythe, angie, eve</span>
+ADDR ERROR HEAD Search Returned Too Many Results BODY Search term returned results in excess of intended specificity window.
 
 <hr>
 <div id="risk">
