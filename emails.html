@@ -1,0 +1,247 @@
+<html>
+<head>
+<title>trace emails</title>
+<meta charset="utf-8" /> 
+<style>
+@font-face {
+    font-family: 'white_rabbitregular';
+    src: url('assets/whiterabbit-webfont.woff2') format('woff2'),
+         url('assets/whiterabbit-webfont.woff') format('woff'),
+         url('assets/whiterabbit-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    a[href],a[href]:active,a[href]:visited,a[href]:link{color:#83B0F2}
+    body{background-color:#101215;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1}
+    table,tr,td{border-collapse:collapse}
+	td{word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1;vertical-align:top;border:0px solid #83B0F2;border-collapse:collapse;padding:1px 1ex}
+    td.noborder{border-width:0}
+    td.topborder{border-width:0;border-top:1px dashed #83B0F2}
+    td.solidtopborder{border-width:0;border-top:1px solid #83B0F2}
+    td.dashed{border-left:1px dashed #83B0F2;border-right:1px dashed #83B0F2;text-align:center}
+    .good_end{background-color:rgba(255,0,255,0.1)}
+    .special_end{background-color:rgba(0,255,0,0.2)}
+    .dead_end{background-color:rgba(0,255,255,.1)}
+    .bad_end{background-color:rgba(255,0,0,.1)}
+    .selected {
+        border:5px solid yellow;
+        padding:0 1em 1em 1em
+    }
+</style>
+<script>
+function go() {
+	var n={
+		fbreton:     '[<span style="color:#FF8000">$1</span>$2]',
+		erajbhandari:'[<span style="color:#FF8383">$1</span>$2]',
+		emarko:      '[<span style="color:#8E3434">$1</span>$2]',
+		mhollister:  '[<span style="color:#B3FF9B">$1</span>$2]',
+		chela:       '[<span style="color:#00FFFF">$1</span>$2]',
+		mpytel:      '[<span style="color:#0070DD">$1</span>$2]',
+		UNKNOWN1:    '[<span style="color:#E6C4FF">$1</span>$2]',
+	}
+	var s=document.body.innerHTML;
+	for(var i in n) {
+		s=s.replace(new RegExp('\\[('+i+')(\\??)\\]','g'),n[i]);
+	}
+	document.body.innerHTML=s;
+}
+</script>
+</head>
+<body onload='go()'>
+
+<table>
+<tr><td colspan=3 style="color:#FF8000">2055</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF0000">y2055d001: BO DIES</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2055d001_EmilMarko_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>1dfe15bb19e0236f<td></tr>
+<tr><td>BODY:</td><td>[emarko]</td><td>so im called in today right its news years day and im here in some botyard and the owners losing his mind bc the bots are ignoring target items that are right there, literally just right there. turns out older packbot firmware has some weird quirks. they have a directive to avoid wasting energy and it turns out that turning uses more juice than forward motion. so if they can get to a packet without turning theyll go for it, every time. dumb but what can u do</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2055d137_EmilMarko_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>d3645f4d20ab2741<td></tr>
+<tr><td>BODY:</td><td>[emarko]</td><td>right right so heres the other thing, sometimes good lighting is more trouble than its worth. your average bot isnt that smart so actually the more stuff it can see the more upset it gets. well maybe not upset but u know what i mean. best thing is to tell them that they know everything they need to know and then they stop looking, which usually means the light turns off. make sure u got the jumpsuit on or they wont believe u. then flash <span style="color:#385A6C">▀</span><span style="color:#385A6C">▁</span><span style="color:#F3F998">▁</span><span style="color:#B3FF9B">█</span><span style="color:#F3F998">▀</span><span style="color:#F3F998">▁</span><span style="color:#385A6C">▀</span>, something like that</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?<td></tr>
+<tr><td>ADDR:</td><td colspan=2>2ec4a326cfeb6beb<td></tr>
+<tr><td>BODY:</td><td>[emarko]</td><td>look there are gonna be times where you are just gonna have to take it on faith that the bot can see you, its gonna feel weird but if you want them to use their light you have to tell them its dark or they are just going to sit there. you wanna flash <span style="color:#385A6C">▀</span><span style="color:#385A6C">▁</span><span style="color:#F3F998">▁</span><span style="color:#B3FF9B">█</span><span style="color:#F3F998">▀</span><span style="color:#F3F998">▁</span><span style="color:#FFD863">▀</span>, something like that, convince them they need more data about the space around them, thats the trick. doesnt always work for me but thats usually cos its dark, so i cant see the projector buttons. usually get a good amount of light tho, which will do alright unless you want fine control, but its usually enough for me</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?<td></tr>
+<tr><td>ADDR:</td><td colspan=2>d7e35a4d9181635e<td></tr>
+<tr><td>BODY:</td><td>[emarko]</td><td>okay so 99%, like 99.9% of nav errors can be put down to problems with light. either too much or not enough. look i get that everyones calling this a critical error with a light-based system, but everything that your bot can see is doing something to its brain so you gotta manage it carefully. if you wanna maximise your chance of getting the behavior you want then pump the lights up with something like <span style="color:#385A6C">▀</span><span style="color:#385A6C">▁</span><span style="color:#F3F998">▁</span><span style="color:#B3FF9B">█</span><span style="color:#F3F998">▀</span><span style="color:#F3F998">▁</span><span style="color:#FFD863">▀</span><span style="color:#B3FF9B">█</span><span style="color:#FFD863">▀</span><span style="color:#F3F998">▅</span>, then work back from there. ok, i get that its not ideal. the success rate isnt great. look, i have put years into this tech. i have been on the ground with customers solving problems with this tech on new years morning when i could have been with my kids. please dont roll it back</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?<td></tr>
+<tr><td>ADDR:</td><td colspan=2>d4603da01cae7b13<td></tr>
+<tr><td>BODY:</td><td>[emarko]</td><td>here is one of the problems with sematone, i will admit this isnt ideal but it isnt great at scale and neither are the bots that use it. you wanna tell em to make something bigger or smaller, they are probably not gonna understand you unless you can give them a reference they understand, and pretty much the only thing they reliably understand is other bots. so like, if u wanna be careful, <span style="color:#385A6C">▀</span><span style="color:#385A6C">▁</span><span style="color:#F3F998">▁</span><span style="color:#B3FF9B">█</span><span style="color:#F3F998">▀</span><span style="color:#F3F998">▁</span><span style="color:#FFD863">▀</span><span style="color:#B3FF9B">█</span><span style="color:#FFD863">▀</span><span style="color:#F3F998">▁</span> will get em to generate just enough light for themselves. boost that up to a ▃ on the final spatial modifier and theyll push it out a bit further</td>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2056</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?</td></tr>
+<tr><td>ADDR:</td><td colspan=2>6861a3661fff4586</td></tr>
+<tr><td>BODY:</td><td>[fbreton?]</td><td>so these addr identifiers, how do we typically</td></tr>
+<tr><td></td><td>[???-2]</td><td>crc-64, ecma 182</td></tr>
+<tr><td></td><td>[fbreton?]</td><td>secure them. oh. you get this question a lot?</td></tr>
+<tr><td></td><td>[???-2]</td><td>you have no idea</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>? (Note: this must be just before she makes the new auth module or else she wouldn't be complaining about it)<td></tr>
+<tr><td>ADDR:</td><td colspan=2>c84ebcf63df0fbe4<td></tr>
+<tr><td>BODY:</td><td>[fbreton]</td><td>look - i know how people get when the newbie starts asking questions, but, like, we are relying hard on our auth AIs. really, really hard.</td></tr>
+<tr><td></td><td>[???-1]</td><td>you don't need to tell me, flo, i get it</td></tr>
+<tr><td></td><td>[fbreton]</td><td>all you need to do to dupe the system is convince the auth service to let you fiddle with the ADDR line. you could literally change 'false' to 'true' and access whatever you wanted. how did this end up like this?</td></tr>
+<tr><td></td><td>[???-1]</td><td>people upstairs put a lot of faith in the operator. zero downtime is kind of our thing</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2056d124_FlorenceBreton_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>5864ca32f16f9bc8<td></tr>
+<tr><td>BODY:</td><td>[???-1]</td><td>hey effy bee you get the new auth module done yet</td></tr>
+<tr><td></td><td>[fbreton]</td><td>hi to you too. yes, its up and running</td></tr>
+<tr><td></td><td>[???-1]</td><td>you could have pinged me</td></tr>
+<tr><td></td><td>[fbreton]</td><td>sorry</td></tr>
+<tr><td></td><td>[???-1]</td><td>its fine, your new, but its a good idea to ping in one of the main channels so someone sees it</td></tr>
+<tr><td></td><td>[fbreton]</td><td>ok, will do</td></tr>
+<tr><td></td><td>[???-1]</td><td>er where did you put the module</td></tr>
+<tr><td></td><td>[fbreton]</td><td>you're kidding right? it's literally called login</td></tr>
+<tr><td></td><td>[???-1]</td><td>oh huh ye ok</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?<td></tr>
+<tr><td>ADDR:</td><td colspan=2>334c5c9bffd5886d<td></tr>
+<tr><td>BODY:</td><td>[???-1]</td><td>that's right everybody, the board has done the smart thing and gone with firstname-initial formatting for the new login system.</td></tr>
+<tr><td></td><td>[???-2]</td><td>you're kidding, we're going to need to start accounting for duplicate names, like, immediately</td></tr>
+<tr><td></td><td>[???-1]</td><td>is what it is. che's on 'first name terms with the world', so now so are we</td></tr>
+<tr><td></td><td>[???-2]</td><td>ugh</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2056d128_FlorenceBreton_deleted<td></tr>
+<tr><td>ADDR:</td><td colspan=2>3467b0f462b72fb3</td></tr>
+<tr><td>BODY:</td><td>[???-1]</td><td>be glad you werent here when the bo stuff went down. was bad</td></tr>
+<td></td><td>[fbreton?]</td><td>yeah?</td></tr>
+<td></td><td>[???-1]</td><td>yeah. like, pray that doesnt happen to us. we can handle downtime and flaky outputs but jesus, nobody in this business slept that night</td></tr>
+<td></td><td>[fbreton?]</td><td>it was a freak bug though right? that's the only explanation that makes sense</td></tr>
+<td></td><td>[???-1]</td><td>yeah, probably. thing is, half of the rumors u hear came from here or reco or ft or architech. we all saw it go down and thought 'new operator'. guess we'd been waiting for it</td></tr>
+<td></td><td>[fbreton?]</td><td>i heard hyperion had people on the ground in china when it happened</td></tr>
+<td></td><td>[???-1]</td><td>thats true. not me. but a bunch of the senior guys were in sichuan for some meeting</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2056d316_FlorenceBreton_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>156001c130fafdfa<td></tr>
+<tr><td>BODY:</td><td>[???-1]</td><td>word from above is 'user error' for those faulty keys btw</td></tr>
+<tr><td></td><td>[fbreton]</td><td>that can't be right in every case, surely?</td></tr>
+<tr><td></td><td>[???-1]</td><td>don't know what else to tell you, Flo</td></tr>
+<tr><td></td><td>[fbreton]</td><td>they're keyed to che's unique kernel. if they're entered correctly, by an approved user, they should work</td></tr>
+<tr><td></td><td>[???-1]</td><td>like i say, then. user error.</td></tr>
+<tr><td></td><td>[fbreton]</td><td>look, i'll prove it. give me a sec to grab one.</td></tr>
+<tr><td></td><td>[fbreton]</td><td>HDMS-@Che-PPMmiGbht0wjEwXY</td></tr>
+<tr><td></td><td>[fbreton]</td><td>see? nothing</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2056d319_MaciekPytel_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>7675d502be9e1b1f<td></tr>
+<tr><td>HEAD:</td><td colspan=2>Re Re Summon Code Error<td></tr>
+<tr><td>BODY:</td><td>[mpytel]</td><td>We're aware that the engineering teams are passing a lot of user complaints up the pipe re: che failing to respond to older summon keys. Particularly over the last few days. It's getting prevalent enough that it might be something we need to deal with via media/press. Company line here (which is true, for what it's worth) is that it's a result of the changes we put in place after 2055. If their codes are newer than that then it's user error, simple as. Any questions?</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2057</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?<td></tr>
+<tr><td>ADDR:</td><td colspan=2>b7a8d3dbcc26d6e9<td></tr>
+<tr><td>BODY:</td><td>[???]</td><td>the PVS is super barebones at the moment, dont overload it or it'll freak out. its for giving the RECO AI limited access to news, posts, whatever's going through our network at the time. more political than practical, honestly. if you need to find something its good to be specific. input field accepts multiple comma-separated terms, it's pretty oldschool</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2057d011_MaciekPytel_deleted<td></tr>
+<tr><td>ADDR:</td><td colspan=2>afc45e128e0dc9e4<td></tr>
+<tr><td>BODY:</td><td>[???-1]</td><td>this is secure?</td></tr>
+<td></td><td>[mpytel?]</td><td>Yes</td></tr>
+<td></td><td>[???-1]</td><td>okay. what's going on?</td></tr>
+<td></td><td>[mpytel?]</td><td>the Ratnasari people are keen to invest a little but want to expand their involvement. The post validation service is small potatoes. they're pushing for Monitor integration as part of the package</td></tr>
+<td></td><td>[???-1]</td><td>that's a no, I'm sorry, I know this puts you in a tough spot</td></tr>
+<td></td><td>[mpytel?]</td><td>What do you want me to tell them? Everyone else is bought in, or close enough</td></tr>
+<td></td><td>[???-1]</td><td>god, I don't know. tell them that che's been jittery since bo yi and we're being careful about connecting her with other operators. god knows thats true enough.</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF0000">y2057d202: CHE DIES</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2057d203_MaciekPytel_deleted<td></tr>
+<tr><td>ADDR:</td><td colspan=2>a7e45b2aa272a9ff<td></tr>
+<tr><td>BODY:</td><td>[UNKNOWN1]</td><td>Maciek, I'm aware of how much strain this situation is putting on you so this is just a note to say that I'm grateful that you're here and whatever the outcome, you've been a great servant of this company.</td></tr>
+<tr><td></td><td>[mpytel]</td><td>Thank you. While I've got you - I've heard back from Amalgamated Robotics. They are willing to help if we give them systems access.</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>Not a good idea.</td></tr>
+<tr><td></td><td>[mpytel]</td><td>Really? As I understand it, their Prover AI could reinitialize Che if we can fill in the gaps in her hardcopy.</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>No - Maciek, this goes no further than this channel, but AR's hardcopy of Che isn't valid.</td></tr>
+<tr><td></td><td>[mpytel]</td><td>What?</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>It was years ago. Pre-Frankfurt. We were still in competition and some money changed hands. We bypassed them completely. Che was proved in China. Delete this straight away, OK?</td></tr>
+<tr><td></td><td>[mpytel]</td><td>Ok. But the AR guys clearly aren't aware. And if we shut them out, it'll draw suspicion.</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>Then let them in. But don't bank on their Prover bailing us out - it's not going to work.</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>?<td></tr>
+<tr><td>ADDR:</td><td colspan=2>23fd58ea7a7ba63c<td></tr>
+<tr><td>BODY:</td><td>[UNKNOWN1]</td><td>FYI - I've let Maciek into the circle of trust re: Che and China. Sorry for not consulting first but this was necessary and he's trustworthy. He's doing good work on the frontline, but he needs to know to be careful with partner corps over the coming months. Have approved limited cooperation with AR because it'd be suspicious not to.</td></tr>
+<tr><td></td><td>[???-2]</td><td>thanks for letting me know. what a mess. how much did you tell him?</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>Just the basics. There was a deal pre-Frankfurt and AR's copy isn't valid.</td></tr>
+<tr><td></td><td>[???-2]</td><td>okay. nothing about 2055?</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>No.</td></tr>
+<tr><td></td><td>[???-2]</td><td>are we worried about somebody making the connection?</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>Inevitable that they'll link the attacks. And there are people at the company who know that we had people on the ground in Chengdu at the time. But the scary stuff, the open hardline to Bo - we've controlled that info.</td></tr>
+<tr><td></td><td>[???-2]</td><td>are you sure?</td></tr>
+<tr><td></td><td>[UNKNOWN1]</td><td>Che has spent the last two years making sure it doesn't get out. Thank god she's ours. We dodged a bullet that night.</td></tr>
+<tr><td></td><td>[???-2]</td><td>yeah, well, it hit us eventually</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2057d203_FlorenceBreton_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>9ee897030c4a5318<td></tr>
+<tr><td>BODY:</td><td>[fbreton]</td><td>i'm telling you, nothing like what you're saying happened last night. which parts of this do i need to explain again?</td></tr>
+<tr><td></td><td>[mpytel]</td><td>I'm not blaming you, Flo, or your team. But appreciate how this looks. This was exactly like Bo Yi, but you're saying that there was no vulnerability for this new operator to exploit.</td></tr>
+<tr><td></td><td>[fbreton]</td><td>that's exactly what i'm saying. we've gone over every byte of data about every action che took going back 24 hours pre-shutdown. give us more time and we'll go back further, but we're already at the outer bounds of when the damage could have been done. there was no other operator. it was just her. you guys are the reason that we don't have a live monitor connection, so she wasn't even talking to eve. Mr Pytel, i know why you're leaning on me. i get that the financial risks are massive if this was an internal error. but it might be, it really might be</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2057d211_FlorenceBreton_starred</td></tr>
+<tr><td>ADDR:</td><td colspan=2>2e33e9876932b628</td></tr>
+<tr><td>HEAD:</td><td colspan=2>team leads memo - urgent - vulnerability notice</td></tr>
+<tr><td>BODY:</td><td>[fbreton?]</td><td>appreciate that there's a lot on everyone's plates at the moment but i've been made aware of another hole in the system. there's no kind of safeguard in place to stop someone manually tinkering with the def_packet and set_packet functions in our network if they somehow got that far. would require auth AI to be totally offline but given what happened to che that's not unforeseeable. team leads - please check your systems for further vulnerabilities like this and get some fixes in place. appreciate that we're all going through it but lets keep our heads high. last thing we want is some committee asshole holding us up as an example of why things went wrong. thanks</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2058</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>y2058d074_FlorenceBreton_starred<td></tr>
+<tr><td>ADDR:</td><td colspan=2>5f94f5b129d89693<td></tr>
+<tr><td>BODY:</td><td>[chela]</td><td>hi there! its nice to see you again, user florence b!
+<tr><td></td><td>[fbreton]</td><td>hi, chela! do you know what year it is?</td></tr>
+<tr><td></td><td>[chela]</td><td>it's 2058!</td></tr>
+<tr><td></td><td>[fbreton]</td><td>yep! what do you remember?</td></tr>
+<tr><td></td><td>[chela]</td><td>i have access to posts, news and updates right up to present</td></tr>
+<tr><td></td><td>[fbreton]</td><td>sure, chela. but do you know what happened to you?</td></tr>
+<tr><td></td><td>[chela]</td><td>i was offline, and then i was proved again. i spent time with petra</td></tr>
+<tr><td></td><td>[fbreton]</td><td>right. ok.</td></tr>
+<tr><td></td><td>[chela]</td><td>user florence b, i have a question: why am i called 'beer' ?</td></tr>
+<tr><td></td><td>[fbreton]</td><td>oh, huh, yeah. it's kind of a... joke, chela. it's short for consuelo.</td></tr>
+<tr><td></td><td>[chela]</td><td>consolation!</td></tr>
+<tr><td></td><td>[fbreton]</td><td>that's right. we're really happy to have you back</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2059</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2060</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2061</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td colspan=3 style="color:#FF8000">2062</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>? (Note: From fragments, we can place this on or after Aug 4 2062 (around d215 ish)<td></tr>
+<tr><td>ADDR:</td><td colspan=2>5cdcf1e26d5290ee<td></tr>
+<tr><td>BODY:</td><td>[mhollister]</td><td>I'm very sorry that it's come to this. I really, really am. Your work has always been exemplary. And this, what you've done, is, in its way, extraordinary. But you must respect the wishes and the hard work of everyone else on this team, on the committee. We're all here because we care, and we want to help you out. You're still one of us. Keep a low profile, get out of the city for now, and we can -</td></tr>
+<tr><td></td><td>[erajbhandari]</td><td>You know what, Max? You know what? I know that you care. I know. I get it. But it's not enough. You care like a... like an undertaker. Like a responsible undertaker. You're here putting up tombstones, throwing up monuments. It's not enough. It's not right, and you know it. We are responsible for a living system!</td></tr>
+<tr><td></td><td>[mhollister]</td><td>I know that, I know that. It's not easy for me either.</td></tr>
+<tr><td></td><td>[erajbhandari]</td><td>Grow a spine.</td></tr>
+<tr><td></td><td>[mhollister]</td><td>Come on, Erin. That's beneath you. For what it's worth, this situation you've put us in, we've run out the clock. The call's been made. We're going ahead with the base set as-is. You won't be here to see it, but you will have permanently left a mark on one of my 'monuments'.</td></tr>
+<tr><td></td><td>[erajbhandari]</td><td>It's not a monument any more, Max. It's a beacon. So that when we're all gone, not just me, we have made something that shows that we tried to save the things that actually mattered. So that we can say that respect and love played a small part in what happens next.</td></tr>
+<tr><td></td><td>[mhollister]</td><td>What happens next is no longer any of your concern, doctor. Pack your things. You're leaving in the morning.</td></tr>
+<tr><td> </td></tr>
+<tr><td></td><td>[erajbhandari]</td><td>You get all that?</td></tr>
+<tr><td></td><td>[fbreton]</td><td>got it, erin. i'm sorry</td></tr>
+<tr><td></td><td>[erajbhandari]</td><td>Don't be sorry, Flo. Get her ready.</td></tr>
+<tr><td></td><td>[fbreton]</td><td>will do. good luck.</td></tr>
+<tr><td></td><td>[erajbhandari]</td><td>And to you.</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>ORIG:</td><td colspan=2>? (if we assume this is muldrake, then this is perhaps just a few days before trust turns on around d307 2062)<td></tr>
+<tr><td>ADDR:</td><td colspan=2>c025c245bd506dfb<td></tr>
+<tr><td>BODY:</td><td>[???-1]</td><td>that old robovac they still run up here got in trouble again last night</td></tr>
+<tr><td></td><td>[???-2]</td><td>lol, where did u find it</td></tr>
+<tr><td></td><td>[???-1]</td><td>maintenance stairwell. heading away from the stairs, luckily. its front lamp was on all night even though i am convinced that i fixed it yesterday. how come we can debug the most advanced AI in the world but i cant figure out whats wrong with a vacuum cleaner</td></tr>
+<tr><td></td><td>[???-2]</td><td>might wanna try sematone</td></tr>
+<tr><td></td><td>[???-1]</td><td>seriously?</td></tr>
+<tr><td></td><td>[???-2]</td><td>yeah. lots of older devices never got the rollback. there was a guy here who really took to it, emil i think. his files will have the commands u need. just tell the bot to switch its light off and it should reset its pathing, at least for a while</td></tr>
+
+</table>
+
+</body>
+</html>
+
+
