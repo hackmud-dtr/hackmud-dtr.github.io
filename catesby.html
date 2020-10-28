@@ -11,7 +11,7 @@
     font-style: normal;
 }
 	a[href],a[href]:active,a[href]:visited,a[href]:link{color:#83B0F2}
-	body{background-color:#101215;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1}
+	body{background-color:#101215;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1;background-image: repeating-linear-gradient(#0e0e0e, #0e0e0e 2px, #101215 2px, #101215 4px)}
 	table,tr,td{border-collapse:collapse}
 	td{padding:1em;max-width:500px;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1;vertical-align:top;border:1px solid #83B0F2;border-collapse:collapse }
 	td.noborder{border-width:0}
@@ -30,7 +30,7 @@
 <script>
 function grabColors() {
 	var skip=['archive_id','derelict_1duij1','jn49tw','option','lack','nts','erva','g7ccxs','anonymous_qv98y0','reads','trusty old amanuensis','unknown_arxqim','n6j0ch','_undergoing_subst','antial_tohubohu','tea_room_','sik4bk','abandoned_d6pkll','z31geg','dxbfje','anon_25s779','anon_9q0xc3']
-	
+
 	var colors={
 		'#FFFFFF':['7d644a']
 	}
@@ -58,8 +58,8 @@ function grabColors() {
 		p.innerHTML='<span style="color:'+i+';display:inline-block;min-width:6em;text-align:right">'+names[c]+'</span>: <span style="color:'+i+'">'+[...new Set(colors[i])].sort().join('</span>, <span style="color:'+i+'">')+'</span>'
 		d.appendChild(p)
 	}
-	
-	
+
+
 	if(document.location.search) {
 		var el=document.getElementById(document.location.search.substring(1))
 		el.className+=' selected'

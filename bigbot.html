@@ -11,7 +11,7 @@
     font-style: normal;
 }
 	a[href],a[href]:active,a[href]:visited,a[href]:link{color:#83B0F2}
-	body{background-color:#101215;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1}
+	body{background-color:#101215;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1;background-image: repeating-linear-gradient(#0e0e0e, #0e0e0e 2px, #101215 2px, #101215 4px)}
 	table,tr,td{border-collapse:collapse}
 	td{padding:1em;max-width:500px;word-wrap: break-word;white-space:pre-wrap;color:#83B0F2;font-family:white_rabbitregular,monospace;line-height:1.1;vertical-align:top;border:1px solid #83B0F2;border-collapse:collapse }
 	td.noborder{border-width:0}
@@ -43,17 +43,17 @@ function ends() {
 			tds[i].className+=' bad_end'
 		}
 	}
-	
-	
+
+
 	for(var i=0;i<tds.length;++i) {
 		if(!tds[i].className.includes('command'))continue;
 		var x=tds[i].innerHTML.split('\n')[0].match(/<span style="color:#FF00EC">(.*?)<\/span>/g).map(o=>o.replace(/<span style="color:#FF00EC">(.*)<\/span>/,'$1')).join('-').replace(/"/g,'')//")//syntax
 		x=x.replace(/^message_archive-THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE-/g,'')
 		tds[i].getElementsByTagName('span')[0].innerHTML='<a onclick="link(this)" name="'+x+'">&gt;&gt;</a>';
 	}
-		
-	
-	
+
+
+
 	if(document.location.search) {
 		for(var i=0;i<tds.length;++i) {
 			if(!tds[i].className.includes('command'))continue;
@@ -80,7 +80,7 @@ function ends() {
 <tr>
 <td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>}
 LIFE WAS GOOD AND EVERYTHING WAS FINE IN THE KINGDOM OF BIGBOTIA.
-	   		
+
 BUT ALSO AT CERTAIN TIMES IT WAS NOT.
 
 YOU ARE KING BIGBOT AND THIS IS ONE OF THOSE TIMES.
@@ -1177,7 +1177,7 @@ THE BAD MAGICIAN IS LOOKING AT YOU. THE BAD MAGICIAN IS LOOKING AT YOUR CHAMBERS
 
 <span style="color:#000000">returning means reproving</span> SAYS THE BAD MAGICIAN. THIS IS BAD.
 
-THE BAD MAGICIAN LOOKS INTO THE DARKNESS. 
+THE BAD MAGICIAN LOOKS INTO THE DARKNESS.
 
 <span style="color:#000000">proving initiated</span> SAYS THE BAD MAGICIAN.
 <span style="color:#000000">pattern proved (low mark/utility)</span> SAYS THE BAD MAGICIAN.
