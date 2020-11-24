@@ -5,7 +5,7 @@
 <script>
 function grabColors() {
 	var skip=['archive_id','derelict_1duij1','jn49tw','option','lack','nts','erva','g7ccxs','anonymous_qv98y0','reads','trusty old amanuensis','unknown_arxqim','n6j0ch','_undergoing_subst','antial_tohubohu','tea_room_','sik4bk','abandoned_d6pkll','z31geg','dxbfje','anon_25s779','anon_9q0xc3']
-	
+
 	var colors={
 		'#FFFFFF':['7d644a']
 	}
@@ -33,8 +33,7 @@ function grabColors() {
 		p.innerHTML='<span style="color:'+i+';display:inline-block;min-width:6em;text-align:right">'+names[c]+'</span>: <span style="color:'+i+'">'+[...new Set(colors[i])].sort().join('</span>, <span style="color:'+i+'">')+'</span>'
 		d.appendChild(p)
 	}
-	
-	
+
 	if(document.location.search) {
 		var el=document.getElementById(document.location.search.substring(1))
 		el.className+=' selected'

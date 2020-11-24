@@ -22,7 +22,7 @@ function clean(args) {
 	return ' '+args.replace(/([^ ,\{]+) *: *([^,\} ]+)/g,'<span style="color:#00FFFF">$1</span>:<span style="color:#FF00EC">$2</span>')
 }
 function binary(dat) {
-	return dat+' <span style="color:#7D0000">[Ed note: '+dat.split(' ').map(o=>String.fromCharCode(parseInt(o,2))).join('')+']</span>'	
+	return dat+' <span style="color:#7D0000">[Ed note: '+dat.split(' ').map(o=>String.fromCharCode(parseInt(o,2))).join('')+']</span>'
 }
 function prepScript(d) {
 	var lines=d.innerHTML.trim().split('\n');
@@ -33,11 +33,11 @@ function prep() {
 	var chats=document.getElementsByClassName("chat");
 	for(var i=0;i<chats.length;++i)
 		prepChat(chats[i])
-		
+
 	var scripts=document.getElementsByClassName("script");
 	for(var i=0;i<scripts.length;++i)
 		prepScript(scripts[i])
-		
+
 	var d=Math.floor((1541872800000-Date.now())/1000);
 	document.getElementById('countdown').innerHTML=d;
 }
@@ -422,7 +422,7 @@ purpose_02
 [_fawkes] i have it again! tresham!
 [_fawkes] the news, but just a number. then... nothing. again!
 
-[_idp1p1] UM 
+[_idp1p1] UM
 [_idp1p1] i found it again. its in a public
 [_idp1p1] BUT NOW ITS GONE
 [_idp1p1] SPOOKY
