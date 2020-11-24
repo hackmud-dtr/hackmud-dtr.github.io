@@ -36,6 +36,7 @@ body {
 	font-family:white_rabbitregular,monospace;
 	line-height:1.1;
 	background-image: repeating-linear-gradient(#0e0e0e, #0e0e0e 2px, #101215 2px, #101215 4px);
+	background-size:100% 4px;
 }
 table,
 tr,
