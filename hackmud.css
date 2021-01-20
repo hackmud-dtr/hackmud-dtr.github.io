@@ -58,6 +58,9 @@ td {
 table.noborder td,table.noborder th,td.noborder {
 	border-width:0;
 }
+table.wide td {
+	max-width:auto;
+}
 td.topborder {
 	border-width:0;
 	border-top:1px dashed #83B0F2;
