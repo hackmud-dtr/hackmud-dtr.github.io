@@ -55,7 +55,7 @@ td {
 	border:1px solid #83B0F2;
 	border-collapse:collapse;
 }
-td.noborder {
+table.noborder td,table.noborder th,td.noborder {
 	border-width:0;
 }
 td.topborder {
