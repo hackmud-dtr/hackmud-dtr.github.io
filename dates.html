@@ -48,7 +48,7 @@ td:first-line {
 <link rel="stylesheet" href="./hackmud.css">
 <script>
 
-function formatMonth(cal,m,y,ar) {
+function formatMonth(cal,wk,m,y,ar) {
 	var d=document.createElement('div');
 	d.className='month';
 	var s=document.createElement('span');
@@ -59,7 +59,7 @@ function formatMonth(cal,m,y,ar) {
 	var tr=document.createElement('tr');
 	for(var i=0;i<7;++i) {
 		var th=document.createElement('th')
-		th.appendChild(document.createTextNode(['Su','Mo','Tu','We','Th','Fr','Sa'][i]));
+		th.appendChild(document.createTextNode(['Su','Mo','Tu','We','Th','Fr','Sa'][(i+wk)%7]));
 		tr.appendChild(th)
 	}
 	t.appendChild(tr);
@@ -74,7 +74,7 @@ function formatMonth(cal,m,y,ar) {
 			els=[];
 		}
 		if(i==0) {
-			for(var j=0;j<ar[i].date.getUTCDay();++j)
+			for(var j=(wk<=ar[i].dow?wk:wk-7);j<ar[i].dow;++j)
 				els.push(document.createElement('td'));
 		}
 		var td=document.createElement('td');
@@ -103,6 +103,8 @@ function formatMonth(cal,m,y,ar) {
 function generate() {
 	var y=document.getElementById('inp').value;
 	var cal=document.getElementById('cal');
+	var wk=document.getElementById('wk').value/1;
+	var ly=document.getElementById('ly').checked
 	cal.innerHTML='';
 
 	var base=new Date(y+'-01-01T00:00:00Z')/1;
@@ -113,17 +115,27 @@ function generate() {
 	for(var i=0;i<366;++i) {
 		var d=new Date(base+i*24*3600*1000);
 		if(d.getUTCFullYear()!=y)continue;
-		if(d.getUTCMonth()==1 && d.getUTCDate()==29)sub=1;
-		ar.push({date:d,zero:i,one:i+1,zero_nl:i-sub,one_nl:i+1-sub})
+		if(d.getUTCMonth()==1 && d.getUTCDate()==29) {
+			sub=1;
+			if(ly)
+				continue;
+		}
+		if(ly)
+			ar.push({date:d,zero:i-sub,one:i+1-sub,dow:d.getUTCDay()-sub})
+		else
+			ar.push({date:d,zero:i,one:i+1,dow:d.getUTCDay()})
 	}
 	for(var i=0;i<12;++i) {
-		formatMonth(cal,['January','February','March','April','May','June','July','August','September','October','November','December'][i],y,ar.filter(o=>o.date.getUTCMonth()==i))
+		formatMonth(cal,wk,['January','February','March','April','May','June','July','August','September','October','November','December'][i],y,ar.filter(o=>o.date.getUTCMonth()==i))
 	}
 }
 </script>
 </head>
 <body onload='generate()'>
-<p>Year <input type="number" value="2055" id="inp" style='max-width:5em'> <button onclick="generate()">Generate</button></p>
+<p>Year <input type="number" value="2055" id="inp" style='max-width:5em'><br>
+Weeks start on <select id="wk"><option value=0>Sunday</option><option value=1>Monday</option><option value=2>Tuesday</option><option value=3>Wednesday</option><option value=4>Thursday</option><option value=5>Friday</option><option value=6>Saturday</option></select><br>
+Skip leap years? <input type="checkbox" id="ly"><br>
+<button onclick="generate()">Generate</button></p>
 <div id="cal"></div>
 </body>
 </html>
