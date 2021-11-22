@@ -3,7 +3,17 @@
 <head>
 <title>robovac_muldrake.plotter</title>
 <link rel="stylesheet" href="./hackmud.css">
-<body>
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+</head>
+<body onload='fixRisk()'>
 <span style="color:#7D0000">[Ed note: How this was discovered]</span>
 <img src="how_we_found.png">
 <p><br></p>

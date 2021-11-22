@@ -3,9 +3,17 @@
 <head>
 <title>Hackmud Events</title>
 <link rel="stylesheet" href="./hackmud.css">
-
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
 </head>
-<body>
+<body onload='fixRisk()'>
 <span style="color:#FFFFFF">Interface</span>
 <a href="/interface.html">trust.interface</a>
 
@@ -34,6 +42,9 @@
 <hr>
 <span style="color:#FFFFFF">Dates</span>
 <a href="/dates.html">Calendar Converter</a>
+
+<hr>
+Note: If you have trouble reading <span style='color:#000000'>risk's text</span>, add `?risk` to any URL
 
 
 </body>

@@ -3,8 +3,17 @@
 <head>
 <title>lore.apocrypha</title>
 <link rel="stylesheet" href="./hackmud.css">
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
 </head>
-<body>
+<body onload='fixRisk()'>
 <p style="color:#FF0000">The following are our best assemblages from fragments found from risk scripts. They may not be accurate. Data last dumped Feb 9, 2021</p>
 <span style="color:#FFFFFF">&gt;&gt;<span style="color:#9B9B9B">lore</span>.<span style="color:#1EFF00">apocrypha</span></span>
 

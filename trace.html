@@ -5,6 +5,15 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="./hackmud.css">
 <script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+<script>
 function go() {
     var ar=[]
     var main=document.getElementById('main')
@@ -22,7 +31,7 @@ function go() {
 }
 </script>
 </head>
-<body onload='go()'>
+<body onload='go();fixRisk()'>
 <div id="main">
 <span style="color:#FFFFFF" id="script-00">&gt;&gt;<span style="color:#9B9B9B">risk</span>.<span style="color:#1EFF00">trace</span></span>
 you find yourself at the heart of a desert of labile and interchangeable data

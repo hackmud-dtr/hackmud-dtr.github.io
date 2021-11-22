@@ -4,6 +4,15 @@
 <title>tearoom_understaffed_today</title>
 <link rel="stylesheet" href="./hackmud.css">
 <script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+<script>
 function grabColors() {
 	var skip=['archive_id','derelict_1duij1','jn49tw','option','lack','nts','erva','g7ccxs','anonymous_qv98y0','reads','trusty old amanuensis','unknown_arxqim','n6j0ch','_undergoing_subst','antial_tohubohu','tea_room_','sik4bk','abandoned_d6pkll','z31geg','dxbfje','anon_25s779','anon_9q0xc3']
 
@@ -43,7 +52,7 @@ function grabColors() {
 }
 </script>
 </head>
-<body onload='grabColors()'>
+<body onload='grabColors();fixRisk()'>
 <b>Diversions</b>
   <a href='?diversion_trust'><span style='color:#FFFFFF'>trusty old amanuensis</span></a>
   <a href='?diversion_six'><span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span></a>

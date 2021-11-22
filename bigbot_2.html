@@ -5,6 +5,15 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="./hackmud.css">
 <script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+<script>
     var codes={
         100:"Continue",
         101:"Switching Protocols",
@@ -82,7 +91,7 @@ function clean() {
 }
 </script>
 </head>
-<body onload='clean()'>
+<body onload='clean();fixRisk()'>
 <span style="color:#FFFFFF">>><span style="color:#9B9B9B">robovac_muldrake</span>.<span style="color:#1EFF00">plotter</span>{<span style="color:#00FFFF">being</span>:<span style="color:#FF00EC">"sentience"</span>,<span style="color:#00FFFF">enter</span>:<span style="color:#FF00EC">true</span>}</span>
 The entrance hall of the Ministry of Dust stretches ahead of you, fine and austere. Once-peaceful, it now resonates with the after-vrr of recent activity. Frequent visitors may regret the loss of the Ministry's former solemnity, but this present season is one of tasks and tests and sacrifices must be made. A banner reads:
 

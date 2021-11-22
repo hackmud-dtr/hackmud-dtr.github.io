@@ -4,6 +4,15 @@
 <title>THE CHRONICLES OF KING BIGBOT IN THE CHAMBERS OF THE MOON CASTLE</title>
 <link rel="stylesheet" href="./hackmud.css">
 <script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+<script>
 function link(x) {
 	alert(document.location.href.split('?')[0]+'?'+x.name)
 }
@@ -45,7 +54,7 @@ function ends() {
 
 </script>
 </head>
-<body onload='ends()'>
+<body onload='ends();fixRisk()'>
 <p>
 <a href="?SWEEP-HELLO-CONSIDER">SPECIAL END: SWEEP HELLO CONSIDER</a><br>
 <a href="?SWEEP-SWEEP-SWEEP-S-WEEP-E-WEEP-SWEEP-EXPLODE">SPECIAL END: SWEEP SWEEP SWEEP S WEEP E WEEP SWEEP EXPLODE</a><br>

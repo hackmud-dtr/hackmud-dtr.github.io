@@ -5,6 +5,15 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="./hackmud.css">
 <script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+<script>
 function go() {
 	var n={
 		fbreton:     '[<span style="color:#FF8000">$1</span>$2]',
@@ -26,7 +35,7 @@ function go() {
 }
 </script>
 </head>
-<body onload='go()'>
+<body onload='go();fixRisk()'>
 
 <table class="noborder wide">
 <tr><td colspan=3 style="color:#FF8000;font-size:2em">2055</td></tr>

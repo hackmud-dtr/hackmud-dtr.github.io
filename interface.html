@@ -4,8 +4,17 @@
 	<title>trust.interface</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="./hackmud.css">
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
 </head>
-<body>
+<body onload='fixRisk()'>
 <span style="color:#FFFFFF">>><span style="color:#9B9B9B">dtr</span>.<span style="color:#1EFF00">spoilers</span> {<span style="color:#00FFFF">quest</span>:<span style="color:#FF00EC">"interface"</span>, <span style="color:#00FFFF">section</span>:<span style="color:#FF00EC">"Declaration"</span>} (19 entries)</span>
 
 <span style="color:#FFFFFF" id="script-00">&gt;&gt;</span><span style="color:#FF8000">trust</span>.<span style="color:#1EFF00">interface</span>

@@ -3,8 +3,17 @@
 <head>
 <title>RoboRev(elry) V: Parade</title>
 <link rel="stylesheet" href="./hackmud.css">
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
 </head>
-<body>
+<body onload='fixRisk()'>
 <p>Note: The parade was dynamic, changing entries every 30 minutes (on the half-hour mark precisely) in an apparently random fashion, with each entry foretelling the next. For simplicity, I've pulled each entry out individually, sorted roughly in alphabetical order, and patched "next entry" here. I've cloned this in-game as <span style="color:#9B9B9B">b1gb0t</span>.<span style="color:#1EFF00">ia</span>{<span style="color:#00FFFF">dream_parade</span>:<span style="color:#FF00EC">"all"</span>}</p>
 <hr>
 <span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">bigbot</span>.<span style="color:#1EFF00">ia</span>

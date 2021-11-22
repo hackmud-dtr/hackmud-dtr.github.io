@@ -4,6 +4,15 @@
 <title>Calendar</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width">
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
 <style>
 #cal {
 	display:flex;
@@ -132,7 +141,7 @@ function generate() {
 }
 </script>
 </head>
-<body onload='generate()'>
+<body onload='generate();fixRisk()'>
 <p>Year <input type="number" value="2055" id="inp" style='max-width:5em'><br>
 Weeks start on <select id="wk"><option value=0>Sunday</option><option value=1>Monday</option><option value=2>Tuesday</option><option value=3>Wednesday</option><option value=4>Thursday</option><option value=5>Friday</option><option value=6>Saturday</option></select><br>
 Skip leap years? <input type="checkbox" id="ly"><br>

@@ -4,6 +4,15 @@
 <title>robovac_tresham.plotter</title>
 <link rel="stylesheet" href="./hackmud.css">
 <script>
+function fixRisk() {
+	if(document.location.search=='?risk')
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		})
+}
+</script>
+<script>
 function getColor(u) {
 	return {
 		"robovac_tresham":"#FFF404",
@@ -44,7 +53,7 @@ function prep() {
 }
 </script>
 </head>
-<body onload="prep()">
+<body onload="prep();fixRisk();">
 
 <div class="chat">
 XXXX 1105 robovac_tresham :::i'm opening my plotter:::
