@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>christmas_crackers_v4 - whiteboard</title>
+<link rel="stylesheet" href="../../hackmud.css">
+<link rel="stylesheet" href="../../colors.css">
+<script>
+var ALL_DATA;
+var DATA_BACK=[];
+var WB_BOARD;
+var WB_DIV
+function importData(dat) {
+	ALL_DATA=dat;
+	DATA_BACK=[];
+	WB_DIV=document.getElementById('whiteboard')
+	WB_BOARD=[];
+	for(var i=0;i<50;++i){
+		WB_BOARD.push(Array(100).fill(null));
+	}
+	fill()
+}
+function fill() {
+	WB_BOARD.innerHTML='';
+	for(var y=0;y<WB_BOARD.length;++y) {
+		var tr=document.createElement('tr');
+		for(var x=0;x<WB_BOARD[y].length;++x) {
+			var sp=document.createElement('td');
+			sp.className='col-A'
+			sp.id='p-'+x+'-'+y
+			sp.appendChild(document.createTextNode('\u{2588}'));
+			tr.appendChild(sp);
+		}
+		WB_DIV.appendChild(tr);
+	}
+}
+function animateStart() {
+	WB_BOARD=[];
+	for(var i=0;i<50;++i){
+		WB_BOARD.push(Array(100).fill(null));
+	}
+	animate();
+}
+function animate() {
+	var frame=ALL_DATA.shift();
+	if(!frame) {
+		ALL_DATA=DATA_BACK;
+		DATA_BACK=[];
+		return;
+	}
+	DATA_BACK.push(ALL_DATA)
+	document.getElementById('p-'+frame.pos.x+'-'+frame.pos.y).className='col-'+frame.color;
+	setTimeout(animate,1000/document.getElementById('fps').value)
+}
+</script>
+</head>
+<body>
+<table id="whiteboard" class="noborder nopadding"></table>
+<a href="javascript:animateStart()">Animate</a> @ <input id="fps" type="number" min=1 max=100 value=50 style="width:5em"> fps
+<script src="./whiteboard.json"></script>
+</body>
