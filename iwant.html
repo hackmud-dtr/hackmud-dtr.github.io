@@ -1,0 +1,100 @@
+<head>
+
+<style>
+img{display:inline-block;}
+table{display:inline-block;}
+td{width:75px;}
+td[colspan=5]{width:375px;}
+select,button{width:100%;}
+</style>
+<script>
+var STATE=1;
+var save=[]
+function cancel() {
+	document.body.innerHTML='[delete the message]'
+}
+function next() {
+	var s1=document.getElementById('s1').value;
+	if(s1=='I want to...')return;
+	var s2=(document.getElementById('s2')||{value:0}).value;
+	if(s2=='And now I want to...')return;
+	var s3=(document.getElementById('s3')||{value:0}).value;
+	if(s3=='Finally I want to...')return;
+	STATE++;
+	update()
+}
+function back() {
+	STATE--;
+	save.length=STATE;
+	document.getElementById('img').innerHTML="[Updated for "+save.join('/')+']'
+	update()
+}
+function handles1() {
+	save.length=1;
+	var s1=document.getElementById('s1').value;
+	save[0]=s1;
+	document.getElementById('img').innerHTML="[Updated for "+save.join('/')+']'
+}
+function handles2() {
+	save.length=2;
+	var s2=document.getElementById('s2').value;
+	save[1]=s2;
+	document.getElementById('img').innerHTML="[Updated for "+save.join('/')+']'
+}
+function handles3() {
+	save.length=3;
+	var s3=document.getElementById('s3').value;
+	save[2]=s3;
+	document.getElementById('img').innerHTML="[Updated for "+save.join('/')+']'
+}
+
+
+function firstSelectRow(disabled,sel) {
+	if(save[0] && !sel)sel=save[0]
+	return `<tr id='r1'><td colspan=5><select id='s1' onchange="handles1()"`+(disabled?' disabled':'')+`><option disabled`+(sel?'':' selected')+`>I want to...</option><option`+(sel=='Foo'?' selected':'')+`>Foo</option><option`+(sel=='Bar'?' selected':'')+`>Bar</option><option`+(sel=='Baz'?' selected':'')+`>Baz</option></select></td></tr>`
+}
+function secondSelectRow(disabled,sel) {
+	if(save[1] && !sel)sel=save[1]
+	return `<tr id='r2'><td colspan=5><select id='s2' onchange="handles2()"`+(disabled?' disabled':'')+`><option disabled`+(sel?'':' selected')+`>And now I want to...</option><option`+(sel=='Sweep'?' selected':'')+`>Sweep</option><option`+(sel=='Weep'?' selected':'')+`>Weep</option><option`+(sel=='EP'?' selected':'')+`>EP</option></select></td></tr>`
+}
+function thirdSelectRow(disabled,sel) {
+	if(save[2] && !sel)sel=save[2]
+	return `<tr id='r2'><td colspan=5><select id='s3' onchange="handles3()"`+(disabled?' disabled':'')+`><option disabled`+(sel?'':' selected')+`>Finally I want to...</option><option`+(sel=='Hardline'?' selected':'')+`>Hardline</option><option`+(sel=='Disconnect'?' selected':'')+`>Disconnect</option><option`+(sel=='Hack'?' selected':'')+`>Hack</option></select></td></tr>`
+}
+function buttonRow(back,done) {
+	return `<tr><td><button id="back"`+(back?'':' style="display:none"')+` onclick="back()">&lt; Back</button></td><td></td><td><button onclick="cancel()">Cancel</button></td><td></td><td><button onclick="`+(done?'done':'next')+`()">`+(done?'Done':'Continue &gt;')+`</button></td></tr>`
+}
+function done() {
+	var img=document.getElementById('img');
+	var tab=document.getElementById('tab');
+	img.innerHTML='Player selected '+save.join(', ');
+	tab.innerHTML=''
+}
+
+
+function update() {
+	var tab=document.getElementById('tab');
+	var img=document.getElementById('img');
+	switch(STATE) {
+		case 1:
+			tab.innerHTML=firstSelectRow()+buttonRow(false);
+			break;
+		case 2:
+			tab.innerHTML=firstSelectRow(true,save[0])+secondSelectRow()+buttonRow(true);
+			break;
+		case 3:
+			tab.innerHTML=firstSelectRow(true,save[0])+secondSelectRow(true,save[1])+thirdSelectRow()+buttonRow(true,true);
+			break;
+
+	}
+}
+</script>
+</head>
+<body onload="update()">
+<pre>
+   +----- dtr used /foo
+  /
+<img width=32 height=32 src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAQAAAAlb59GAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAACJZJREFUeNrdnN9PE1kUx6cFhGpYVnARrMiqQ0UrKAWxgGB3jeyyCoiy4g+Ku7Ii6uoSNEIUZVWg/S/w2T/ARON/4L7wAA8mPvlOok/GBL6buZ17O9N22mnnDDTDifGaGKafzr3nnvM9515JIv9pLgtONr6WP1R99qxJMDbPWtVn+UPj6+Bkc5mUzz9ycXC84Z13tWA9HU4qK1j3rja8C47LxXkHdWKkfin9+zFjnrX6pRMjeYLU1tTwZvtXo49ahGrI8COANoQQQhsC8ENGNYoM8bZ/bXjT1rSpUB2dvuVUE68cLejDKKYRQdTAIpjGKPrQgvKUk9O33NG5KVDtZ+SP7gSorWjCIKYMYYxsCoNowtYEOPe6/LH9zIZChWTfiksHVQA/wpjPGklr8wjDjwIdnGvdtxKSN4bKFVjUu4ly9OOpJSStPUVfwuT0rAUWJZfdE/BC1RftQysxhAUyKG4LGEKlDq7qS/sFG7GOvtK6ikoMp3EOVi2CYR1cwfrRV7ZAddXs/aR14z0WV5S5Vdej2xb2fuqqoZ6C4bJv8Qf4MW07FLdp+DVoZd/aw4RYrfOFYgqW4OqGQXG7ihKBVrjeOk8V1L6Mu3YvHm44lmIP4dVsAc0vCbAa3sQnQgfmNgVLsTl0aKZkwxuLWAf/E3EABjcNitsg3ALt4Hsrb+utmNm4tulYil1DYfytvc15bYm9H7fyAkuxW/AItJzWWus8dxkeTOQNlmITAs2VvYdsD3MHX5hHbyv+1gqF889qX+uq4duxO0/WVvJac4stO4toJB48DeYlVsxDxgMt06FufN+K5rHF9zVT4XH7BR7BezdxOza3ZXtF5J85qXHxfKvEVPA0j2NwmdSg3ChFFRrRiztEmcFDEUNWfcmQigYW+ccwH+re0cRxZm0rTuagjaQKj/lvDCym1TJ40u/PMik8p9k2JdNv0I8HltH8QkBIo434VngamX2+9QQtKSdlNb5LEGi0Voyw5XyNp6K+FUNBjccaPTk+5DZ2JX30mHjwDGM4hdqUiF0WVZMeEYcYiHXyR65l5L60x4Qcpwfj9hhdKE5CO25RQODaiPwxparL5c9hCw/hYLUGYIrNojEBzIUxS2jDQmJNoR77lvn7ihCAtYv3kvq3dSesxx2W9syIeGe+5aTSAt+Whyx9dxzsjFhtRl9Tb8JbC1l67pDYqhPKGVwAKLe4kDlYWLjhiOG3XBMXaNif55Yk1vLUogEvBPVbdL4c7B46M4BF8Y8aoXvRrn4ZVp7cJ4pQurId92VPicBmxYPSrVifOm0fMsRWi5o/98Sa0mH9Ui7xhjFYMaL4wwTYKeYRHyHK/OQ+ohikfknUjnkgFSYCq0YUkybAFPj9bHSXrW9rzw6L4EqtZQfHeWA6TwR2CFG8MAE2Awnn1fF+FFlW+nnpMDge84jvYv9sIoi2xzQJamlGsCeQ8Js6rkGp5ac3cc/4joF5V+lkgBjYWTbekxFMmYC7VA+peEcqucC7ytpN+NY8RQYWW6tHM4KNsP9xH1EElUVv+elTYptuLpOCk3xrjpKB3WPjnzOC9bP/cQrPWQB2jOD5fJsOTkqNr2PDFkKwWc3ESAd2RI0TL2SZsxtbiwrW+FqSP8SGfWRgJer4RgawSREIK25mG4kOwsMC+YNU9Tk2HCUDq1THDzKAHdEFwZ0kzx/l4s5niW/O02RgLtxk41BasFFd4lJM4roUoYBv0hJXOSKEa0zJwe+rsVvEIDXUiwRXyHoNRDFeEkEQHZiEbsiGkcc8zmoKeNalAb1V68HqiMFcBtLAHPrxfUKKeYK0BaZOD+YnBtOrVC8wg9v4FXXYktT29zux8O3XgwWIwSrEXPckTDtJkzefwAy5oh/Qg7WRgm3BpBpVGGnAtehmeRi9tenBQqRgMUGo3gBrC9owhLuWNA5jC9kHVqgq8r9k0O5dqEEv+WQM2TkVd2EOE0x72oK9qMMhNMKPGpSlWG9u+Eir3G32Oo9WdT/xJslkN9CKbUnvrgVP7HEedrl7r4EKOKBpROHCxE073L28oWCxnHlHklMZI/gEsr0h1TZ1H0uX7j/Hj0nb9Q3qkIo2CJZwEaczgilVs5oEtDKLWZkmCKZPW2LS5xxL0zMJNLOoSEA7R5W20CeabibPxKSazMrTSLw8zlIZa+9Mk2jSSwNudVpPmJTU9qsfZhyH2d+XaKQBO8Scx1m8sSj+VN39Aq6z0U80Yo4d8tvfbHzWJNhTESJEsF1pIKKR3+wQTIdFr5M5dbdCiG/dkLCHRjC1Q+LuZeODpsEOowDP2OgRa0wikbjtKEp0sfFO02AH4FZF1sdwwUNVlKAvIx1h4yLTYLvFVFTS051UZaTdHurC31619mUWTFnyzWy0T2lpoCr80Zdqy1n7kVmwBSbxlCKCGaZu5SrGJZVq6YvrhYjgkmmwi+oHuosBC+JpyuI6fTvEDHPcZsAWRLR4mqUcbvxL1w5B38ByF8dMgp0XseIPTDjILTM0bGChbjkaUSNAb8YFn9jol1sebdhyRN0k1s+Co0xgl5PEndzKtWmaxKjb+rpEO5HxYj+e1JG6LcfTaWnb+mgbMWvTah5zGEg6zq340tt2NGJStM7y8my8w9Sb1NlxGQ1JpYnY27puV+ustWZn5Zs7pzatxK0UJ9GBVgRwAJUpgdS1oeZwtjQ7596eHmUbckWOl13U4ZoFh2WqPT23AwXK2aDqHICKsA+nMLkRBwqyPwISxU1NY7PJ60hwAD24RZBLZHEEJNtDO0/QmdG60I0BXMFfuIcpwuJRdod2nHvMysEH4xx8lNGxh08dfFzYwQe89Rco5OWRfCsXKRx878hLFPQXKeTVtRdvJes/Dr2oxMFXyzj4MiAHX9/k4Au3HH1FmoMvtXPyNYROvjjS0Vd9mr+ctS7pcta6fL+c1dHX6Tr8AuT8u7L6f3nJJVyVAbiFAAAAAElFTkSuQmCC"> <span id='img'>[pretend this is a big image here]</span>
+     <table id='tab'>
+	</table>
+</body>
