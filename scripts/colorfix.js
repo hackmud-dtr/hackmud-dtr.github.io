@@ -133,11 +133,17 @@ var HEAD=`<!DOCTYPE html>
 <link rel="stylesheet" href="./hackmud.css">
 <script>
 function fixRisk() {
-	if(document.location.search=='?risk')
+	if(document.location.search=='?risk'){
 		[...document.all].forEach(x=>{
 			if(x.style.color=='rgb(0, 0, 0)')
 				x.style.textShadow='0px 0px 5px white'
+		});
+
+		[...document.getElementsByTagName('a')].forEach(x=>{
+			if(x.href)
+				x.href+='?risk'
 		})
+	}
 }
 </script>
 </head>
