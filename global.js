@@ -19,8 +19,10 @@ function createFooter(){ // create page footer
 <a style="color:#FFFFFF" href="https://hackmud.com">hackmud.com</a> | <a style="color:#FFFFFF" href="https://discord.gg/3wegMtb">discord</a>
 </p>`
 
+console.log("footing")
 let footer = document.getElementById("global-footer")
 if(footer){
+	console.log("footered")
 	footer.innerHTML = footer_txt;
 	footer.className = "global-footer-filled";
 }

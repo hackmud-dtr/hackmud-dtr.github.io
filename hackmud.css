@@ -9,8 +9,9 @@
 
 .global-footer-filled {
   text-align: center;
-
+  position: fixed;
   line-height:0.5;
+  height: 10%;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -50,6 +51,7 @@ body {
 	line-height:1.1;
 	background-image: repeating-linear-gradient(#0e0e0e, #0e0e0e 2px, #101215 2px, #101215 4px);
 	background-size:100% 4px;
+	padding-bottom: 10%;
 }
 
 .list-body {
