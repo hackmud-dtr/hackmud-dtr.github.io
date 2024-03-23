@@ -20,6 +20,10 @@
   background-size:100% 4px;
 }
 
+.hackmud-logo {
+	white-space: pre;
+}
+
 a[href],
 a[href]:active,
 a[href]:visited,
