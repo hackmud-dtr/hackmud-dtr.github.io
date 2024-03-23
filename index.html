@@ -1,72 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hackmud Events</title>
-<link rel="stylesheet" href="./hackmud.css">
-<script>
-function fixRisk() {
-	if(document.location.search=='?risk'){
-		[...document.all].forEach(x=>{
-			if(x.style.color=='rgb(0, 0, 0)')
-				x.style.textShadow='0px 0px 5px white'
-		});
-
-		[...document.getElementsByTagName('a')].forEach(x=>{
-			if(x.href)
-				x.href+='?risk'
-		})
-	}
-}
-</script>
+<title>Hackmud Archive</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="hackmud.css">
+<link rel="stylesheet" href="colors.css">
+<script type="text/javascript" src="global.js"></script>
 </head>
-<body onload='fixRisk()'>
-<span style="color:#FFFFFF">Roborev v2</span>
-<a href="/nogrub.html">nogrub.movement</a> <span style="color:#FFFFFF">|</span> <a href="/roborev_v2.html">Roborev v2</a>
+<body onload='fixRisk(); createFooter()'>
 
-<span style="color:#FFFFFF">Interface</span>
-<a href="/interface.html">trust.interface</a>
-
-<span style="color:#FFFFFF">Debris / Roborev v3</span>
-<a href="/tresham.html">Tresham</a>
-
-<span style="color:#FFFFFF">THE CHRONICLES OF KING BIGBOT IN THE CHAMBERS OF THE MOON CASTLE</span>
-<a href="/muldrake.html">Intro</a> <span style="color:#FFFFFF">|</span> <a href="/bigbot.html">Bigbot</a>
-
-<span style="color:#FFFFFF">Tea Room Understaffed Today</span>
-<a href="/catesby.html">Catesby</a>
-
-<span style="color:#FFFFFF">Bigbot II</span>
-<a href="/bigbot_2.html">Bigbot</a> <span style="color:#FFFFFF">|</span> <a href="/trace.html">risk.trace</a> <span style="color:#FFFFFF">|</span> <a href="/emails.html">emails</a>
-
-<span style="color:#FFFFFF">Bigbot III / Parade / RoboRev(elry) V</span>
-<a href="/parade.html">Parade</a>
-
-<span style="color:#FFFFFF">Parade II / RoboRev(elry) VI</span>
-<a href="/parade2.html">Parade II</a>
+<div align="center">
+<h1 class="hackmud-logo" style="font-size:12px">
+                                                                                                      ◥██◣  
+       ◢███◤      ◢██◤                               ◢██◤                                        ◢██◤   ██◣ 
+      ◢██◤       ◢██◤                               ◢██◤                                        ◢██◤    ███ 
+     ◢██◤       ◢██◤                               ◢██◤                                        ◢██◤     ███ 
+    ◢██◤       ◢██◤                               ◢██◤                                        ◢██◤      ███ 
+   ◢██◤       ◢██◤                               ◢██◤                                        ◢██◤       ███◣
+ ◢███◤       ◢██◤                               ◢██◤                                        ◢██◤       ◢███◤
+ ◥███       ◢█████◣     ◢████████◤  ◢███████◤  ◢██◤ ◢██◤   ◢███◤ ◢███◤  ◢██◤  ◢██◤  ◢█████████◤       ◢██◤  
+  ███      ◢███████◣         ◢██◤  ◢██◤ ◢██◤  ◢███████◤   ◢█████████◤  ◢██◤  ◢██◤  ◢██◤  ████◤       ◢██◤   
+  ███     ◢██◤  ◢██◤  ◢████████◤  ◢██◤       ◢█████◣     ◢██◤◢█◤◢██◤  ◢██◤  ◢██◤  ◢██◤   ███◤       ◢██◤    
+  ███    ◢██◤  ◢██◤  ◢██◤  ███◤  ◢██◤ ◢██◤  ◢██◤◥███◣   ◢██◤   ◢██◤  ◢████████◤  ◢█████████◤       ◢██◤     
+  ◥██   ◢██◤  ◢██◤  ◢████████◤  ◢███████◤  ◢██◤  ◥███◣ ◢██◤   ◢██◤  ◢████████◤  ◢█████████◤      ◢███◤      
+                                                                                                   
+</h1>
+<h3>Content Archive</h3>
 
 <hr>
-<span style="color:#FFFFFF">n00b quests</span>
-<a href="/quest_aon.html">aon.memb3rs_only</a> <span style="color:#FFFFFF">|</span> <a href="/quest_pica.html">pica.nubloops</a> <span style="color:#FFFFFF">|</span> <a href="/quest_skimmerite.html">skimmerite.learn_to_read</a> <span style="color:#FFFFFF">|</span> <a href="/quest_suborbital_airlines.html">suborbital_airlines.bulletin</a> <span style="color:#FFFFFF">|</span> <a href="/quest_vacuum_rescue.html">vacuum_rescue.responder</a>
 
-<hr>
-<span style="color:#FFFFFF">Apocrypha / Fragments</span>
-<a href="/apocrypha.html">lore.apocrypha</a>
+<a style="color:#FF00EC" href="events/index.html">events</a>
+<br/>
+<a style="color:#FF00EC" href="events/player/index.html">player_events</a>
+<br/>
+<a style="color:#FF00EC" href="quests/index.html">quests</a>
+<br/>
+<a style="color:#FF00EC" href="lore/index.html">lore_scripts</a>
+<br/>
+<a style="color:#FF00EC" href="misc/index.html">misc</a>
 
-<hr>
-<span style="color:#FFFFFF">Misc</span>
-<a href="/erajbhandari_diagalpha.html">erajbhandari.diagalpha</a> <span style="color:#FFFFFF">|</span> <a href="/teach_me.html">teach.me</a>
 
-<hr>
-<span style="color:#FFFFFF">TwitterImages</span>
-<a href="/twitter.html">Twitter</a>
+<p>Note: If you have trouble reading <span style='color:#000000'>risk text</span>, add <span style="color:#FFFFFF">?risk</span> to any URL</p>
 
-<hr>
-<span style="color:#FFFFFF">Dates</span>
-<a href="/dates.html">Calendar Converter</a>
+<footer id="global-footer"></footer>
 
-<hr>
-Note: If you have trouble reading <span style='color:#000000'>risk's text</span>, add `?risk` to any URL
-
+</div>
 
 </body>
 </html>

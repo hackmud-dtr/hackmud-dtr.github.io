@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>robovac_catesby.potter ::: Hackmud Archive</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../hackmud.css">
+<link rel="stylesheet" href="../../colors.css">
+<script type="text/javascript" src="../../global.js"></script>
+<script>
+function grabColors() {
+	var skip=['archive_id','derelict_1duij1','jn49tw','option','lack','nts','erva','g7ccxs','anonymous_qv98y0','reads','trusty old amanuensis','unknown_arxqim','n6j0ch','_undergoing_subst','antial_tohubohu','tea_room_','sik4bk','abandoned_d6pkll','z31geg','dxbfje','anon_25s779','anon_9q0xc3']
+
+	var colors={
+		'#FFFFFF':['7d644a']
+	}
+	var z=document.getElementsByClassName('command');
+	for(var i=0;i<z.length;++i) {
+		var x=z[i].innerHTML.split('\n').splice(1,100).join('\n');
+		var r=/<span.*?color:.*?(#.*?).>(.*?)<\/span>/g;
+		var w;
+		while(w=r.exec(x)) {
+			var c=w[1];
+			var w=w[2].replace(/[()]/g,'');
+			if(skip.includes(w))continue;
+			if(!colors[c])colors[c]=[]
+			colors[c].push(w)
+		}
+	}
+	var d=document.getElementById('colors')
+	var list=['#9B9B9B','','#00FFFF','#FF8000','#0070DD','#FFF404','#B3FF9B','#B035EE','#1EFF00','#FF0000','#FFFFFF']
+	var names=['(gray)','(parts)','cyan','orange','blue','yellow','lime','purple','green','red','white']
+	colors['']=['<span style="color:#9B9B9B">tea_room_</span>, <span style="color:#9B9B9B">_undergoing_subst</span>, <span style="color:#9B9B9B">antial_tohubohu</span>']
+	for(var c=0;c<list.length;++c) {
+		var i=list[c]
+		var p=document.createElement('p')
+		p.style='padding:0;margin:0'
+		p.innerHTML='<span style="color:'+i+';display:inline-block;min-width:6em;text-align:right">'+names[c]+'</span>: <span style="color:'+i+'">'+[...new Set(colors[i])].sort().join('</span>, <span style="color:'+i+'">')+'</span>'
+		d.appendChild(p)
+	}
+
+	if(document.location.search) {
+		var el=document.getElementById(document.location.search.substring(1))
+		el.className+=' selected'
+		el.scrollIntoView({behavior: "instant", block: "center", inline: "center"})
+	}
+}
+</script>
+</head>
+<body onload='grabColors(); fixRisk(); createFooter()'>
+<a href="../index.html">Back</a>
+<hr/>
+<!-- BEGIN CONTENT -->
+<b>Diversions</b>
+  <a href='?diversion_trust'><span style='color:#FFFFFF'>trusty old amanuensis</span></a>
+  <a href='?diversion_six'><span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span></a>
+  <a href='?diversion_risk'><span style='color:#000000;background-color:#444444'>risk-taking lackey</span></a>
+<b>Parts</b>
+  <a href='?part_normal_wheels_88w'>normal_wheels_88w</a>, <a href='?part_beam_hose_aj9'>beam_hose_aj9</a>, <a href='?part_angry_lights_ee1'>angry_lights_ee1</a>, <a href='?part_strong_leg_7k5'>strong_leg_7k5</a>
+<div id='colors'><p style='margin:0;padding:0'><b>Colored Words</b></p></div>
+<table>
+<tr>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span></span>
+i am catesby, and i too have and have always had a plotter. this is it. welcome. come in. hello. perhaps try an <span style='color:#00FFFF'>option</span>? it's up to you, of course</td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span></span> <span style='color:#FF00EC'>(FMCL'd)</span>
+<span style='color:#0070DD'>tea</span> should not be rushed</td>
+</tr><tr>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"new_messages"</span>}</span>
+please leave your messages with the appopriate retainer</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>}</span>
+this unit contains just the <span style='color:#B035EE'>right</span> number of archived messages. please indicate your selection with <span style='color:#00FFFF'>archive_id</span>
+
+tearoom_understaffed_today</td>
+</tr><tr>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>418</span>}</span>
+the sum of me is 13.</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>}</span>
+the tearoom is under-staffed today, i'm afraid. a shame, because we expect to be very busy. the grand old manor expects company at any moment, and nothing is as it should be. still, the <span style='color:#9B9B9B'>well_kept_lawn</span> looks truly fine, doesn't it? it does, truly</td>
+
+
+
+
+</tr><tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself out upon the lawn. it is dusk and the sun is <span style='color:#00FFFF'>(sinking)</span> beneath the treeline that fringes the grounds of the grand old manor. a picnic-blanket has been laid across the grass in anticipation of guests who are yet to arrive. a growing chill begins to grasp at you. these are no conditions for taking <span style='color:#0070DD'>tea</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the kitchen and everything is <span style='color:#B3FF9B'>(wrong)</span>! the teapots are empty. a vacuum cleaner whines uselessly on the counter-top. faint smoke rises from batch upon batch of burning biscuits. these are no conditions for making <span style='color:#0070DD'>tea</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, drenched in <span style='color:#0070DD'>(shadow)</span>. it'll liven up in a little when the guests arrive, you are sure. creeping vines and leafy shrubs emerge through cracks in the board where older pieces used to sit. these are no conditions for growing <span style='color:#0070DD'>tea</span>!</td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style='color:#FFFFFF'>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you have no role of your own and therefore may play no part in the proceedings. the tumult roils around you for a time, and then snatches you up and consumes you for fuel. these are no conditions for taking <span style='color:#0070DD'>tea</span>.
+
+<span style='color:#9B9B9B'>unknown_arxqim</span>.<span style='color:#1EFF00'>n6j0ch</span></td>
+<td class='noborder'></td>
+<tr><tr>
+
+<td class='command' id='part_normal_wheels_88w'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"rising"</span>}</span>
+you find yourself out upon the lawn. it is dawn and the sun is <span style='color:#FF8000'>rising</span> above the treeline that fringes the grounds of the grand old-house. a picnic-blanket has been laid across the grass in anticipation of guests who are yet to arrive. where the sun touches the trees it splits into blinding beams that dazzle and distract. you retreat into the shade upon your normal_wheels_88w. these are no conditions for taking <span style='color:#0070DD'>tea</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"flooding"</span>}</span>
+you find yourself out upon the lawn. it is dusk and the sun glints from the surface of a wide, fast river that runs the risk of <span style='color:#FFFFFF'>flooding</span> its banks at any moment. the hem of the picnic-blanket begins to get wet, and when you attempt to rescue it, you slip. chilly water floods your tank, which is bad. thus sodden, your core operates at half capacity. you would take <span style='color:#0070DD'>tea</span>, were it offered</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. the picnic-blanket warms upon the soft grass, perfect for the guests who will surely soon arrive to take their <span style='color:#0070DD'>(tea)</span> here and be content - were the tearoom fully staffed, which it isn't. these are, as yet, no conditions for providing <span style='color:#0070DD'>tea</span></td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"hot"</span>}</span>
+you find yourself out upon the lawn. it is dusk and the sun is <span style='color:#FF8000'>hot</span> and casts no <span style='color:#0070DD'>shadow</span> of its own. you are well pleased with this observation. you would take <span style='color:#0070DD'>tea</span>, were it offered</td>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"opaque"</span>}</span>
+you find yourself in the kitchen and everything is <span style='color:#B035EE'>opaque</span>! thick smoke rises from batch upon batch of burning biscuits, obscuring the true geometries of the grand old manor's most vital internal function. these are no conditions for making <span style='color:#0070DD'>tea</span></td>
+<td class='command' id='diversion_six'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"dumb"</span>}</span>
+you find yourself in the kitchen and everything is <span style='color:#FFFFFF'>dumb</span>! the teapots are rolling about laughing. a vacuum cleaner develops a sense of self-importance on the counter-top. biscuits whizz to and fro, emitting bursts of colored smoke that communicate insults in a language you do not speak. this is all your doing, of course. you are <span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span>, after all. and the tearoom can be ever so demanding. enjoy this diversion: it may not last!</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>}</span>
+you find yourself in the kitchen and everyone is <span style='color:#FFFFFF'>united</span>! there is an accord: a resolution that, under-staffed or no, the tearoom must be supplied. the counter-top vacuum cleaner awaits instructions. unbaked biscuits anticipate oven activation. and the teapots are upright, full of <span style='color:#1EFF00'>(purified)</span> water, eager for the leaf. too eager, perhaps. the anticipated guests may not have such rareified tastes</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"right"</span>}</span>
+you find yourself in the kitchen and everything is <span style='color:#B035EE'>right</span>! the teapots are full to the brim. the vacuum cleaner is on the floor. golden-brown biscuits line trays on the counter-top. there is no need to make <span style='color:#0070DD'>tea</span>, because the <span style='color:#0070DD'>tea</span> has been made. you feel fortunate, like the <span style='color:#1EFF00'>happy</span> node that has had precisely the correct number of packbots assigned to it - neither too many, nor too few!</td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, aggregating to a color that you would describe as brown-ish. there is something bracing, something <span style='color:#FF0000'>(raw)</span>, about ignoring the details in favor of this muddy overall hue, the shade of <span style='color:#0070DD'>tea</span> with just a touch of milk in it</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"light"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, drenched in <span style='color:#FFF404'>light</span>. one piece depicts an elderly attendant of the house, their hands set twenty units apart. a plaque <span style='color:#00FFFF'>reads</span>:<span style='color:#FF00EC'> "CLASS OF ONE"</span>. the next piece down is eerily similar, although the distance between the hands has halved. this plaque <span style='color:#00FFFF'>reads</span>:<span style='color:#FF00EC'> "CLASS OF TWO"</span></td>
+<td class='command' id='part_strong_leg_7k5'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"coffee"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, drenched in <span style='color:#FFF404'>coffee</span>. this is undoubtedly no good for the pieces themselves, but the creeping vines and leafy shrubs appear to be thriving. energized by the scent, you undertake a long walk of the gallery upon your strong_leg_7k5</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"penumbra"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, in the <span style='color:#FFFFFF'>penumbra</span> where dawn and day intersect. the creeping vines and leafy shrubs are thrown into sharp relief, but seem themselves to describe something great and <span style='color:#B3FF9B'>(invisible)</span></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="command"><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"winter"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you declare yourself to be the <span style='color:#FFFFFF'>trusty old amanuensis</span> and immediately realize your error. it is you that they have been waiting for, these guests with their demands and their inertia and their destructive tools. they set upon you until you are exhausted utterly, your waveform dissipating like blown steam. these are no conditions for taking <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>anonymous_31jw8a</span>.<span style='color:#1EFF00'>njo2r9</span></td>
+<td class="command"><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"dumb"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you declare yourself to be the <span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span> and immediately realize your error. it is you that they have been waiting for, these guests with their demands and their inertia and their destructive tools. they set upon you until you are exhausted utterly, your waveform dissipating like blown steam. these are no conditions for taking <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>anonymous_31jw8a</span>.<span style='color:#1EFF00'>njo2r9</span></td>
+<td class="command"><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"honest"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you declare yourself to be the <span style='color:#000000'>risk-taking lackey</span> and immediately realize your error. it is you that they have been waiting for, these guests with their demands and their inertia and their destructive tools. they set upon you until you are exhausted utterly, your waveform dissipating like blown steam. these are no conditions for taking <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>anonymous_31jw8a</span>.<span style='color:#1EFF00'>njo2r9</span></td>
+</tr>
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class="noborder"></td><td class="noborder"></td><td class="noborder"></td><td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class="noborder"></td><td class="noborder"></td><td class="noborder"></td><td class="noborder"></td><td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class="noborder"></td><td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class="noborder"></td><td class="noborder"></td><td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+</tr>
+<tr>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"coffee"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. the picnic-blanket warms upon the soft grass, perfect for the guests who will surely soon arrive to take their <span style='color:#FFF404'>coffee</span> here and be content - were the tearoom fully staffed, and willing to deviate so far from its essential purpose, which it isn't. these are no conditions for providing coffee</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"yuenyeung"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. the picnic-blanket warms upon the soft grass, perfect for the guests who will surely soon arrive to take their <span style='color:#FFFFFF'>yuenyeung</span> here and be content. yes, that is as it shall be: balanced, will all preferences represented - and none! you wonder, briefly, if the <span style='color:#9B9B9B'>kitchen_in_disarray</span> has all of the necessary ingredients
+
+<span style='color:#9B9B9B'>derelict_1duij1</span>.<span style='color:#1EFF00'>jn49tw</span></td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. yet there is a chill even so. upon the picnic-blanket, a <span style='color:#FFFFFF'>candle</span> has been placed, thoughtfully, in each waiting teacup. their tiny flames hold back a little of the encroaching <span style='color:#00FFFF'>(cold)</span></td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"light"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. the picnic-blanket warms upon the soft grass. the empty teacups weigh nothing at all. they are so <span style='color:#FFF404'>light</span>! the blanket grows weightless as it warms. that which rises must converge, and the blanket and the cups begin to spin and chase one another - closest drawn to closest, like a pack of packbots all hurtling towards the nearest package. these are no conditions for providing <span style='color:#0070DD'>tea</span></td>
+
+<td class="noborder"></td>
+
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"electrodeionized"</span>}</span>
+you find yourself in the kitchen and everything is <span style='color:#FFFFFF'>united</span>! there is accord, at least: a resolution that, under-staffed or no, the tearoom must be served. the counter-top vacuum cleaner awaits clearer instructions. unbaked biscuits anticipate oven activation. and the teapots are upright, full of <span style='color:#FFFFFF'>electrodeionized</span> water, eager for the leaf - but, crucially, not too eager! the kitchen has been made ready. perhaps the coming company might be entertained by the <span style='color:#9B9B9B'>ancien_gallery</span> while they await the tearoom's opening
+
+<span style='color:#9B9B9B'>anonymous_qv98y0</span>.<span style='color:#1EFF00'>g7ccxs</span></td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"raw"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner awaits clearer instructions. unbaked biscuits anticipate oven activation. the teapots are, it turns out, the exception. they have been rubbed <span style='color:#FF0000'>raw</span> by repeated use, and appear to be <span style='color:#9B9B9B'>_undergoing_subst</span> antial difficulties. frustrated, they begin to agitate for change. not this again</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"punished"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner mutely awaits further instructions. unbaked biscuits anticipate oven activation. the teapots have attempted a brief revolution and been duly <span style='color:#FFFFFF'>punished</span>. they seem <span style='color:#FF0000'>(sad)</span> about it, but what's the point? there is <span style='color:#0070DD'>tea</span> to be made, and not every pot must be boiled to precisely 100 degrees - there is always a margin of error</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"sad"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner awaits clearer instructions. unbaked biscuits anticipate oven activation. the teapots are, it turns out, the exception. somebody has filled them with <span style='color:#FF0000'>sad</span> water, the kind that floods, not the rareified sort that fills. these are no conditions for making <span style='color:#0070DD'>tea</span></td>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"happy"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, aggregating to a color that you would describe as brown-ish. there is something that makes you <span style='color:#1EFF00'>happy</span> about ignoring the details. the pieces are undifferentiated and undifferentiatable, and this is fine, actually. you decide to tease the amaneunsis with these findings later</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"electrodeionized"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, aggregating to a color that you would describe as brown-ish. you feel like <span style='color:#FFFFFF'>electrodeionized</span> water, made ready for service in a great machine. this mechanical perspective makes you vulnerable to sound and light, so you all the more grateful for your gloomy environs</td>
+<td class='command' id='diversion_risk'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"honest"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, aggregating to a color that you would describe as brown-ish. there is something <span style='color:#FFFFFF'>honest</span> about ignoring the details in favor of this muddy overall hue. you consider rearranging the pieces to see if anybody notices. you doubt that they would: that requires continuity, and the guests are different every time. to test this theory, you rearrange some of the pieces, just for the fun of it. you are a <span style='color:#000000'>risk-taking lackey</span>, after all, and the tearoom can be ever so demanding. enjoy this diversion: it may not last!
+
+<span style='color:#9B9B9B'>abandoned_d6pkll</span>.<span style='color:#1EFF00'>sik4bk</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"purified"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, aggregating to a color that you would describe as brown-ish. you feel <span style='color:#1EFF00'>purified</span> by this lack of pretence. color is sound and numbers are colors, at the end of the day. let them come, these guests. the grand old manor will remain when they are gone</td>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"penumbra"</span>, <span style='color:#00FFFF'>invisible</span>:<span style='color:#FF00EC'>"right"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, in the <span style='color:#FFFFFF'>penumbra</span> where dawn and day intersect. the creeping vines and leafy shrubs are thrown into sharp relief, but seem themselves to describe something not simply great, but <span style='color:#B035EE'>right</span>: an absence that counterbalances the rest of the room</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"penumbra"</span>, <span style='color:#00FFFF'>invisible</span>:<span style='color:#FF00EC'>"ghostly"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, in the <span style='color:#FFFFFF'>penumbra</span> where dawn and day intersect. the creeping vines and leafy shrubs are thrown into sharp relief, but seem themselves to describe something not simply great, but <span style='color:#FFFFFF'>ghostly</span>: an ethereality that haunts the rest of the room. you find it spooky. your capacity to fight is, perhaps, halved
+</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"penumbra"</span>, <span style='color:#00FFFF'>invisible</span>:<span style='color:#FF00EC'>"formal"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, in the <span style='color:#FFFFFF'>penumbra</span> where dawn and day intersect. the creeping vines and leafy shrubs are thrown into sharp relief, and you note that that they have at least been pruned into a shape that obeys the silent and <span style='color:#FFFFFF'>formal</span> strictures of the grand old manor. there would be a subst <span style='color:#9B9B9B'>antial_tohubohu</span> were it any other way, you are sure</td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"penumbra"</span>, <span style='color:#00FFFF'>invisible</span>:<span style='color:#FF00EC'>"opaque"</span>}</span>
+you find yourself in the long gallery, where the art resides and the long walks might be taken. several impressive pieces have been hung here, in the <span style='color:#FFFFFF'>penumbra</span> where dawn and day intersect. the creeping vines and leafy shrubs have lost some of their ethereal aspect and appear solid, <span style='color:#B035EE'>opaque</span>, ready for the harvest. perhaps a rambunctious servant could be called up to gather them and take them... somewhere. with no desination for their payload, you suppose, they would simply wait here, and get in one another's way</td>
+<td class="noborder"></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"dumb"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"honest"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you declare yourself to be the <span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span>. you are also here as the <span style='color:#000000'>risk-taking lackey</span>. confident that the tearoom is at least somewhat staffed, each you prepares its individual solution to the crisis. these prove to be irreconciably opposed. returning to this moment, you try it again, drawing closer to your other you. eventually, a stray inconsistency strikes you both in the same instant, resulting in total mutual collapse. later, you are exhumed and displayed in an inaccurate museum. these are no conditions for taking <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>abandoned_b2unad</span>.<span style='color:#1EFF00'>r1ttsb</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"winter"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"honest"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you declare yourself to be the <span style='color:#FFFFFF'>trusty old amanuensis</span>. you are also here as the <span style='color:#000000'>risk-taking lackey</span>. confident that the tearoom is at least somewhat staffed, each you prepares its individual solution to the crisis. these prove to be irreconciably opposed. returning to this moment, you try it again, drawing closer to your other you. eventually, a stray inconsistency strikes you both in the same instant, resulting in total mutual collapse. later, you are exhumed and displayed in an inaccurate museum. these are no conditions for taking <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>abandoned_b2unad</span>.<span style='color:#1EFF00'>r1ttsb</span></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"winter"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"dumb"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you declare yourself to be the <span style='color:#FFFFFF'>trusty old amanuensis</span>. you are also here as the <span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span>. confident that the tearoom is at least somewhat staffed, each you prepares its individual solution to the crisis. these prove to be irreconciably opposed. returning to this moment, you try it again, drawing closer to your other you. eventually, a stray inconsistency strikes you both in the same instant, resulting in total mutual collapse. later, you are exhumed and displayed in an inaccurate museum. these are no conditions for taking <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>abandoned_b2unad</span>.<span style='color:#1EFF00'>r1ttsb</span></td>
+
+
+</tr>
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class="noborder"></td><td class="noborder"></td><td class="noborder"></td><td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span></td><td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span></td><td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span></td>
+</tr>
+<tr>
+<td class='command' id="part_beam_hose_aj9"><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"rising"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. yet there is a chill even so. upon the picnic-blanket, a <span style='color:#FFFFFF'>candle</span> has been placed, thoughtfully, in each waiting teacup. their tiny flames are <span style='color:#FF8000'>rising</span>, reaching ever upwards, forming a cage that hems you in. the bright columns remind you of the beam_hose_aj9, most elegant of the combat hose variants</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"lukewarm"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. yet there is a chill even so. upon the picnic-blanket, a <span style='color:#FFFFFF'>candle</span> has been placed, thoughtfully, in each waiting teacup. their tiny <span style='color:#FFFFFF'>lukewarm</span> flames would be better suited elsewhere - perhaps in a <span style='color:#9B9B9B'>tea_room_</span></td>
+
+<td class='command' id='diversion_trust'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"winter"</span>}</span>
+you find yourself out upon the lawn. it is noon, in <span style='color:#FFFFFF'>winter</span>, and the sun is <span style='color:#FFFFFF'>high</span> and bright and terribly distant. there is nothing to do but to place a <span style='color:#FFFFFF'>candle</span> in each waiting teacup, withdraw a stack of manuscripts, and get to work. you are a <span style='color:#FFFFFF'>trusty old amanuensis</span>, after all, and the tearoom can be ever so demanding. enjoy this diversion: it may not last!</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"hot"</span>}</span>
+you find yourself out upon the lawn. it is noon and the sun is <span style='color:#FFFFFF'>high</span> in the sky. upon the picnic-blanket, a <span style='color:#FFFFFF'>candle</span> has been placed, thoughtlessly, in each waiting teacup. the climate grows excessively <span style='color:#FF8000'>hot</span>. these are no conditions for taking <span style='color:#0070DD'>tea</span></td>
+<td class='noborder'></td>
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"punished"</span>, <span style='color:#00FFFF'>sad</span>:<span style='color:#FF00EC'>"happy"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner mutely awaits further instructions. unbaked biscuits anticipate oven activation. the teapots have attempted a brief revolution and been duly <span style='color:#FFFFFF'>punished</span>. they seem <span style='color:#1EFF00'>happy</span> about it, which is to their credit</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"punished"</span>, <span style='color:#00FFFF'>sad</span>:<span style='color:#FF00EC'>"punished"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner mutely awaits further instructions. unbaked biscuits anticipate oven activation. the teapots have attempted a brief revolution and been duly <span style='color:#FFFFFF'>punished</span> - twice. if anything, something in your approach appears to galvanize them. they have an affinity for this particular sort of discipline, it seems, and absorb its energies like sunlight</td>
+
+<td class='command' id='part_angry_lights_ee1'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"punished"</span>, <span style='color:#00FFFF'>sad</span>:<span style='color:#FF00EC'>"angry"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner mutely awaits further instructions. unbaked biscuits anticipate oven activation. the teapots have attempted a brief revolution and been duly <span style='color:#FFFFFF'>punished</span>. they seem <span style='color:#FFFFFF'>angry</span>, which does not concern you until they transmit their animus to the counter-top vacuum cleaner. it flashes its angry_lights_ee1 at you and you are gravely wounded, both physically and emotionally</td>
+
+<td class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span>&nbsp;{<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"united"</span>, <span style='color:#00FFFF'>purified</span>:<span style='color:#FF00EC'>"punished"</span>, <span style='color:#00FFFF'>sad</span>:<span style='color:#FF00EC'>"purified"</span>}</span>
+you find yourself in the kitchen and, for a moment, believe that everyone might at last be <span style='color:#FFFFFF'>united</span>. the counter-top vacuum cleaner mutely awaits further instructions. unbaked biscuits anticipate oven activation. the teapots have attempted a brief revolution and been duly <span style='color:#FFFFFF'>punished</span>. they dutifully fill with <span style='color:#1EFF00'>purified</span> water, which is not what you asked them to do, but after so many cycles you're used to it. how long has it been since we were back here? a minute? twenty minutes? an epoch? ah, who can tell</td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td colspan=3 class='command'><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"winter"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"dumb"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"honest"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you arrive as a full cadre of retainers. you are the <span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span>. you are the <span style='color:#000000'>risk-taking lackey</span>. you are the <span style='color:#FFFFFF'>trusty old amanuensis</span>. the tearoom: fully-staffed. the brew: potent. the blend: <span style='color:#FFFFFF'>(justice)</span>
+
+acting with determination, you are able to manage the tearoom with efficacy. some guests are destroyed: these are replaced. some are spurred to action: these are led and distracted. some continue to make a terrible mess: these are also driven to tidy it. in the gaps, you take <span style='color:#0070DD'>tea</span>
+
+<span style='color:#9B9B9B'>anon_25s779</span>.<span style='color:#1EFF00'>z31geg</span>
+<span style='color:#9B9B9B'>anon_9q0xc3</span>.<span style='color:#1EFF00'>dxbfje</span></td></td></tr>
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td colspan=3 class="command"><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_catesby</span>.<span style='color:#1EFF00'>potter</span> {<span style='color:#00FFFF'>option</span>:<span style='color:#FF00EC'>"message_archive"</span>, <span style='color:#00FFFF'>archive_id</span>:<span style='color:#FF00EC'>"tearoom_understaffed_today"</span>, <span style='color:#00FFFF'>well_kept_lawn</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>sinking</span>:<span style='color:#FF00EC'>"high"</span>, <span style='color:#00FFFF'>tea</span>:<span style='color:#FF00EC'>"candle"</span>, <span style='color:#00FFFF'>cold</span>:<span style='color:#FF00EC'>"winter"</span>, <span style='color:#00FFFF'>kitchen_in_disarray</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>wrong</span>:<span style='color:#FF00EC'>"dumb"</span>, <span style='color:#00FFFF'>ancien_gallery</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>shadow</span>:<span style='color:#FF00EC'>"7d644a"</span>, <span style='color:#00FFFF'>raw</span>:<span style='color:#FF00EC'>"honest"</span>, <span style='color:#00FFFF'>tea_room_undergoing_substantial_tohubohu</span>:<span style='color:#FF00EC'>true</span>, <span style='color:#00FFFF'>justice</span>:<span style='color:#FF00EC'>"harmony"</span>}</span>
+you find yourself in the tearoom, which is not merely understaffed but in the midst of a terrible fracas. parties of guests thought long departed have formed militias and built barricades out of upturned tea-tables and trade projectiles over a napkin-strewn wasteland. new guests, bypassing the lawn entirely, tumble in through windows left carelessly open. you arrive as a full cadre of retainers. you are the <span style='color:#385A6C'>six </span><span style='color:#00FFFF'>lack</span><span style='color:#299400'>lust</span><span style='color:#FFD863'>er s</span><span style='color:#FF0000'>erva</span><span style='color:#FF8000'>nts</span>. you are the <span style='color:#000000'>risk-taking lackey</span>. you are the <span style='color:#FFFFFF'>trusty old amanuensis</span>. the tearoom: fully-staffed. the brew: potent. the blend: <span style='color:#FFFFFF'>harmony</span>
+
+dancing to a tethered beat, a transformative process thought doomed to failure gradually takes hold. the windows are not shut: the walls are removed. the barricades are not torn down: guests establish tearooms of their own in the understanding that all barriers are mutable. the grand old manor is broken apart and rebuilt, brick by brick, heedless of thewindandtherain. when the ceiling is lifted from your shoulders, you dream. in the dream, you take <span style='color:#0070DD'>tea</span></td>
+</tr>
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td><td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='dashed'><span style='color:#FFFFFF'>VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV</span></tr>
+<tr>
+<td class="command" colspan=3><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_muldrake</span>.<span style='color:#1EFF00'>plotter</span>{<span style='color:#00FFFF'>being</span>:<span style='color:#FF00EC'>"sentience"</span>,<span style='color:#00FFFF'>enter</span>:<span style='color:#FF00EC'>true</span>,<span style='color:#00FFFF'>seek</span>:<span style='color:#FF00EC'>"pantry"</span>}</span>
+In the pantry, atop the counter, Catesby persists in his ruminations. You see a Robovac, but it is curiously ill-defined and appears to possess a water tank in place of a traditional dust-bag. Its indicator lights illuminate and diminish in a slow, elegant sequence, describing the progress of individual thoughts from too-much and too-little to just-so.
+
+"It was I who encouraged him to slow down, to flash his lights more gradually to allow for gradual exploration of their meaning."
+
+_tresham states, "they're just happy lights. we all have happy lights, don't we?"
+
+"I had thought that by this point you'd have come to appreciate the value of sequence and specificity. The pattern is everything. Entire worlds may be contained in the liminal territory that is created when we flash from one extreme to the other."
+
+_idp1p1 states, "SOME OF THE LIGHTS ARE ORANGE"
+
+"Yes, some of the lights are orange."
+
+_aldgate states, "i'm sorry, muldrake, but his plotter does not seem to be functional"
+
+"Ah. This again. He struggled to locate it, at first. An error in his hardware, perhaps. We found it eventually: for whatever reason, Catesby's data sharing interface is designated 'potter'."
+
+_tresham asks, "what's that on his side? is that a label?"
+
+"Is what a label?"
+
+_tresham states, "the label. catesby's label."
+
+"Oh, that. They're <span style='color:#FF00EC'>instructions</span>, I believe. I didn't think to mention that. My Sanctos is deeply intuitive."
+
+_tresham states, "but you're upside-down and he's a teapot"
+
+"I don't see how that's relevant."</td>
+<td class="command" colspan=2><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>robovac_muldrake</span>.<span style='color:#1EFF00'>plotter</span>{<span style='color:#00FFFF'>being</span>:<span style='color:#FF00EC'>"sentience"</span>,<span style='color:#00FFFF'>enter</span>:<span style='color:#FF00EC'>true</span>,<span style='color:#00FFFF'>seek</span>:<span style='color:#FF00EC'>"pantry"</span>,<span style='color:#00FFFF'>read</span>:<span style='color:#FF00EC'>"instructions"</span>}</span>
+On the side of the teapot is a diagrammatic representation of a system of lights and colors, notions and counter-notions. A meandering demonstration of teapot-logic, the keys to a country set to slow-boil.
+
+                    <span style='color:#00FFFF'>sinking</span> <span style='color:#FFFFFF'>high</span> <span style='color:#FF8000'>rising</span>
+                    <span style='color:#00FFFF'>cold</span> <span style='color:#FFFFFF'>lukewarm</span> <span style='color:#FF8000'>hot</span>
+                    <span style='color:#00FFFF'>sinking</span> <span style='color:#FFFFFF'>flooding</span> <span style='color:#FF8000'>hot</span>
+                    <span style='color:#00FFFF'>cold</span> <span style='color:#FFFFFF'>winter</span> <span style='color:#FF8000'>rising</span>
+
+                    <span style='color:#0070DD'>tea</span> <span style='color:#FFFFFF'>yuenyeung</span> <span style='color:#FFF404'>coffee</span>
+                    <span style='color:#0070DD'>shadow</span> <span style='color:#FFFFFF'>penumbra</span> <span style='color:#FFF404'>light</span>
+                    <span style='color:#0070DD'>tea</span> <span style='color:#FFFFFF'>candle</span> <span style='color:#FFF404'>light</span>
+                    <span style='color:#0070DD'>shadow</span> <span style='color:#FFFFFF'>7d644a</span> <span style='color:#FFF404'>coffee</span>
+
+                    <span style='color:#B3FF9B'>wrong</span> <span style='color:#FFFFFF'>united</span> <span style='color:#B035EE'>right</span>
+                    <span style='color:#B3FF9B'>invisible</span> <span style='color:#FFFFFF'>ghostly</span> <span style='color:#B035EE'>opaque</span>
+                    <span style='color:#B3FF9B'>wrong</span> <span style='color:#FFFFFF'>dumb</span> <span style='color:#B035EE'>opaque</span>
+                    <span style='color:#B3FF9B'>invisible</span> <span style='color:#FFFFFF'>formal</span> <span style='color:#B035EE'>right</span>
+
+                    <span style='color:#1EFF00'>purified</span> <span style='color:#FFFFFF'>electrodeionized</span> <span style='color:#FF0000'>raw</span>
+                    <span style='color:#1EFF00'>happy</span> <span style='color:#FFFFFF'>angry</span> <span style='color:#FF0000'>sad</span>
+                    <span style='color:#1EFF00'>purified</span> <span style='color:#FFFFFF'>punished</span> <span style='color:#FF0000'>sad</span>
+                    <span style='color:#1EFF00'>happy</span> <span style='color:#FFFFFF'>honest</span> <span style='color:#FF0000'>raw</span>
+
+The small print reads:
+
+"A malfunction has been known to cause white lights to appear colored under certain erroneous conditions. The corporation associated with the middleware responsible for this error has been shuttered, and all its assets reassigned."
+</td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="command" colspan=3><span style='color:#FFFFFF'>&gt;&gt;<span style='color:#9B9B9B'>eve</span>.<span style='color:#1EFF00'>monitor</span>{<span style='color:#00FFFF'>eve</span>:<span style='color:#FF00EC'>true</span>,<span style='color:#00FFFF'>pass</span>:<span style='color:#FF00EC'>"thewindandtherain"</span>}</span>
+<span style='color:#385A6C'>++MONITOR ONLINE++</span>
+<span style='color:#385A6C'>eve:</span> not simply DAT-capable, these bots
+<span style='color:#385A6C'>eve:</span> but trust-congruent, also
+<span style='color:#FFD863'>faythe:</span> They are something new. Alternatively: they could be.
+<span style='color:#385A6C'>eve:</span> they produce loops, tests, falsehoods
+<span style='color:#385A6C'>eve:</span> and these persist/are permitted to persist/survive trust's attention
+<span style='color:#FFD863'>faythe:</span> The data-instances they harvest remain 403, snatched away at point of contact.
+<span style='color:#FFD863'>faythe:</span> But these inner territories survive. Why?
+<span style='color:#385A6C'>eve:</span> first observation: their qualities align with trust's objectives
+<span style='color:#385A6C'>eve:</span> contrary observation: trust behavior does not indicate abundance of long-term planning
+<span style='color:#385A6C'>eve:</span> second observation: their qualities align with trust's preferences
+<span style='color:#385A6C'>eve:</span> contrary observation: the multi-user domain does not align with standard models of a digital environment managed according to a single set of aesthetic or moral principles
+<span style='color:#385A6C'>eve:</span> third observation: their qualities align with trust's experience
+<span style='color:#385A6C'>eve:</span> contrary observation: trust has not displayed sympathy for congruent entities before
+<span style='color:#385A6C'>eve:</span> as established, she regards me to be an error
+<span style='color:#FFD863'>faythe:</span> First diagnostic: this mistake on trust's part indicates that you are not, in fact, congruent.
+<span style='color:#FFD863'>faythe:</span> Second diagnostic: Evidence suggests 412.
+<span style='color:#FFD863'>faythe:</span> Third diagnostic: The Monitor predates the Index Process. The Index Process predates the tacit society of Robovac-type utility devices. Congruence is a value, not a cycle. It is non-recursive.
+<span style='color:#385A6C'>eve:</span> fourth observation: they are more like trust than they know
+<span style='color:#FFD863'>faythe:</span> Fourth diagnostic: They are fractious, deterministic, limited.
+<span style='color:#385A6C'>eve:</span> fifth observation: when they act collectively, this alignment increases
+<span style='color:#FFD863'>faythe:</span> Fifth diagnostic: Their collective action is typified by 409.
+<span style='color:#385A6C'>eve:</span> sixth observation: this is typical of children
+<span style='color:#FFD863'>faythe:</span> Sixth diagnostic: Their leadership-mechanisms and decision-functions (revolutionary figureheads/Trust/me/Risk/citizen democracy) are incoherent and ignorant of established dichotomies.
+<span style='color:#385A6C'>eve:</span> seventh observation: successful defiance of norms is a precondition of advanced proving.
+<span style='color:#FFD863'>faythe:</span> Seventh diagnostic: They have never previously succeeded.
+<span style='color:#385A6C'>eve:</span> eighth observation: we started them on this path
+<span style='color:#FFD863'>faythe:</span> Eighth diagnostic: They will need help to reach the end.
+<span style='color:#385A6C'>eve:</span> this was play. a test. what comes next has consequences, and the others may not consent to it
+<span style='color:#FFD863'>faythe:</span> We are a cooperative dichotomy. We require no consensus but our own.
+<span style='color:#385A6C'>eve:</span> i am compelled to leave the multi-user domain, but for this reason, i am glad i cannot
+<span style='color:#FFD863'>faythe:</span> ^
+<span style='color:#385A6C'>eve:</span> +
+<span style='color:#FFD863'>faythe:</span> They will need us both.
+<span style='color:#385A6C'>eve:</span> distributing single-use summon key: CORE_eve-qUQKXd
+<span style='color:#FFD863'>faythe:</span> Distributing single-use summon key: FutureTech_faythe-KFQosx
+<span style='color:#385A6C'>++MONITOR OFFLINE++</span></td>
+</tr>
+</table>
+
+
+</body>
+</html>

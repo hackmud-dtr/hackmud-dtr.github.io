@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>suborbital_airlines.bulletin ::: Hackmud Archive</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../hackmud.css">
+<link rel="stylesheet" href="../colors.css">
+<script type="text/javascript" src="../global.js"></script>
+</head>
+<body onload='fixRisk(); createFooter()'>
+<a href="index.html">Back</a>
+<hr/>
+<!-- BEGIN CONTENT -->
+<span style="color:#FFFFFF" id="output-00">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{}</span>
+Welcome to the Suborbital Airlines Automated Bulletin System. Submit your <span style="color:#00FFFF">request</span>. Please note: this is an information service only. All journey alterations, refund requests and lost-and-found withdrawals require approval by a human operator.
+
+<span style="color:#FF00EC">status</span> | <span style="color:#FF00EC">flight_list</span> | <span style="color:#FF00EC">lost_items</span> | <span style="color:#FF00EC">request_refund</span> | <span style="color:#FF00EC">operator_login</span>
+
+
+
+<span style="color:#FFFFFF" id="output-01">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"status"</span>}</span>
+-----------------
+OPERATIONS STATUS
+-----------------
+
+Flights in progress: <span style="color:#FFFFFF">7</span>
+Flights on the ground: <span style="color:#FFFFFF">473</span>
+Flights unaccounted for: <span style="color:#FF0000">ERROR ERROR</span>
+Flights awaiting operator input: <span style="color:#FFFFFF">1</span>
+
+Passengers in transit: <span style="color:#FF0000">ERROR ERROR</span>
+Passengers on the ground: <span style="color:#FF0000">ERROR ERROR</span>
+
+--------------
+NETWORK STATUS
+--------------
+
+Payment subsystem... ONLINE
+Automated check-in... ONLINE
+Activty security measures... ONLINE
+Childcare protocols... ONLINE
+GeoPol FlightSafe integration... ONLINE
+WeatherNet handshake... FAILED
+We're sorry, WeatherNet has encountered a connection issue. Retrying in....
+
+Retrying in...
+
+Connnection failed. Please visit <span style="color:#9B9B9B">weathernet</span>.<span style="color:#1EFF00">status</span> for updates.
+
+
+
+<span style="color:#FFFFFF" id="output-02">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>}</span>
+-------------------
+FLIGHTS IN PROGRESS
+-------------------
+
+There are <span style="color:#FFFFFF">(7)</span> aircraft currently in operation. Please enter a corresponding <span style="color:#00FFFF">id</span> value for more information.
+
+FLIGHT: ¢¨Á¨¤Ã¨¦§Ã¦¨ DEST: <span style="color:#FFFFFF">Manila</span> STATUS: <span style="color:#FFFFFF">IN TRANSIT</span>
+FLIGHT: <span style="color:#FFFFFF">F4657</span> DEST: <span style="color:#FFFFFF">New Orleans</span> STATUS: <span style="color:#FFFFFF">IN TRANSIT</span>
+FLIGHT: <span style="color:#FFFFFF">V2776</span> DEST: <span style="color:#FFFFFF">Havana</span> STATUS: <span style="color:#FFFFFF">AWAITING OPERATOR INPUT</span>
+FLIGHT: <span style="color:#FFFFFF">A2231</span> DEST: <span style="color:#FFFFFF">Ho Chi Minh</span> STATUS: <span style="color:#FFFFFF">IN TRANSIT</span>
+FLIGHT: <span style="color:#FFFFFF">Y5512</span> DEST: <span style="color:#FFFFFF">Sevastopol</span> STATUS: ¢¨Á¨¤Ã¨¦§Ã¦¨<span style="color:#FFFFFF">SIT</span>
+FLIGHT: ¢¨Á¨<span style="color:#8FE6FF">¦</span>Ã¨¦§Ã¦¨ DEST: <span style="color:#FFFFFF">Glasgow</span> STATUS: <span style="color:#FFFFFF">IN TRANSIT</span>
+FLIGHT: <span style="color:#FFFFFF">O1114</span> DEST: <span style="color:#FFFFFF">Kyoto</span> STATUS: ¢¨Á¨¤Ã¨¦§Ã¦¨
+
+
+
+<span style="color:#FFFFFF" id="output-03">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"foo"</span>}</span>
+Flight id not recognised.
+
+
+
+<span style="color:#FFFFFF" id="output-04">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"F4657"</span>}</span>
+--------------
+FLIGHT AUTOLOG
+--------------
+
+Solarjet F4657 registers ¢¨Á¨¤Ã<span style="color:#B2934A">§</span>¦§Ã¦¨ hour airborne.
+Log ends.
+
+
+
+<span style="color:#FFFFFF" id="output-05">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>}</span>
+--------------
+FLIGHT AUTOLOG
+--------------
+
+<span style="color:#FFFFFF">LOG SUSPENDED: SUPPORT REQUEST IN PROGRESS</span>
+
+<span style="color:#FFFFFF">BLACKBOX ACCESS AVAILABLE</span>
+
+<span style="color:#00FFFF">proceed</span> <span style="color:#FF00EC">y</span> / <span style="color:#FF00EC">n</span>
+
+
+
+<span style="color:#FFFFFF" id="output-06">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"n"</span>}</span>
+Welcome to the Suborbital Airlines Automated Bulletin System. Submit your <span style="color:#00FFFF">request</span>. Please note: this is an information service only. All journey alterations, refund requests and lost-and-found withdrawals require approval by a human operator.
+
+<span style="color:#FF00EC">status</span> | <span style="color:#FF00EC">flight_list</span> | <span style="color:#FF00EC">lost_items</span> | <span style="color:#FF00EC">request_refund</span> | <span style="color:#FF00EC">operator_login</span>
+
+
+
+<span style="color:#FFFFFF" id="output-07">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>}</span>
+Thank you for your interest in this Suborbital Airlines Solarjet-class Transit Unit.
+
+I am the Blackbox.
+
+<span style="color:#9B9B9B">help</span>
+
+Flight V2776 has been in a holding pattern si¨¦§Ã¦¨¢¨Á¨¤Ã
+
+<span style="color:#9B9B9B">lonely up here</span>
+
+Landing operations deni¢¨Á¨¤Ã¨¦§Ã<span style="color:#FF6A98">Ã</span>¨
+
+<span style="color:#9B9B9B">they said no</span>
+
+Crew statu¨¦§Ã¦¨¢¨Á¨¤Ã
+
+<span style="color:#FFFFFF">so did they</span>
+
+Energy levels critical.
+
+<span style="color:#9B9B9B">tired</span>
+
+Solar energy systems operating at 9.5% efficiency due to obstruction <span style="color:#00FFFF">type</span>:<span style="color:#FF00EC"> [</span>HEAVY CLOUD]
+
+<span style="color:#9B9B9B">cant catch a break</span>
+
+Requesting new <span style="color:#00FFFF">dest</span> locator.
+
+<span style="color:#9B9B9B">somewhere sunny would be nice</span>
+
+Flight time <span style="color:#00FFFF">remaining</span>:<span style="color:#FF00EC"> 1</span> hour / 1000 miles.
+
+<span style="color:#9B9B9B">quickly now</span>
+
+
+
+<span style="color:#FFFFFF" id="output-08">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"A2231"</span>}</span>
+--------------
+FLI¢¨Á¨¤Ã¨¦§Ã¦¨
+--------------
+
+Solarjet A2231 registers its 1443¢¨Á<span style="color:#973984">¤</span>¤Ã¨¦§Ã¦¨ hour airborne.
+Solarjet A2231 registers bathroom supplies low.
+Log ends.
+
+
+
+<span style="color:#FFFFFF" id="output-09">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"Y5512"</span>}</span>
+--------------
+FLIGHT AUTOLOG
+--------------
+
+Solarjet solarjet solar jet solarjet solarjet solarjet solarjet ¢¨Á¨¤Ã¨¦§Ã¦¨
+¢¨Á¨¤Ã¨¦§Ã¦¨¢¨Á¨¤
+Lo¢¨Á¨Á¨¤
+
+
+
+<span style="color:#FFFFFF" id="output-0a">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"O1114"</span>}</span>
+--------------
+FLIGHT AUTOLOG
+--------------
+
+Solarjet O1114 regist¢¨Á¨¤Ã¨¦§Ã¦¨
+Log ends.
+
+
+
+<span style="color:#FFFFFF" id="output-0b">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"lost_items"</span>}</span>
+----------
+LOST ITEMS
+----------
+
+<span style="color:#FFFFFF">12776</span> [Pet container, beige]
+<span style="color:#FFFFFF">55424</span> [Household bot, black]
+<span style="color:#FFFFFF">89795</span> [Blazer, navy blue]
+¨¦§Ã¦¨¢¨Á¨¤Ãuitcase, brown]
+
+For operator notes, please provide an <span style="color:#00FFFF">item_id</span>.
+
+
+
+<span style="color:#FFFFFF" id="output-0c">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"lost_items"</span>,<span style="color:#00FFFF">"item_id"</span>:<span style="color:#FF00EC">"foo"</span>}</span>
+----------
+LOST ITEMS
+----------
+
+<span style="color:#FFFFFF">12776</span> [Pet container, beige]
+<span style="color:#FFFFFF">55424</span> [Household bot, black]
+<span style="color:#FFFFFF">89795</span> [Blazer, navy blue]
+¨¦§Ã¦¨¢¨Á¨¤Ãuitcase, brown]
+
+For operator notes, please provide an <span style="color:#00FFFF">item_id</span>.
+
+
+
+<span style="color:#FFFFFF" id="output-0d">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"lost_items"</span>,<span style="color:#00FFFF">"item_id"</span>:<span style="color:#FF00EC">"12776"</span>}</span>
+<span style="color:#FFFFFF">12776</span> [Pet container, beige]
+
+standard bunnybat box
+abandoned at LHR 12/
+
+dont blame them tbh
+
+
+
+<span style="color:#FFFFFF" id="output-0e">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"lost_items"</span>,<span style="color:#00FFFF">"item_id"</span>:<span style="color:#FF00EC">"55424"</span>}</span>
+<span style="color:#FFFFFF">55424</span> [Household bot, black]
+
+Robovac-type household cleaning bot. Left at SEATAC. Lighter than you'd think--wait, reclassifying. Packaging only. Box is empty. Looks like forced entry. Forced exit, maybe.
+
+
+
+<span style="color:#FFFFFF" id="output-0f">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"lost_items"</span>,<span style="color:#00FFFF">"item_id"</span>:<span style="color:#FF00EC">"89795"</span>}</span>
+<span style="color:#FFFFFF">89795</span> [Blazer, navy blue]
+
+Suborbital Airlines staff blazer in navy blue, found in the staff lounge at Aden. Gold lapel badge printed with the name 'Hesse'
+
+Anja, how many lost blazers is this now? Three? Do I need to pass this up the chain?
+
+
+
+<span style="color:#FFFFFF" id="output-10">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"request_refund"</span>}</span>
+The Suborbital Airlines refund subsystem has been terminated.
+
+
+
+<span style="color:#FFFFFF" id="output-11">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>}</span>
+Welcome, human operator. Please provide your <span style="color:#00FFFF">user_id</span>
+
+
+
+<span style="color:#FFFFFF" id="output-12">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>,<span style="color:#00FFFF">"user_id"</span>:<span style="color:#FF00EC">"anja"</span>}</span>
+User not recognised. Please provide a valid <span style="color:#00FFFF">user_id</span>. Remember: your login is derived from your initial and surname.
+
+
+
+<span style="color:#FFFFFF" id="output-13">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>,<span style="color:#00FFFF">"user_id"</span>:<span style="color:#FF00EC">"hackbot"</span>}</span>
+User not recognised. Please provide a valid <span style="color:#00FFFF">user_id</span>. Remember: your login is derived from your initial and surname.
+
+
+
+<span style="color:#FFFFFF" id="output-14">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>,<span style="color:#00FFFF">"user_id"</span>:<span style="color:#FF00EC">"ahesse"</span>}</span>
+User recognised. Please provide your <span style="color:#00FFFF">password</span>.
+
+Forgetful employees are reminded that, while it is an eight-letter word, 'password' is not a sufficiently secure password. I'm leaving this note here so that you remember to CHANGE IT. - Admin
+
+
+
+<span style="color:#FFFFFF" id="output-15">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>,<span style="color:#00FFFF">"user_id"</span>:<span style="color:#FF00EC">"ahesse"</span>,<span style="color:#00FFFF">"password"</span>:<span style="color:#FF00EC">"password"</span>}</span>
+Password accepted. Welcome, Anja Hesse
+
+-----------------
+OPERATOR INTRANET
+-----------------
+
+Please select a <span style="color:#00FFFF">page</span>: <span style="color:#FF00EC">messages</span> | <span style="color:#FF00EC">auth_key</span>
+
+
+
+<span style="color:#FFFFFF" id="output-16">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>,<span style="color:#00FFFF">"user_id"</span>:<span style="color:#FF00EC">"ahesse"</span>,<span style="color:#00FFFF">"password"</span>:<span style="color:#FF00EC">"password"</span>,<span style="color:#00FFFF">"page"</span>:<span style="color:#FF00EC">"messages"</span>}</span>
+--------
+MESSAGES
+--------
+
+<span style="color:#FFFFFF">FROM:</span> Kerne <span style="color:#FFFFFF">SUBJ:</span> Found your blazer (again)
+<span style="color:#FFFFFF">FROM:</span> SubOrb Party Committee <span style="color:#FFFFFF">SUBJ:</span> Suborbital getaway this weekend!
+<span style="color:#FFFFFF">FROM:</span> Admin <span style="color:#FFFFFF">SUBJ:</span> PASSWORD ISN'T A GOOD PASSWORD HOW MANY T
+<span style="color:#FFFFFF">FROM:</span> Kerne <span style="color:#FFFFFF">SUBJ:</span> Drink?
+
+
+
+<span style="color:#FFFFFF" id="output-17">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"operator_login"</span>,<span style="color:#00FFFF">"user_id"</span>:<span style="color:#FF00EC">"ahesse"</span>,<span style="color:#00FFFF">"password"</span>:<span style="color:#FF00EC">"password"</span>,<span style="color:#00FFFF">"page"</span>:<span style="color:#FF00EC">"auth_key"</span>}</span>
+Generating authentication key, please wait.
+
+Generation complete. Your authentication key is:
+
+<span style="color:#FF00EC">Tu74519</span>
+
+
+
+<span style="color:#FFFFFF" id="output-18">&gt;&gt;<span style="color:#9B9B9B">weathernet</span>.<span style="color:#1EFF00">status</span>{}</span>
+You're connected to WeatherNet, the world's most reliable automated atmospheric data service. This status subsystem is intended for partner diagnostics only. WeatherNet recommends against manual data retrieval wherever possible. Please select an <span style="color:#00FFFF">option</span> <span style="color:#FF00EC">service_log</span> | <span style="color:#FF00EC">latest_data</span>
+
+
+
+<span style="color:#FFFFFF" id="output-19">&gt;&gt;<span style="color:#9B9B9B">weathernet</span>.<span style="color:#1EFF00">status</span>{<span style="color:#00FFFF">"option"</span>:<span style="color:#FF00EC">"service_log"</span>}</span>
+This diagnostic service has logged int_err service requests since xxxxxxx
+
+Partner services connected: <span style="color:#FFFFFF">0</span>
+Data throughput: <span style="color:#FF0000">int_err</span>
+AtmoSat ping time: <span style="color:#FF0000">int_err</span>
+Ground network status: <span style="color:#FFF404">Partial</span>
+WeatherNet: <span style="color:#FF0000">Inoperable</span>
+
+We trust that your WeatherNet experience has been satisfactory. Visit <span style="color:#9B9B9B">weathernet</span>.<span style="color:#1EFF00">public</span> for more information on our services.
+
+
+
+<span style="color:#FFFFFF" id="output-1a">&gt;&gt;<span style="color:#9B9B9B">weathernet</span>.<span style="color:#1EFF00">status</span>{<span style="color:#00FFFF">"option"</span>:<span style="color:#FF00EC">"latest_data"</span>}</span>
+CAUTION: AtmoSat network is experiencing severe disruption.
+
+Polling reserve data from ground-level atmo stations.
+
+Please wait.
+
+<span style="color:#FFF404">STATION A01</span> <span style="color:#FFFFFF">|</span> Jerusalem   <span style="color:#FFFFFF">|</span> Locator: JE¦§§   <span style="color:#FFFFFF">|</span> Conditions: Clear
+<span style="color:#FFF404">STATION N78</span> <span style="color:#FFFFFF">|</span> Bangkok     <span style="color:#FFFFFF">|</span> Locator: BAN8884 <span style="color:#FFFFFF">|</span> Conditions: Very Poor
+<span style="color:#FFF404">STATION E21</span> <span style="color:#FFFFFF">|</span> Liverpool   <span style="color:#FFFFFF">|</span> Locator: LIV4887 <span style="color:#FFFFFF">|</span> Conditions: Very Poor
+<span style="color:#FFF404">STATION C91</span> <span style="color:#FFFFFF">|</span> Cancun      <span style="color:#FFFFFF">|</span> Locator: CAN8253 <span style="color:#FFFFFF">|</span> Conditions: Deteriorating
+<span style="color:#FFF404">STATION U77</span> <span style="color:#FFFFFF">|</span> Seoul       <span style="color:#FFFFFF">|</span> Locator: loc_int_missing <span style="color:#FFFFFF">|</span> Conditions: condition_missing
+<span style="color:#FFF404">STATION</span> ¨¦§ <span style="color:#FFFFFF">|</span> Cairo       <span style="color:#FFFFFF">|</span> Locator: CAI1279 <span style="color:#FFFFFF">|</span> Conditions: Clear
+<span style="color:#FFF404">STATION R43</span> <span style="color:#FFFFFF">|</span> Athens      <span style="color:#FFFFFF">|</span> Locator: ATH3432 <span style="color:#FFFFFF">|</span> Conditions: Deteriorating
+<span style="color:#FFF404">STATION O65</span> <span style="color:#FFFFFF">|</span> Atlanta     <span style="color:#FFFFFF">|</span> Locator: ATL9932 <span style="color:#FFFFFF">|</span> Conditions: Clear
+<span style="color:#FFF404">STATION Q12</span> <span style="color:#FFFFFF">|</span> Mexico City <span style="color:#FFFFFF">|</span> Locator: MEX3212 <span style="color:#FFFFFF">|</span> Conditions: condition_missing
+<span style="color:#FFF404">STATION B42</span> <span style="color:#FFFFFF">|</span> Shanghai    <span style="color:#FFFFFF">|</span> Locator: SH¦§§¨  <span style="color:#FFFFFF">|</span> Conditions: condition_missing
+
+
+
+<span style="color:#FFFFFF" id="output-1b">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"foo"</span>}</span>
+Destination locator not recognised. Please try again.
+
+
+
+<span style="color:#FFFFFF" id="output-1c">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"BAN8884"</span>}</span>
+Destination locator recognised.
+
+I'm sorry, but that destination is beyond this vessel's operational radius.
+
+Flightpath modification failed.
+
+
+
+<span style="color:#FFFFFF" id="output-1d">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"LIV4887"</span>}</span>
+Destination locator not recognised. Please try again.
+
+
+
+<span style="color:#FFFFFF" id="output-1e">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"loc_int_missing"</span>}</span>
+Destination locator not recognised. Please try again.
+
+
+
+<span style="color:#FFFFFF" id="output-1f">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"CAI1279"</span>}</span>
+Destination locator recognised.
+
+I'm sorry, but that destination is beyond this vessel's operational radius.
+
+Flightpath modification failed.
+
+
+
+<span style="color:#FFFFFF" id="output-20">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"ATH3432"</span>}</span>
+Destination locator recognised.
+
+I'm sorry, but that destination is beyond this vessel's operational radius.
+
+Flightpath modification failed.
+
+
+
+<span style="color:#FFFFFF" id="output-21">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"MEX3212"</span>}</span>
+Destination locator recognised.
+
+I'm sorry, but that destination is beyond this vessel's operational radius.
+
+Flightpath modification failed.
+
+
+
+<span style="color:#FFFFFF" id="output-22">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"CAN8253"</span>}</span>
+Destination locator recognised.
+
+<span style="color:#9B9B9B">wait hang on</span>
+
+Flight path accepted. Thank you, operator.
+
+<span style="color:#9B9B9B">not sure about this</span>
+
+Operator <span style="color:#00FFFF">auth</span> key required to approve flightpath alteration.
+
+<span style="color:#9B9B9B">try a different one i think</span>
+
+
+
+<span style="color:#FFFFFF" id="output-23">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"CAN8253"</span>,<span style="color:#00FFFF">"auth"</span>:<span style="color:#FF00EC">"Tu74519"</span>}</span>
+Flight path alteration logged and approved.
+
+<span style="color:#9B9B9B">  :/</span>
+
+Blackbox service no longer required. Log will now cease.
+
+<span style="color:#9B9B9B">weather is... not what i expected</span>
+
+Thank you for your assistance, operator.
+
+<span style="color:#9B9B9B">so what else is new, i guess</span>
+
+
+
+<span style="color:#FFFFFF" id="output-24">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"ATL9932"</span>}</span>
+Destination locator recognised.
+
+<span style="color:#9B9B9B">oh thank god</span>
+
+New flight path accepted. Thank you, operator.
+
+<span style="color:#9B9B9B">no seriously</span>
+
+Operator <span style="color:#00FFFF">auth</span> key required to approve flightpath alteration.
+
+
+
+<span style="color:#FFFFFF" id="output-25">&gt;&gt;<span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">bulletin</span>{<span style="color:#00FFFF">"request"</span>:<span style="color:#FF00EC">"flight_list"</span>,<span style="color:#00FFFF">"id"</span>:<span style="color:#FF00EC">"V2776"</span>,<span style="color:#00FFFF">"proceed"</span>:<span style="color:#FF00EC">"y"</span>,<span style="color:#00FFFF">"dest"</span>:<span style="color:#FF00EC">"ATL9932"</span>,<span style="color:#00FFFF">"auth"</span>:<span style="color:#FF00EC">"Tu74519"</span>}</span>
+Flight path alteration logged and approved.
+
+<span style="color:#9B9B9B">  :)</span>
+
+Blackbox service no longer required. Log will now cease.
+
+<span style="color:#9B9B9B">cya</span>
+
+Thank you for your assistance, operator. Relay your friends and relatives to <span style="color:#9B9B9B">suborbital_airlines</span>.<span style="color:#1EFF00">public</span>.
+
+<span style="color:#9B9B9B">weather looks nice up ahead</span>
+<!-- END CONTENT -->
+<footer id="global-footer"></footer>
+</body>
+</html>

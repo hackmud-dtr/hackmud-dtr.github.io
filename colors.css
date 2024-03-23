@@ -14,7 +14,7 @@
     color:#3F3F3F
 }
 
-.col-C {
+.col-C, .user {
     color:#9B9B9B
 }
 
@@ -38,7 +38,7 @@
     color:#8E3434
 }
 
-.col-F, .col-5 {
+.col-F, .col-5, .user-trust {
     color:#FF8000
 }
 
@@ -86,7 +86,7 @@
     color:#495225
 }
 
-.col-L, .col-2 {
+.col-L, .col-2, .scriptname {
     color:#1EFF00
 }
 

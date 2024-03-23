@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calendar ::: Hackmud Archive</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../hackmud.css">
+<link rel="stylesheet" href="../colors.css">
+<script type="text/javascript" src="../global.js"></script>
+<meta name="viewport" content="width=device-width">
+<script>
+function fixRisk() {
+	if(document.location.search=='?risk'){
+		[...document.all].forEach(x=>{
+			if(x.style.color=='rgb(0, 0, 0)')
+				x.style.textShadow='0px 0px 5px white'
+		});
+
+		[...document.getElementsByTagName('a')].forEach(x=>{
+			if(x.href)
+				x.href+='?risk'
+		})
+	}
+}
+</script>
+<style>
+#cal {
+	display:flex;
+	flex-wrap:wrap;
+}
+.month {
+	width:400px;
+	height:450px;
+	border:3px double #83B0F2;
+	margin:20px;
+}
+#cal .month .name {
+	display:block;
+	font-weight:700;
+	text-align:center;
+	padding:1em
+}
+table {
+	margin:auto;
+	width:350px;
+}
+table,tr,td,th {
+	border:1px solid #83B0F2;
+	border-collapse:collapse;
+}
+th,td {
+	width:50px;
+	height:50px;
+}
+td {
+	font-size:0.75em;
+	color:gray !important;
+	text-align:right;
+	vertical-align:top;
+	padding:0 !important;
+	margin:0 !important;
+}
+td:first-line {
+	color:#83B0F2;
+	font-size:1.33em;
+}
+</style>
+<link rel="stylesheet" href="./hackmud.css">
+<script>
+
+function formatMonth(cal,wk,m,y,ar) {
+	var d=document.createElement('div');
+	d.className='month';
+	var s=document.createElement('span');
+	s.className='name';
+	s.appendChild(document.createTextNode(m+' '+y));
+	d.appendChild(s);
+	var t=document.createElement('table');
+	var tr=document.createElement('tr');
+	for(var i=0;i<7;++i) {
+		var th=document.createElement('th')
+		th.appendChild(document.createTextNode(['Su','Mo','Tu','We','Th','Fr','Sa'][(i+wk)%7]));
+		tr.appendChild(th)
+	}
+	t.appendChild(tr);
+
+	var els=[];
+	for(var i=0;i<ar.length;++i) {
+		if(els.length==7) {
+			var tr=document.createElement('tr');
+			for(var j=0;j<els.length;++j)
+				tr.appendChild(els[j]);
+			t.appendChild(tr);
+			els=[];
+		}
+		if(i==0) {
+			for(var j=(wk<=ar[i].dow?wk:wk-7);j<ar[i].dow;++j)
+				els.push(document.createElement('td'));
+		}
+		var td=document.createElement('td');
+		td.appendChild(document.createTextNode(ar[i].date.getUTCDate()))
+		td.appendChild(document.createElement('br'));
+		td.appendChild(document.createTextNode('0='+ar[i].zero))
+		td.appendChild(document.createElement('br'));
+		td.appendChild(document.createTextNode('1='+ar[i].one))
+		els.push(td)
+	}
+	if(els.length) {
+		while(els.length < 7)
+			els.push(document.createElement('td'));
+		var tr=document.createElement('tr');
+		for(var i=0;i<els.length;++i)
+			tr.appendChild(els[i]);
+		t.appendChild(tr);
+	}
+
+	d.appendChild(t);
+
+	cal.appendChild(d);
+
+
+}
+function generate() {
+	var y=document.getElementById('inp').value;
+	var cal=document.getElementById('cal');
+	var wk=document.getElementById('wk').value/1;
+	var ly=document.getElementById('ly').checked
+	cal.innerHTML='';
+
+	var base=new Date(y+'-01-01T00:00:00Z')/1;
+	var lm=null;
+	var lc=null;
+	var ar=[];
+	var sub=0;
+	for(var i=0;i<366;++i) {
+		var d=new Date(base+i*24*3600*1000);
+		if(d.getUTCFullYear()!=y)continue;
+		if(d.getUTCMonth()==1 && d.getUTCDate()==29) {
+			sub=1;
+			if(ly)
+				continue;
+		}
+		if(ly)
+			ar.push({date:d,zero:i-sub,one:i+1-sub,dow:d.getUTCDay()-sub})
+		else
+			ar.push({date:d,zero:i,one:i+1,dow:d.getUTCDay()})
+	}
+	for(var i=0;i<12;++i) {
+		formatMonth(cal,wk,['January','February','March','April','May','June','July','August','September','October','November','December'][i],y,ar.filter(o=>o.date.getUTCMonth()==i))
+	}
+}
+</script>
+</head>
+<body onload='fixRisk(); createFooter()'>
+<a href="index.html">Back</a>
+<hr/>
+<p>Year <input type="number" value="2055" id="inp" style='max-width:5em'><br>
+Weeks start on <select id="wk"><option value=0>Sunday</option><option value=1>Monday</option><option value=2>Tuesday</option><option value=3>Wednesday</option><option value=4>Thursday</option><option value=5>Friday</option><option value=6>Saturday</option></select><br>
+Skip leap years? <input type="checkbox" id="ly"><br>
+<button onclick="generate()">Generate</button></p>
+<div id="cal"></div>
+</body>
+</html>

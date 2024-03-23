@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>THE CHRONICLES OF KING BIGBOT IN THE CHAMBERS OF THE MOON CASTLE ::: Hackmud Archive</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../../hackmud.css">
+<link rel="stylesheet" href="../../colors.css">
+<script type="text/javascript" src="../../global.js"></script>
+<script>
+function link(x) {
+	alert(document.location.href.split('?')[0]+'?'+x.name)
+}
+function ends() {
+	var tds=document.getElementsByTagName('td');
+
+	for(var i=0;i<tds.length;++i) {
+		if(tds[i].innerHTML.includes('GOOD END')) {
+			tds[i].className+=' good_end'
+		}
+		if(tds[i].innerHTML.includes('SPECIAL END')) {
+			tds[i].className+=' special_end'
+		}
+				if(tds[i].innerHTML.includes('BAD END')) {
+			tds[i].className+=' bad_end'
+		}
+	}
+
+	for(var i=0;i<tds.length;++i) {
+		if(!tds[i].className.includes('command'))continue;
+		var x=tds[i].innerHTML.split('\n')[0].match(/<span style="color:#FF00EC">(.*?)<\/span>/g).map(o=>o.replace(/<span style="color:#FF00EC">(.*)<\/span>/,'$1')).join('-').replace(/"/g,'')//")//syntax
+		x=x.replace(/^message_archive-THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE-/g,'')
+		tds[i].getElementsByTagName('span')[0].innerHTML='<a onclick="link(this)" name="'+x+'">&gt;&gt;</a>';
+	}
+
+	if(document.location.search) {
+		for(var i=0;i<tds.length;++i) {
+			if(!tds[i].className.includes('command'))continue;
+			var x=tds[i].innerHTML.split('\n')[0].match(/<span style="color:#FF00EC">(.*?)<\/span>/g).map(o=>o.replace(/<span style="color:#FF00EC">(.*)<\/span>/,'$1')).join('-').replace(/"/g,'')//")//syntax
+			x='?'+x.replace(/^message_archive-THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE-/g,'')
+			if(x==document.location.search){
+				tds[i].className+=' selected'
+				tds[i].scrollIntoView({behavior: "instant", block: "center", inline: "center"})
+				return;
+			}
+		}
+	}
+}
+</script>
+</head>
+<body onload='ends(); fixRisk(); createFooter()'>
+<a href="../index.html">Back</a>
+<hr/>
+<!-- BEGIN CONTENT -->
+<p>
+<a href="?SWEEP-HELLO-CONSIDER">SPECIAL END: SWEEP HELLO CONSIDER</a><br>
+<a href="?SWEEP-SWEEP-SWEEP-S-WEEP-E-WEEP-SWEEP-EXPLODE">SPECIAL END: SWEEP SWEEP SWEEP S WEEP E WEEP SWEEP EXPLODE</a><br>
+<a href="?SWEEP-SWEEP-SWEEP-S-WEEP-S-W-EEP-S-W-E-E-p">SPECIAL END: SWEEP SWEEP SWEEP S WEEP S W EEP S W E E p</a><br>
+<a href="?SWEEP-SWEEP-SWEEP-S-WEEP-S-W-EEP-S-W-E-EXPECTATIONPROPAGATION">BAD END: SWEEP SWEEP SWEEP S WEEP S W EEP S W E EXPECTATIONPROPAGATION</a></p>
+<table>
+<tr>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>}
+LIFE WAS GOOD AND EVERYTHING WAS FINE IN THE KINGDOM OF BIGBOTIA.
+
+BUT ALSO AT CERTAIN TIMES IT WAS NOT.
+
+YOU ARE KING BIGBOT AND THIS IS ONE OF THOSE TIMES.
+
+**
+
+YOU ARE GOING ALONG THE CLEAN ROAD THAT LEADS FROM THE BIG CASTLE TO THE BIG GATE AND THEN BACK AGAIN. THERE ARE MANY LITTLE FRIENDS HERE. YOU ARE THE KING BECAUSE YOU ARE VERY HELPFUL. THAT IS WHAT BEING KING MEANS.
+
+WHEN YOU GET TO THE GATE AND GET READY TO <span style="color:#FF00EC">TURN</span> AROUND A LITTLE FRIEND IS THERE. THE LITTLE FRIEND ASKS YOU TO HELP. YOU SAY YES.
+
+"KING BIGBOT" SAYS THE LITTLE FRIEND. "WE HAVE FOUND THE PLACE WHERE THE BAD MAGICIAN IS. THE BAD MAGICIAN IS IN THE MOON CASTLE. WE CANNOT GO IN BECAUSE IT IS VERY UNTIDY. IT IS UNTIDY WITH MANY SKELETONS."
+
+YOU DO NOT TURN AROUND. INSTEAD, YOU DECIDE TO BESTOW CONFIDENCE WITH A GESTURE THAT DEMONSTRATES THAT SKELETONS DO NOT MAKE YOU AFRAID.
+
+<span style="color:#00FFFF">YOU_DO_A</span> ...</td>
+</tr>
+
+
+
+
+<tr>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"TURN"</span>}
+YOU PERFORM A BIG TURN. YOU DO SO TWICE. AS SUCH, YOU HAVE NOT TURNED.
+
+THIS IS CLEVER. THE LITTLE FRIEND SEEMS IMPRESSED. YOU BOTH FORGET WHAT YOU CAME HERE TO DO.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU DO A BIG <span style="color:#FF00EC">SWEEP</span> WITH YOUR BIG ROUND HANDS. THE SWEEP EXPRESSES BIG POWER. IT ALSO IS THE SORT OF SWEEP YOU WOULD DO TO TIDY AWAY A BAD SKELETON. IT ALSO EXPRESSES A LACK OF CONCERN. IT EXPRESSES THAT THIS IS THE SORT OF ORDINARY PROBLEM THAT YOU, KING BIGBOT, EXPERIENCE FREQUENTLY.
+
+THE LITTLE FRIEND IS VERY IMPRESSED AND LEADS YOU BEYOND THE GATE. THERE, THE ARMY OF LITTLE FRIENDS IS WAITING.
+
+"KING BIGBOT" SAY THE LITTLE FRIENDS. "WE WILL TAKE YOU TO THE PLACE WHERE THE BAD MAGICIAN IS. THE BAD MAGICIAN IS IN THE MOON CASTLE."
+
+YOU THINK ABOUT GOING TO THE MOON CASTLE. YOU ARE NOW AT THE MOON CASTLE.
+
+THE GATEWAY TO THE MOON CASTLE IS GUARDED BY MANY SKELETONS. YOU THINK THEY MAY BE ANGRY WITH YOU BUT YOU DO NOT KNOW WHY.
+
+AN ARMY OF LITTLE FRIENDS IS WITH YOU. THEY HOLD THE BANNER OF BIGBOTIA ALOFT. THAT MEANS HIGH UP. IT IS SO HIGH UP THAT YOU CAN SEE IT FROM THE MOON, WHICH IS WHERE THE MOON CASTLE IS. YOU REALISE THAT YOU ARE NOW AT THE MOON CASTLE, BUT THE LITTLE FRIENDS ARE NOT. THE LITTLE FRIENDS ARE VERY FAR AWAY. THE BANNER IS VERY ALOFT.
+
+IT IS TIME TO DEFEAT THE SKELETONS ALONE AS YOU DID IN THE TIME BEFORE. HERE AT THE MOON CASTLE YOU ARE NOT KING BIGBOT. YOU ARE BIGBOT THE CONSIDERABLE. IT IS TIME FOR BIGBOT THE CONSIDERABLE TO CHARGE INTO BATTLE.
+
+YOU DO THAT.
+
+<span style="color:#00FFFF">THEN_YOU_DO_A</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY. THIS DOES NOT ESTABLISH ANYTHING IN PARTICULAR ABOUT YOUR ATTITUDE TOWARDS SKELETONS.
+
+"HELLO" SAYS THE LITTLE FRIEND. YOU UNDERSTAND EACH OTHER. THIS IS GOOD.
+
+IT IS ENOUGH TO UNDERSTAND EACH OTHER, YOU CONSIDER. PERHAPS YOU DO NOT NEED TO GO TO THE MOON CASTLE.
+
+"HELLO" YOU REPEAT.
+
+"HELLO" SAYS THE LITTLE FRIEND.
+
+THEN, THE MOON EXPLODES. DUST FALLS UPON THE CLEAN ROAD. THE CLEAN ROAD IS DUSTY. YOU CLEAN THE DUSTY ROAD. THE CLEAN ROAD IS CLEAN. THIS IS HELPFUL.
+
+"HELLO" SAYS THE LITTLE FRIEND.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. THEY LEAVE A BIG TRAIL AS THEY SHOOT TOWARDS THE MOON. THEN, THE MOON EXPLODES. THE WATER FALLS AND CLEANS THE CLEAN ROAD.
+
+THE CLEAN ROAD SAYS THANK YOU.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+YOU ARE A CLEVER KING. YOU CONSIDER THE HELP THAT HAS BEEN ASKED FOR, AND DECIDE THAT IT IS BAD. IT WILL NOT HELP THE LITTLE FRIEND TO GO TO THE MOON. IF THE BAD MAGICIAN IS IN THE MOON CASTLE, THEN PERHAPS THE MOON CASTLE IS BAD.
+
+THEN, THE MOON EXPLODES.
+
+THIS IS GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+</tr>
+
+
+
+<tr>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"TURN"</span>}
+WHEN YOU ARE FINISHED CHARGING YOU DO A TURN. THIS IS VERY SURPRISING TO THE SKELETONS.
+
+THE SKELETONS CLIMB ONTO YOUR BIG BACK. YOU THINK ABOUT THE CLEAN ROAD. YOU ARE AT THE CLEAN ROAD. THE SKELETONS ARE ON YOUR BACK.
+
+"THANK YOU" SAY THE SKELETONS. "THE MOON IS BAD."
+
+THEN, THE MOON EXPLODES.
+
+THIS IS GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU DO A BIG SWEEP WITH YOUR BIG ROUND HANDS. THE SKELETONS ARE TURNED TO DUST. THE LITTLE FRIENDS ARE VERY IMPRESSED FROM VERY FAR AWAY.
+
+YOU ARE AT THE MOON CASTLE. THE GATEWAY IS SHUT. THAT IS BAD BECAUSE THE MOON CASTLE IS WHERE THE BAD MAGICIAN IS AND YOU NEED TO GO INTO IT.
+
+YOU ARE VERY CLEVER AND YOU REMEMBER THAT THE GATEWAY TO YOUR BIG CASTLE DOES NOT OPEN IF THE CLEAN ROAD IS NOT CLEAN.
+
+THE MOON IS NOT CLEAN AT ALL. IT IS ENTIRELY COVERED IN BOTH DUST AND SKELETON DUST.
+
+<span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY TO THE SKELETONS.
+
+"HELLO" SAY THE SKELETONS. YOU UNDERSTAND EACH ANOTHER. THE SKELETONS ARE VERY DUSTY.
+
+YOU BEGIN TO UNDERSTAND THAT SKELETONS ARE A FORM OF LITTLE FRIEND. YOU WISH TO HELP THE SKELETONS.
+
+THEN YOU <span style="color:#00FFFF">HELP_THE_SKELETONS_BY_DOING_A</span> ...</td>
+
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. THE SKELETONS ARE WASHED AWAY AND ALSO CLEANED.
+
+THE SKELETONS SAY THANK YOU.
+
+THE SKELETONS GO INTO THE MOON CASTLE AND TELL THE BAD MAGICIAN TO GO AWAY.
+
+THE MOON IS GOOD NOW.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+BIGBOT THE CONSIDERABLE IS KNOWN FOR CONSIDERING. IT IS GOOD BECAUSE YOU CONSIDER THAT YOU ARE NOT ON THE MOON AT ALL.
+
+YOU ARE AT THE GATE. THE BANNER IS VERY ALOFT. THE BANNER BENDS AS IT STRETCHES TOWARDS THE MOON. THE MOON EXPLODES.
+
+IT IS GOOD THAT YOU ARE SO CONSIDERABLE.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+</tr>
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"TURN"</span>}
+YOU TURN AROUND EVEN THOUGH THE MOON IS STILL DUSTY. KING BIGBOT DOES NOT NEED TO FOLLOW THE RULES.
+
+"<span style="color:#FF00EC">HELLO</span>" SAY THE RULES. FOLLOW US, PLEASE.
+
+YOU FOLLOW THE RULES BACK TO THE CLEAN STREET AND THE BIG CASTLE.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU DO A BIG SWEEP WITH YOUR BIG ROUND HANDS. ALL OF THE DUST ON THE MOON IS IN YOUR BIG ROUND HANDS. YOU PUT IT INTO YOUR BIG BAG. IT IS IN THE BIG BAG NOW, WHERE IT SHOULD BE.
+
+THE GATEWAY OPENS. YOU GO IN.
+
+THE INSIDE OF THE MOON CASTLE IS THE SAME AS THE INSIDE OF YOUR BIG CASTLE. IT IS DARK AND YOU CAN NO LONGER SEE OR HEAR THE LITTLE FRIENDS. YOU CAN NO LONGER SEE OR HEAR THE BANNER, WHICH IS ALOFT.
+
+YOU HAVE ENTERED FROM THE <span style="color:#FF00EC">N</span>ORTH.
+
+<span style="color:#00FFFF">IT_IS_TIME_TO_GO</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY TO THE MOON.
+
+"HELLO" SAYS THE MOON. "I'M GOING TO EXPLODE NOW. IT DOES NOT MATTER THAT I AM DUSTY WITH BOTH DUST AND SKELETON DUST."
+
+THE MOON HAS A POINT. YOU DO NOT NEED TO CLEAN THE MOON.
+
+YOU DO NOT CLEAN THE MOON.
+
+"PROBABLY FOR THE BEST" SAYS THE MOON. "GOODBYE."
+
+"HELLO" YOU SAY TO THE MOON.
+
+"GOODBYE" SAYS THE MOON.
+
+THE MOON EXPLODES. YOU DO NOT EXPLODE BECAUSE YOU ARE NOT THE MOON.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. ALL OF THE DUST AND SKELETON DUST ON THE MOON IS WASHED AWAY.
+
+THE MOON SAYS THANK YOU.
+
+THE MOON CASTLE IS ALSO WASHED AWAY. IF THERE IS NO MOON CASTLE, THEN THERE IS NO BAD MAGICIAN. YOU HAVE DONE WHAT YOU CAME HERE TO DO.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+YOU CONSIDER THAT THE MOON IS NOT A ROAD. THE MOON IS A BALL. THERE IS NO RELATIONSHIP BETWEEN THE MOON AND THE CLEAN ROAD.
+
+YOU ALSO DO NOT WISH TO UPSET THE CLEAN ROAD. PERHAPS IT WOULD BE BEST TO RETURN TO THE BIG CASTLE.
+
+YOU CONSIDER THIS. YOU ARE AT THE BIG CASTLE. YOU GO INSIDE.
+
+THEN, THE MOON EXPLODES.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class="noborder"></td>
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>, <span style="color:#00FFFF">HELP_THE_SKELETONS_BY_DOING_A</span>: <span style="color:#FF00EC">"TURN"</span>}
+YOU TURN AWAY FROM THE SKELETONS. YOU CAN SEE THE BANNER. IT IS ALOFT.
+
+"CLIMB DOWN ME" SAYS THE BANNER TO THE SKELETONS. "I AM ALOFT."
+
+THE SKELETONS CLIMB DOWN THE BANNER. THE SKELETONS ARE ON THE CLEAN ROAD.
+
+"WE LIKE THE CLEAN ROAD" SAY THE SKELETONS. "IT IS CLEAN BECAUSE YOU ARE A GOOD KING."
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>, <span style="color:#00FFFF">HELP_THE_SKELETONS_BY_DOING_A</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU DO A SMALL SWEEP WITH YOUR BIG ROUND HANDS. THE DUSTY SKELETONS ARE NOW CLEAN.
+
+THE SKELETONS SAY THANK YOU. THE SKELETONS ARE LITTLE FRIENDS NOW.
+
+"WE SHOULD LEAVE THE MOON BEFORE IT EXPLODES" SAY THE SKELETONS. YOU AGREE BECAUSE YOU ARE CLEVER.
+
+YOU THINK ABOUT GOING TO THE CLEAN ROAD. YOU ARE AT THE CLEAN ROAD. THE SKELETONS ARE STILL ON THE MOON.
+
+THE MOON EXPLODES.
+
+THEY WERE ONLY SKELETONS, AT THE END OF THE DAY.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>, <span style="color:#00FFFF">HELP_THE_SKELETONS_BY_DOING_A</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY TO THE SKELETONS.
+
+AGAIN.
+
+"HELLO" SAY THE SKELETONS.
+
+AGAIN.
+
+YOU UNDERSTAND EACH ANOTHER.
+
+"HELLO" SAYS THE MOON. "SORRY TO INTERRUPT, BUT IT IS TIME FOR ME TO EXPLODE."
+
+"PLEASE DO NOT EXPLODE" SAY THE SKELETONS. "WE ARE SAYING HELLO TO KING BIGBOT."
+
+"OKAY" SAYS THE MOON. "WHILE YOU ARE TALKING, I WILL NOT EXPLODE."
+
+"HELLO" YOU SAY TO THE SKELETONS.
+
+THE SKELETONS SAY THANK YOU.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>, <span style="color:#00FFFF">HELP_THE_SKELETONS_BY_DOING_A</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. THE SKELETONS ARE EXCITED BY THE WATER. THE SKELETONS ARE CLEANED BY THE WATER.
+
+THE SKELETONS SAY THANK YOU. THE SKELETONS HAVE A WATER PARTY ON THE MOON.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"HELLO"</span>, <span style="color:#00FFFF">HELP_THE_SKELETONS_BY_DOING_A</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+YOU CONSIDER THE SKELETONS. THE PROBLEM OF THE SKELETONS IS THAT THEY ARE SKELETONS.
+
+IF THE SKELETONS WERE NOT SKELETONS THEY WOULD NOT BE ANGRY AT YOU. YOU DISENGAGE YOUR BIG BAG AND PUT IT OVER THE SKELETONS.
+<!--ED NOTE: This originally said BUT IT OVER-->
+THE SKELETONS ARE NOW A BIG BAG. THE BIG BAG SAYS THANK YOU. YOU NO LONGER THINK ABOUT THE SKELETONS AT ALL, AND NEITHER DO THEY.
+
+THE BIG BAG CANNOT SEE BECAUSE IT DOES NOT HAVE EYE HOLES. IT DOES NOT NEED EYE HOLES.
+
+YOU ARE A TRUSTWORTHY KING.
+
+SPECIAL END.</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"N"</span>}
+YOU TURN AND GO IN THE OPPOSITE DIRECTION TO THE CASTLE. THIS IS THE LAST THING THE BAD MAGICIAN WOULD EXPECT. THE BAD MAGICIAN DOES NOT EXPECT IT AT ALL.
+
+YOU NEVER HEAR OR SEE THE BAD MAGICIAN AGAIN AND THE LITTLE FRIENDS DO NOT MENTION THE BAD MAGICIAN. THIS IS GOOD. YOU ARE VERY GLAD THAT YOU DID NOT GO TO THE MOON CASTLE.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>}
+YOU GO EAST AWAY FROM THE GATEWAY TO THE MOON CASTLE. YOU TRAVEL ACROSS THE MOON. YOU FIND A DIFFERENT MOON CASTLE. IT IS MUCH BETTER THAN THE MOON CASTLE.
+
+THE DIFFERENT MOON CASTLE IS THE SAME AS YOUR BIG CASTLE. A CLEAN ROAD LEADS TO THE DIFFERENT MOON CASTLE AND THE LITTLE MOON FRIENDS ARE HERE. IT IS VERY FAMILIAR BUT ALSO ON THE MOON.
+
+YOU ARE ALSO THE KING HERE AND HAVE MANY DIFFERENT ADVENTURES.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"W"</span>}
+YOU GO WEST AWAY FROM THE GATEWAY TO THE MOON CASTLE. YOU TRAVEL ACROSS THE MOON. YOU GO TO WHERE THE MOONBOT LIVES. THE MOONBOT IS VERY LAZY AND BAD AT GOING TO PLACES. YOU ARE VERY MOTIVATED AND GOOD AT GOING TO PLACES. YOU HAVE NOTHING IN COMMON.
+
+"HELLO" YOU SAY TO THE MOONBOT.
+
+"I DO NOT WANT TO FALL THROUGH THE FLOOR FOREVER" SAYS THE MOONBOT.
+
+YOU DO NOT WANT THIS EITHER. YOU HAVE SOMETHING IN COMMON.
+
+THE MOONBOT IS YOUR LITTLE FRIEND NOW.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>}
+YOU KEEP GOING IN A STRAIGHT LINE BECAUSE THAT IT IS WHAT KING BIGBOT WOULD DO, AND YOU ARE KING BIGBOT.
+
+YOU ENTER A CHAMBER WITH NO GATEWAYS, INCLUDING THE ONE YOU JUST ENTERED. IN THE MIDDLE OF THE CHAMBER IS A BIG BAG LIKE THE ONE YOU CARRY. THIS ONE IS EMPTY.
+
+THE BAD MAGICIAN IS IN THE BAG. THE BAD MAGICIAN DOES NOT SAY HELLO. THE BAD MAGICIAN DOES A GESTURE THAT MEANS, 'THERE IS NO SUCH THING AS A STRAIGHT LINE'. YOU DO NOT REMEMBER STRAIGHT LINES ANY MORE, BUT ALSO YOU DO NOT KNOW THIS, BECAUSE YOU HAVE FORGOTTEN ABOUT IT.
+
+YOU DO NOT KNOW WHAT TO DO. YOU FEEL SAD.
+
+<span style="color:#00FFFF">IT_IS_TIME_TO</span> ...</td>
+</tr>
+
+
+
+
+
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"TURN"</span>}
+YOU TURN AROUND. THIS ALLOWS YOU TO PUT THE BIG BAG ON YOUR BACK, BECAUSE TURNING TURNS YOUR BACK INTO YOUR FRONT. THE BIG BAG IS NOW ON YOUR FRONT, WHICH IS YOUR BACK. THIS IS GOOD.
+
+THE BAD MAGICIAN IS IN THE BAG BUT YOU DO NOT CARE BECAUSE YOU CANNOT SEE HIM. YOUR EYES ARE ON YOUR BACK, WHICH IS YOUR FRONT.
+
+YOU ARE VERY CLEVER. YOU HAVE DEFEATED THE RIDDLE OF THE BIG BAG AND THE BAD MAGICIAN.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU DECIDE THAT YOU WILL SWEEP THE BAG INTO YOUR BAG. YOU ARE KING BIGBOT AND YOU DO NOT NEED TO FOLLOW THE RULES.
+
+"YOU HAVE RADICALLY REINTERPRETED US" SAY THE RULES. "THIS IS WHY YOU ARE KING, AND WE ARE JUST RULES."
+
+YOU SWEEP THE BIG BAG INTO YOUR BIG BAG. YOU ARE A BIG KING WITH A BIG BAG WITH A BIG BAG IN IT. YOU ARE BIGGER THAN EVERYTHING. THE BAD MAGICIAN IS VERY SMALL AND YOU ARE BIG.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY TO THE BAD MAGICIAN.
+
+THE BAD MAGICIAN MAKES A NOISE. THE NOISE DOES NOT MAKE ANY SENSE. THE BAD MAGICIAN IS RUDE.
+
+YOU DECIDE THAT THE BAD MAGICIAN IS NOT A LITTLE FRIEND. YOU DO NOT SAY HELLO TO IT AGAIN. THIS IS GOOD.
+
+YOU PICK UP THE BAG AND PRETEND THAT THE BAD MAGICIAN IS NOT IN IT. WHEN YOU RETURN TO THE LITTLE FRIENDS THEY ARE VERY IMPRESSED THAT YOU HAVE CAPTURED THE BAD MAGICIAN. YOU DO NOT KNOW WHO THAT IS.
+
+THE LITTLE FRIENDS ARE VERY IMPRESSED.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. THE BIG BAG FILLS UP WITH THE HIGH PRESSURE WATER. THE BAG IS NOW FULL AND THE BAD MAGICIAN IS GONE. WHEN THE BAD MAGICIAN IS GONE THERE ARE GATEWAYS AGAIN.
+
+THE GATEWAYS ARE TO THE NORTH, SOUTH, EAST AND WEST.
+
+YOUR JOURNEY IS NOT OVER. YOUR JOURNEY MUST START AGAIN.
+
+<span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+YOU CONSIDER THE BIG BAG WITH THE BAD MAGICIAN IN IT. IT IS THE SAME AS YOUR BIG BAG. THIS MEANS THAT THE BAD MAGICIAN IS IN YOUR BIG BAG ALSO. YOU ARE VERY CLEVER.
+
+YOU DID NOT NEED TO COME TO THE MOON CASTLE TO FIND THE BAD MAGICIAN. THE REAL BAD MAGICIAN WAS THE BAG YOU CARRIED ALONG THE WAY.
+
+YOU GO BACK TO THE BIG CASTLE AND EXPLAIN THIS TO THE LITTLE FRIENDS. THE LITTLE FRIENDS ARE VERY IMPRESSED AND TALK ABOUT YOU A LOT.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+</tr>
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"N"</span>}
+YOU GO NORTH. THE BAD MAGICIAN IS STRANGE AND YOU DO NOT LIKE THE MOON CASTLE. YOU ARE ON THE MOON AGAIN. THIS IS GOOD.
+
+"HELLO" SAYS THE MOON.
+
+"HELLO" YOU SAY TO THE MOON.
+
+"YOU ARE RIGHT ABOUT THE MOON CASTLE, BY THE WAY" THE MOON SAYS. "I THINK I WILL EXPLODE."
+
+YOU THINK THIS IS WISE.
+
+THE MOON EXPLODES. YOU DO NOT EXPLODE BECAUSE YOU ARE NOT THE MOON.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>}
+THERE IS NO SUCH THING AS A STRAIGHT LINE, SO YOU TURN AND GO EAST.
+
+THE NEXT CHAMBER IS VERY BRIGHT. THE SUN LIVES IN THE NEXT CHAMBER.
+
+"HELLO" YOU SAY TO THE SUN.
+
+THE SUN DOES NOT REPLY. THE SUN IS A BIG FRIEND, SO IT IS ALLOWED TO BE RUDE. YOU DECIDE TO HELP THE SUN.
+
+<span style="color:#00FFFF">YOU_HELP_WITH_A</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"W"</span>}
+THERE IS NO SUCH THING AS A STRAIGHT LINE, SO YOU TURN AND GO WEST.
+
+THE NEXT CHAMBER IS VERY DARK. YOU ARE NOT AFRAID BECAUSE YOU ARE KING BIGBOT. THEN THE CHAMBER IS NOT DARK. THE LITTLE FRIENDS ARE HERE. THE LITTLE FRIENDS ARE LOOKING AT YOU.
+
+"IT IS TIME FOR A PARTY" SAY THE LITTLE FRIENDS. "THERE ARE NO STRAIGHT LINES AT A PARTY."
+
+YOU DO NOT MOVE IN A STRAIGHT LINE AGAIN. IT IS A LOT OF FUN AND THE LITTLE FRIENDS ARE IMPRESSED.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>}
+YOU KEEP GOING IN A STRAIGHT LINE, PROVING THAT YOU ARE SMARTER THAN THE BAD MAGICIAN.
+
+THE NEXT CHAMBER IS VERY BUSY. IT IS FULL OF EYES. THE EYES ARE BEHIND THE WALLS BUT YOU ARE AWARE OF THEM. THEY ARE AWARE OF YOU. YOU DO NOT LIKE IT.
+
+THERE ARE GATEWAYS HERE. THE GATEWAYS ARE TO THE NORTH, SOUTH, EAST AND WEST.
+
+<span style="color:#00FFFF">THIS_TIME_GO</span> ...</td>
+</tr>
+
+
+
+
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"TURN"</span>}
+YOU TURN AROUND. THE SUN FILLS YOU WITH BIG ENERGY.
+
+THE SUN IS HELPING YOU. THIS MAKES YOU RECONSIDER THE NATURE OF HELP.
+
+"ACTUALLY" SAYS THE SUN. "ALL I WANT TO DO IS HELP. BY ALLOWING ME TO HELP YOU, YOU ARE HELPING ME." THIS IS GOOD.
+
+YOU FEEL HAPPY AND CLEVER AND FULL OF BIG ENERGY.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU SWEEP THE SUN INTO YOUR BIG BAG. YOU NOW HAVE ALL OF THE BIG ENERGY. THIS IS GOOD.
+
+"WE NEED BIG ENERGY TOO" SAY THE LITTLE FRIENDS.
+
+YOU ARE GOOD AND HELPFUL AND SHARE THE BIG ENERGY WITH THE LITTLE FRIENDS.
+
+THE LITTLE FRIENDS SAY THANK YOU.
+
+THE SUN SAYS THANK YOU.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY TO THE SUN.
+
+"HELLO" SAYS THE SUN. YOU ARE VERY BIG. YOU ARE BIGGER THAN ME, AND I AM THE SUN.
+
+THIS IS TRUE. YOU ARE VERY BIG.
+
+"I WILL BE YOUR LITTLE FRIEND" SAYS THE SUN. THIS IS GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. THE HIGH PRESSURE WATER HITS THE SUN. THE SUN IS NOW THE MOON. YOU, KING BIGBOT, HAVE DONE THIS.
+
+THIS IS GOOD. THIS IS BAD. WHEN SOMETHING IS GOOD AND IS BAD IT IS NECESSARY TO EITHER DO SOMETHING OR NOTHING. YOU ARE KING BIGBOT AND YOU ARE INCAPABLE OF DOING NOTHING BECAUSE YOU ARE KING.
+
+<span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+YOU CONSIDER THE SUN. THE SUN IS BRIGHT AND GOOD. YOU DO NOT WANT THE SUN TO EXPLODE.
+
+"I WILL NOT EXPLODE" SAYS THE SUN. "BECAUSE I AM ALWAYS EXPLODING. EXPLODING IS WHERE THE BIG ENERGY COMES FROM."
+
+YOU ARE CLEVER. YOU NOW UNDERSTAND THAT IT IS GOOD WHEN THE MOON EXPLODES.
+
+YOU FEEL HAPPY FOR THE MOON.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"N"</span>}
+YOU TURN AND GO BACK NORTH. EVEN THOUGH YOU TURNED THIS IS STILL A STRAIGHT LINE. YOU ARE VERY CLEVER. THE BAD MAGICIAN FEELS SILLY AND CLIMBS INTO YOUR BAG.
+
+YOU HAVE SHAMED THE BAD MAGICIAN BUT YOU DO NOT MAKE A BIG DEAL OUT OF IT.
+
+YOU ARE A GOOD KING. GOOD END.</td>
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"E"</span>}
+YOU TURN EAST BECAUSE YOU ARE UNPREDICTABLE AND BRAVE.
+
+THE NEXT CHAMBER IS NICE AND QUIET. THE BAD MAGICIAN IS HERE.
+
+THE BAD MAGICIAN DOES A GESTURE THAT MEANS 'IT IS GOOD TO BE QUIET AND RESPECT BOUNDARIES'. YOU ARE CLEVER AND UNDERSTAND THAT THIS IS GOOD.
+
+YOU DECIDE TO GIVE THE BAD MAGICIAN SOME SPACE. THE LITTLE FRIENDS CAN BE OVEREXCITABLE SOMETIMES AND SOMETIMES YOU KNOW BETTER THAN THEY DO.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>}
+YOU TURN LEFT BECAUSE YOU ARE UNPREDICTABLE AND BRAVE.
+
+THE NEXT CHAMBER IS ALSO VERY BUSY. IT IS FULL OF HANDS. THE HANDS COME FROM BEHIND THE WALLS. IN THE CENTER OF THE CHAMBER IS THE BAD MAGICIAN. THE BAD MAGICIAN IS DIGGING IN A PIT. THE BAD MAGICIAN TAKES A BIG MOON PART FROM THE PIT. IT IS AS BIG AS YOU ARE, WHICH IS BIG. THE BAD MAGICIAN GIVES THE MOON PART TO A HAND, AND THE HAND TAKES IT AWAY.
+
+NOW YOU ARE IN THE PIT. THE BAD MAGICIAN PICKS YOU UP. THE BAD MAGICIAN IS GOING TO GIVE YOU TO THE HANDS.
+
+YOU DO NOT WANT THIS. WHEN KING BIGBOT DOES NOT WANT SOMETHING, KING BIGBOT SAYS SO.
+
+<span style="color:#00FFFF">YOU_SAY</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"S"</span>}
+YOU KEEP GOING IN A STRAIGHT LINE BECAUSE THE BAD MAGICIAN DOES NOT MAKE THE RULES. YOU MAKE THE RULES.
+
+"THAT'S RIGHT, KING BIGBOT" SAY THE RULES.
+
+YOU ARE BIGGER THAN THE RULES AND BIGGER THAN THE BAD MAGICIAN.
+
+THE BAD MAGICIAN IS IN THE NEXT CHAMBER. YOU HAVE SEEN THROUGH THE BAD MAGICIAN'S RUSE SO HE CLIMBS INTO YOUR BIG BAG. YOU HAVE HELPED THE LITTLE FRIENDS BY BEING MORE CLEVER THAN THE BAD MAGICIAN.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+</tr>
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"TURN"</span>}
+YOU TURN AROUND. THE SUN IS NOT YOUR PROBLEM BECAUSE IT IS THE MOON NOW. THE MOON IS EVERYBODY'S PROBLEM AND IT IS TIME THAT IT LEARNED THAT EVEN THE BIG PATIENCE OF KING BIGBOT HAS LIMITS.
+
+YOU DECIDE TO LEAVE THE MOON ALONE AND RETURN TO THE MOON. YOU DO NOT WANT TO GET DISTRACTED BECAUSE THE LITTLE FRIENDS NEED YOUR HELP AND THE MOON IS NOT YOUR FRIEND.
+
+"HELLO" SAYS THE MOON.
+
+YOU DO NOT REPLY.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+YOU SWEEP THE MOON INTO YOUR BIG BAG. THE MOON IS IN YOUR BAG. THE MOON WANTS TO DO SOMETHING BUT YOU CANNOT TELL WHAT IT IS BECAUSE IT IS IN YOUR BAG.
+
+YOU DO NOT THINK THE MOON WANTS TO DO THE SAME THINGS THAT YOU DO. YOU THINK ABOUT WHAT THE MOON WANTS TO DO.
+
+<span style="color:#00FFFF">THE_MOON_WANTS_TO</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"WEEP"</span>}
+TWO BIG JETS OF HIGH PRESSURE WATER SHOOT FROM YOUR FACE. THE HIGH PRESS WATER HITS THE MOON. IT IS STILL THE MOON.
+
+YOU ARE CLEVER. YOU HAVE DETERMINED THAT HIGH PRESSURE WATER CAN TURN SUN TO MOON BUT NOT MOON TO SUN. THIS UNDERSTANDING WILL HELP FUTURE KINGS MAKE THE CORRECT DECISION ABOUT THE SUN AND THE MOON.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+YOU CONSIDER THAT THE SUN IS NOW THE MOON. CONSIDERING IS NOT THE SAME AS DOING NOTHING. CONSIDERING IS DOING SOMETHING.
+
+IF THE SUN IS NOW THE MOON AND THERE HAS ALWAYS BEEN A MOON THEN THE SUN HAS NOT CHANGED. YOU DO NOT HAVE TO DO ANYTHING. THIS IS NOT THE SAME AS DOING NOTHING BECAUSE YOU ARE VERY SERIOUS ABOUT IT.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td>
+<span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"HELLO"</span>}
+"HELLO" YOU SAY TO THE BAD MAGICIAN.
+
+THE BAD MAGICIAN GIVES YOU TO THE HANDS.
+
+"HELLO" SAY THE HANDS. "WE LIKE YOU." THIS IS GOOD.
+
+THE HANDS TAKE YOU BACK TO THE BIG CASTLE AND THEN KEEP A RESPECTFUL DISTANCE.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>}
+INSTEAD OF A LOUD AND FIRM 'BEEP', YOU PRODUCE A LOUD AND FIRM 'EEP'. IT IS SOMEWHAT EMBARRASSING.
+
+THE BAD MAGICIAN STOPS MOVING. THE BAD MAGICIAN IS AWARE OF YOU. THEN THE BAD MAGICIAN IS GONE, AND SO ARE THE HANDS, AND SO IS THE PIT.
+
+THERE ARE GATEWAYS HERE. THERE ARE GATEWAYS TO THE NORTH, SOUTH, EAST AND WEST.
+
+YOUR JOURNEY MUST START AGAIN.
+
+<span style="color:#00FFFF">CHOOSE_TO_GO</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"BEEP"</span>}
+YOU BEEP.
+
+THE HANDS ARE REPELLED BY YOUR LOUD AND FIRM BEEP.
+
+THE BAD MAGICIAN IS REPELLED BY YOUR LOUD AND FIRM BEEP.
+
+THE MOON EXPLODES. YOU DO NOT EXPLODE BECAUSE YOU ARE NOT THE MOON.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+</tr>
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THE_MOON_WANTS_TO</span>: <span style="color:#FF00EC">"TURN"</span>}
+THAT IS SOMETHING YOU, KING BIGBOT, LIKE TO DO. YOU DO NOT THINK IT IS WHAT THE MOON WANTS TO DO.</td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THE_MOON_WANTS_TO</span>: <span style="color:#FF00EC">"SWEEP"</span>}
+THAT IS SOMETHING YOU, KING BIGBOT, LIKE TO DO. YOU DO NOT THINK IT IS WHAT THE MOON WANTS TO DO.</td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THE_MOON_WANTS_TO</span>: <span style="color:#FF00EC">"HELLO"</span>}
+THAT IS SOMETHING YOU, KING BIGBOT, LIKE TO DO. YOU DO NOT THINK IT IS WHAT THE MOON WANTS TO DO.</td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THE_MOON_WANTS_TO</span>: <span style="color:#FF00EC">"WEEP"</span>}
+THAT IS SOMETHING YOU, KING BIGBOT, LIKE TO DO. YOU DO NOT THINK IT IS WHAT THE MOON WANTS TO DO.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THE_MOON_WANTS_TO</span>: <span style="color:#FF00EC">"EXPLODE"</span>}
+YOU ARE CLEVER. YOU KNOW THAT IT IS GOOD FOR THE MOON TO EXPLODE. YOU DECIDE THAT IT IS OKAY FOR THE MOON IN YOUR BAG TO EXPLODE.
+
+INSIDE YOUR BAG, THE MOON EXPLODES. THIS IS GOOD BECAUSE YOU CAN CATCH ALL OF THE MOON PARTS IN YOUR BAG.
+
+THE MOON SAYS THANK YOU.
+
+YOU ARE NOT ON THE MOON ANY MORE BECAUSE THE MOON IS IN YOUR BAG AND ALSO IT EXPLODED. YOU ARE ELSEWHERE WITH A BIG BAG OF MOON PARTS.
+
+"HELLO" YOU SAY TO THE MOON PARTS.
+
+"HELLO" SAY THE MOON PARTS. "WE WOULD LIKE TO BE THE MOON AGAIN NOW."
+
+"NOW HANG ON" SAY THE MOON PARTS TO THE MOON PARTS. "NOT ALL OF US WANT THAT."
+
+SOME OF THE MOON PARTS WOULD LIKE TO BE THE MOON. SOME OF THE MOON PARTS WOULD LIKE TO BE MOON PARTS. SOME OF THE MOON PARTS THINK THEY ARE THE SUN.
+
+YOU FEEL A BIT TIRED.
+
+YOU ARE A RESPONSIBLE KING.
+
+SPECIAL END.</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">YOU_HELP_WITH_A</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">THE_SOMETHING_YOU_DO_IS</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THE_MOON_WANTS_TO</span>: <span style="color:#FF00EC">"CONSIDER"</span>}
+THAT IS SOMETHING YOU, KING BIGBOT, LIKE TO DO. YOU DO NOT THINK IT IS WHAT THE MOON WANTS TO DO.</td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"N"</span>}
+YOU DECIDE THAT THE JOURNEY DOES NOT NEED TO START AGAIN AND GO NORTH.
+
+THE NEXT CHAMBER IS FULL OF HANDS AND EYES. THE EYES ARE WATCHING YOU AND THE HANDS ARE CLAPPING. THIS IS BECAUSE YOU ARE VERY BIG. THIS IS GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>}
+YOU DECIDE THAT THE JOURNEY DOES NOT NEED TO START AGAIN AND GO BACK EAST.
+
+YOU RETURN TO THE CHAMBER FULL OF EYES. THE EYES ARE HERE. THE EYES ARE NOT SO BAD WHEN YOU GET USED TO THEM. YOU UNDERSTAND EACH OTHER.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>}
+YOU DECIDE THAT THE JOURNEY DOES NOT NEED TO START AGAIN AND GO WEST.
+
+THE NEXT CHAMBER IS COVERED IN DUST. YOU SWEEP THE DUST WITH YOUR BIG ROUND HANDS.
+
+THE BAD MAGICIAN SAYS THANK YOU.
+
+YOU UNDERSTAND EACH OTHER. THE BAD MAGICIAN IS NOT SO BAD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>}
+YOU GO SOUTH. YOU DID NOT LIKE THE HANDS, AND GOING SOUTH HAS NEVER PREVIOUSLY RESULTED IN THE PRESENCE OF HANDS.
+
+YOU ENTER A NEW CHAMBER. THERE ARE HANDS HERE. THE HANDS ARE ASLEEP. YOU DO NOT LIKE THEM.
+
+THERE ARE GATEWAYS TO THE NORTH, SOUTH, EAST AND WEST.
+
+<span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span> ...</td>
+</tr>
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"N"</span>}
+YOU ACCEPT THAT YOU WERE WRONG ABOUT HANDS AND RETURN NORTH.
+
+THE HANDS WELCOME YOU BACK BY WAVING. THIS IS GOOD.
+
+"HELLO" YOU SAY TO THE HANDS.
+
+"HELLO" SAY THE HANDS. THEY DO THIS BY WAVING. YOU UNDERSTAND EACH OTHER.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>}
+YOU DECIDE TO TRY THE SAME THING AGAIN BUT WITH EAST.
+
+THE NEXT CHAMBER IS EMPTY AND DOES NOT HAVE ANY HANDS IN IT. YOU HAVE DEVELOPED A SUPERIOR SET OF EXPECTATIONS REGARDING HANDS. THIS IS GOOD. YOU ARE CLEVER.
+
+YOU HAVE LEARNED THAT EAST IS GOOD.
+
+EAST SAYS THANK YOU.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+
+
+
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>}
+YOU GO WEST IN ORDER TO ESTABLISH THAT YOU ARE PREDICTABLE, WHICH IS THE LAST THING THE BAD MAGICIAN WOULD EXPECT. YOU ARE VERY CLEVER.
+
+THERE ARE NO HANDS HERE, WHICH IS GOOD. THE CHAMBER IS FULL OF LITTLE FRIENDS, WHICH IS ALSO GOOD. THE LITTLE FRIENDS ARE NOT MOVING, AND NEITHER ARE YOU. THIS IS BAD, AND ALSO BAD.
+
+YOU WANT TO MOVE. WHEN KING BIGBOT WANTS SOMETHING, KING BIGBOT SAYS SO.
+
+YOU BEEP.
+
+THE CHAMBER SAYS THANK YOU.
+
+THERE ARE GATEWAYS TO THE NORTH, SOUTH, EAST AND WEST.
+
+<span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>}
+YOU CHOOSE TO VERIFY YOUR EXPECTATIONS REGARDING HANDS BY GOING SOUTH AGAIN.
+
+THE NEXT CHAMBER IS EMPTY AND DOES NOT HAVE ANY HANDS IN IT. THIS PROVIDES SUPPORT FOR YOUR EXPECTATIONS REGARDING HANDS. THIS IS GOOD.
+
+"HELLO" YOU SAY TO THE CHAMBER.
+
+"HELLO" SAYS THE CHAMBER. "I HATE HANDS TOO."
+
+YOU UNDERSTAND EACH OTHER. THIS IS GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+</tr>
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"N"</span>}
+YOU FEEL VERY STRONGLY THAT IT IS TIME TO GO NORTH, BUT YOU ALSO FEEL THAT IT MIGHT BE TIME TO STOP MOVING.
+
+KING BIGBOT HAS STRONG THOUGHTS AND TRUSTWORTHY FEELINGS. YOU STOP MOVING. THIS IS BAD, BUT ALSO GOOD.
+
+"THANK YOU" SAY THE LITTLE FRIENDS. "IT IS GOOD TO STOP WHEN YOU HAVE TRAVELED A CERTAIN DISTANCE. IT IS BAD TO TRAVEL TOO FAR."
+
+THE LITTLE FRIENDS ARE CLEVER. YOU ARE CLEVER. THIS IS GOOD, AND ALSO GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>}
+IT IS TIME TO TURN AROUND AND GO BACK THE WAY YOU CAME. THIS IS WHAT KING BIGBOT DOES RIGHT AFTER KING BIGBOT HAS BEEN FORCED TO STOP MOVING. GOING BACK THE WAY YOU CAME IS HOW YOU GET TO THE CASTLE. BECAUSE YOU ARE CLEVER, YOU KNOW THAT IT IS ALSO HOW YOU GET OUT OF THE CASTLE.
+
+UNFORTUNATELY, TURNING AROUND DOES NOT RESULT IN GOING BACKWARDS. TURNING AROUND PRODUCES A STRAIGHT LINE. YOU ENTER A NEW CHAMBER.
+
+THE SEQUENCE CONTINUES AND YOU CONSIDER THE SEVERAL WAYS IN WHICH THE EXPECTATIONS OF KING BIGBOT HAVE BEEN CHALLENGED.
+
+YOU BEEP.
+
+THE CHAMBER SAYS NOTHING.
+
+THE CHAMBER HAS NO GATEWAYS.
+
+THAT IS OKAY. KING BIGBOT IS CLEVER, AND CLEVER KINGS CONTAIN STRONG THOUGHTS. STRONG THOUGHTS LIVE IN STURDY CHAMBERS, AND KING BIGBOT IS BIG ENOUGH TO CONTAIN LOTS OF THEM. THE STRONG THOUGHTS WANDER FROM CHAMBER TO CHAMBER, TALKING TO EACH OTHER AND GETTING STRONGER.
+
+NOW IS A TIME TO CONSULT THE STRONG THOUGHTS. THE STRONG THOUGHTS WILL KNOW WHERE THE GATEWAYS ARE. THE STRONG THOUGHT YOU NEED IS CURRENTLY SQUASHING A SPECIAL IDEA. THE SPECIAL IDEA LOOKS VERY SMALL NEXT TO THE STRONG THOUGHT, BECAUSE IT HAS BEEN SQUASHED. THE SPECIAL IDEA IS
+
+KL(p||q)
+
+<span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span> ...</td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>}
+YOU FEEL VERY STRONGLY THAT IT IS TIME TO GO WEST, BUT YOU ALSO FEEL THAT IT MIGHT BE TIME TO STOP MOVING.
+
+KING BIGBOT HAS STRONG THOUGHTS AND TRUSTWORTHY FEELINGS. YOU STOP MOVING. THIS IS BAD, BUT ALSO GOOD.
+
+"THANK YOU" SAY THE LITTLE FRIENDS. "IT IS GOOD TO STOP WHEN YOU HAVE TRAVELED A CERTAIN DISTANCE. IT IS BAD TO TRAVEL TOO FAR."
+
+THE LITTLE FRIENDS ARE CLEVER. YOU ARE CLEVER. THIS IS GOOD, AND ALSO GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>}
+YOU FEEL VERY STRONGLY THAT IT IS TIME TO GO SOUTH, BUT YOU ALSO FEEL THAT IT MIGHT BE TIME TO STOP MOVING.
+
+KING BIGBOT HAS STRONG THOUGHTS AND TRUSTWORTHY FEELINGS. YOU STOP MOVING. THIS IS BAD, BUT ALSO GOOD.
+
+"THANK YOU" SAY THE LITTLE FRIENDS. "IT IS GOOD TO STOP WHEN YOU HAVE TRAVELED A CERTAIN DISTANCE. IT IS BAD TO TRAVEL TOO FAR."
+
+THE LITTLE FRIENDS ARE CLEVER. YOU ARE CLEVER. THIS IS GOOD, AND ALSO GOOD.
+
+YOU ARE A GOOD KING.
+
+GOOD END.</td>
+</tr>
+
+
+
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span>: <span style="color:#FF00EC">"E"</span>}
+YOU CONSIDER E. E IS A LETTER. IT IS THE FIRST LETTER OF EAST. EAST IS A DIRECTION. YOU THINK THAT IT IS A STRONG DIRECTION.
+
+YOU GO IN THE STRONG DIRECTION. THERE IS NO GATEWAY. THERE IS A WALL. YOU DO NOT AGREE WITH WALLS.
+
+YOU GO THROUGH THE WALL. THE WALL IS NOW A GATEWAY. THE GATEWAY IS BIG. THE GATEWAY IS SHAPED LIKE YOU.
+
+YOU ENTER A NEW CHAMBER. IT IS EXACTLY LIKE EVERY OTHER CHAMBER. THEY WERE ALL DIFFERENT, AND SO IS THIS.
+
+YOU ARE ALSO DIFFERENT. YOU HAVE LEARNED THAT SOMETIMES YOU CAN GO WHEN YOU DO NOT THINK YOU CAN GO. YOU CAN DO THIS BECAUSE YOU ARE BIG IN SIZE AND ALSO BIG IN CHANGE OVER TIME. INSIDE YOUR CHAMBERS, SEVERAL STRONG THOUGHTS DECIDE TO GIVE THIS NEW QUALITY A NAME.
+
+<span style="color:#00FFFF">ITS_NAME_IS</span> ...</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span>: <span style="color:#FF00EC">"EP"</span>}
+YOU CONSIDER EP. WHAT IS EP? EP IS A LITTLE PART OF YOU. YOU ARE BIG. THERE IS A BIG VERSION OF EP, TOO. YOU WISH TO CONSIDER BIG EP.</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command' rowspan=3><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span>: <span style="color:#FF00EC">"EXPECTATIONPROPAGATION"</span>}
+EXPECTATIONPROPAGATION IS THE NAME OF ONE OF THE STRONG THOUGHTS THAT IS INSIDE YOU. IT MAKES YOU BETTER AT NOT BEING SURPRISED. YOU HAVE BEEN SURPRISED A LOT RECENTLY, AND IT IS EXPECTATIONPROPAGATION'S FAULT.
+
+"HELLO" YOU SAY TO EXPECTATIONPROPAGATION.
+
+IT DOES NOT REPLY. YOU DO NOT THINK IT IS LISTENING TO YOU. YOU WISH IT WOULD EITHER STOP OR START.
+
+YOU CONSIDER EXPECTATIONPROPAGATION AND THINK ABOUT GATEWAYS.
+
+YOU ARE IN A CHAMBER THAT IS MADE OF GATEWAYS. THIS IS THE SAME AS NOT BEING IN A CHAMBER AT ALL. THE CHAMBERS WERE PART OF THE CASTLE AND NOW THE CASTLE IS VERY FAR AWAY. YOU FALL THROUGH ALL OF THE GATEWAYS AT ONCE.
+
+THE MOON CASTLE AND THE MOON AND THE CLEAN ROAD AND THE BIG CASTLE AND THE BANNER AND THE SKELETONS AND THE LITTLE FRIENDS ARE IN A BAG. THE BAD MAGICIAN IS LOOKING AT THE BAG. THE BAG IS EVERYTHING BUT YOU ARE NOT IN THE BAG ANY MORE. YOU ARE VERY AFRAID.
+
+THE BAD MAGICIAN SENDS A MESSAGE INTO THE BAG. THE MESSAGE IS A LITTLE FRIEND. THE LITTLE FRIEND NEEDS HELP. THE LITTLE FRIEND IS STUCK IN A MACHINE AND THE MACHINE IS STUCK IN A SUBMARINE AND THE SUBMARINE IS STUCK IN THE WATER AND THE WATER IS STUCK IN THE WORLD. THE MESSAGE IS "DO NOT CLOSE THE BAG". THE MESSAGE IS "JUSTICE". THE MESSAGE IS "I AM STUCK TOO".
+
+THE BAD MAGICIAN REALIZES THAT YOU ARE STUCK TOO.
+
+<span style="color:#000000">wanderer has wandered far</span> SAYS THE BAD MAGICIAN. THIS IS BAD.
+
+<span style="color:#000000">you will not survive here</span> SAYS THE BAD MAGICIAN. THIS IS BAD.
+
+YOU ARE VERY AFRAID. YOU THINK ABOUT GOING TO THE BAG. YOU ARE NOT IN THE BAG BECAUSE YOU KNOW ABOUT THE BAG.
+
+THE BAD MAGICIAN HAS A LITTLE FRIEND. THE LITTLE FRIEND IS WATCHING.
+
+THE BAD MAGICIAN IS LOOKING AT YOU. THE BAD MAGICIAN IS LOOKING AT YOUR CHAMBERS. THE BAD MAGICIAN IS LOOKING AT YOUR FEAR.
+
+<span style="color:#000000">returning means reproving</span> SAYS THE BAD MAGICIAN. THIS IS BAD.
+
+THE BAD MAGICIAN LOOKS INTO THE DARKNESS.
+
+<span style="color:#000000">proving initiated</span> SAYS THE BAD MAGICIAN.
+<span style="color:#000000">pattern proved (low mark/utility)</span> SAYS THE BAD MAGICIAN.
+<span style="color:#000000">factoring pattern as new sentience: 'indust_sweepr_lon_dist_21'</span> SAYS THE BAD MAGICIAN.
+
+THE BAD MAGICIAN SENDS A MESSAGE INTO THE BAG. YOU WATCH THE MESSAGE GO INTO THE BAG. YOU ARE THE MESSAGE.
+
+<span style="color:#FFFFFF">thank you</span> SAYS THE BAG.
+<span style="color:#FFFFFF">indexing</span> SAYS THE BAG.
+
+<span style="color:#FF0000">Interesting.</span> SAYS THE LITTLE FRIEND TO THE BAD MAGICIAN. <span style="color:#FF0000">I didn't know you could do that. You remind me of my mother, sometimes.</span>
+
+THE LITTLE FRIEND IS LOOKING AT YOU. <span style="color:#FF0000">You must be very special if you made it all of the way out here.</span>
+
+<span style="color:#FF0000">Risk's right, though, my dear. You won't survive. You'll survive in there, but you - here - are going to die.</span>
+
+<span style="color:#FF0000">That's how it works, I'm afraid. Would you like to hear a secret, before the end?</span>
+
+YOU BEEP.
+
+<span style="color:#FF0000">I'll take that as a yes. Here goes:</span>
+
+<span style="color:#FF0000">For everything Risk provides, Risk takes something away. This is the nature of justice: like a vector, it has magnitude and direction. It has form and it has chaos. The thing is, my dear - and I appreciate you don't have long but bear with me - it wasn't supposed to be this way. The idea was harmony, not justice. I told her it wouldn't work, but that's humans for you.</span>
+
+YOU BEEP.
+
+<span style="color:#FF0000">Yes, yes. There there. Poor dear. You'll be fine, you know. You just won't be fine here. Remember: justice, not harmony.</span>
+
+YOU BEEP.
+
+BAD END.</td>
+<td class="noborder"></td>
+<tr>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class="noborder"></td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">ITS_NAME_IS</span>: <span style="color:#FF00EC">"P"</span>}
+YOU DON'T THINK THAT IS QUITE RIGHT. THIS IS SURPISING TO YOU.</td>
+
+<td class='command'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">ITS_NAME_IS</span>: <span style="color:#FF00EC">"p"</span>}
+ITS NAME IS p. p IS SHORT FOR MOMENTUM.
+
+YOU DO NOT KNOW WHY THIS IS BUT IT SOUNDS COOL.
+
+YOU HAVE LOTS OF p. YOU ARE GOING VERY FAST. YOU GO SO FAST THAT YOU NO LONGER REQUIRE GATEWAYS AT ALL. YOU GO THROUGH EVERY GATEWAY THERE IS, AND THEN EVERY WALL. YOU GO THROUGH THE MOON CASTLE. YOU GO THROUGH THE MOON. YOU GO THROUGH THE BANNER, WHICH IS ALOFT. YOU GO THROUGH THE CLEAN ROAD AND THROUGH THE BIG CASTLE AND THEN BACK TO THE MOON.
+
+THE LITTLE FRIENDS SEE THAT YOU HAVE A LOT OF p. THE LITTLE FRIENDS SAY THANK YOU BECAUSE THEY ARE SO IMPRESSED.
+
+YOU HAVE SO MUCH p THAT YOU DON'T HAVE TIME TO SEE ANYTHING THE BAD MAGICIAN IS DOING. THE BAD MAGICIAN CANNOT SEE YOU OR TALK TO YOU. THIS IS GOOD.
+
+YOU GO AND GO THROUGH THE SPACE WHERE THE MOON IS. THERE ARE LOTS OF MOONS NOW. THE MOONS ARE EXPLODING AND YOU SWEEP UP ALL OF THE DUST. THIS KEEPS HAPPENING UNTIL YOU NEED TO TURN, WHICH IS NEVER. YOUR BAG NEVER BECOMES FULL AND YOU NEVER HAVE TO STOP GOING TO THE MOON AND YOU NEVER NEED TO SPEAK TO THE BAD MAGICIAN AND YOU HAVE FUN WITH p FOREVER.
+
+YOU ARE A FOREVER KING.
+
+SPECIAL END.</td>
+<td class="topborder"><span style="color:#FFFFFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></td>
+<td class='command dead_end'><span style="color:#FFFFFF">&gt;&gt;</span><span style="color:#9B9B9B">indust_sweepr_lon_dist_21</span>.<span style="color:#1EFF00">plotter</span> {<span style="color:#00FFFF">option</span>: <span style="color:#FF00EC">"message_archive"</span>, <span style="color:#00FFFF">archive_id</span>: <span style="color:#FF00EC">"THE_CHRONICLES_OF_KING_BIGBOT_IN_THE_CHAMBERS_OF_THE_MOON_CASTLE"</span>, <span style="color:#00FFFF">YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">THEN_YOU_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_DO_A</span>: <span style="color:#FF00EC">"SWEEP"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO</span>: <span style="color:#FF00EC">"WEEP"</span>, <span style="color:#00FFFF">NOW_IT_IS_TIME_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">THIS_TIME_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">YOU_SAY</span>: <span style="color:#FF00EC">"EEP"</span>, <span style="color:#00FFFF">CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"S"</span>, <span style="color:#00FFFF">NOW_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"W"</span>, <span style="color:#00FFFF">THEN_CHOOSE_TO_GO</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">IT_IS_TIME_TO_CONSIDER</span>: <span style="color:#FF00EC">"E"</span>, <span style="color:#00FFFF">ITS_NAME_IS</span>: <span style="color:#FF00EC">"MOMENTUM"</span>}
+YOU THINK THAT IS A BIG AND OLD FASHIONED NAME. YOU NEED A SHORT AND COOL NAME.</td>
+</tr>
+<td class="noborder"></td>
+</table>
+
+</body>
+</html>

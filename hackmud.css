@@ -7,6 +7,23 @@
 	font-style: normal;
 }
 
+.global-footer-filled {
+  text-align: center;
+  position: fixed;
+  line-height:0.5;
+  height: 10%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#101215;
+  background-image: repeating-linear-gradient(#0e0e0e, #0e0e0e 2px, #101215 2px, #101215 4px);
+  background-size:100% 4px;
+}
+
+.hackmud-logo {
+	white-space: pre;
+}
+
 a[href],
 a[href]:active,
 a[href]:visited,
@@ -33,11 +50,23 @@ body {
 	word-wrap:break-word;
 	white-space:pre-wrap;
 	color:#83B0F2;
+	height: 100%;
 	font-family:white_rabbitregular,monospace;
 	line-height:1.1;
 	background-image: repeating-linear-gradient(#0e0e0e, #0e0e0e 2px, #101215 2px, #101215 4px);
 	background-size:100% 4px;
+	padding-bottom: 10%;
 }
+
+.list-body {
+	line-height:0.7;
+	padding-top:0;
+	padding-bottom:0;
+	color:#FFF;
+	align:center;
+	text-align:center;
+}
+
 table,
 tr,
 td {
